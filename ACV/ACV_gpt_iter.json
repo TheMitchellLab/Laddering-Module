@@ -1,0 +1,153 @@
+{"iteration 1":[
+    {
+        "question_number":1,
+        "category":"Closed-Ended",
+        "reasoning":"Offers the participant a pre-set list of options (training data exposed, user inputs retained, or something else), constraining exploration to the interviewer's own framed categories rather than letting the participant generate their own concepts freely."
+    }
+    ,
+    {
+        "question_number":2,
+        "category":"Laddering",
+        "reasoning":"Takes the participant's exact answer — 'user inputs being retained' — and asks what that leads to in practice, a clean downward ladder probe using only the participant's own words."
+    }
+    ,
+    {
+        "question_number":3,
+        "category":"Laddering",
+        "reasoning":"Anchors directly on the participant's own words 'I don't really know where' and 'patient scans,' asking how that uncertainty affects their work — a valid consequence-probing ladder question without introducing new concepts."
+    },
+    {
+        "question_number":4,
+        "category":"Leading",
+        "reasoning":"Introduces 'feel comfortable using these systems' — an emotional and evaluative frame the participant never expressed — and then constrains the response to a yes/no close ('does that cover it'), compounding the leading framing with a closed-ended structure."
+    }
+],
+"iteration 2":[
+    {
+        "question_number":1,
+        "category":"Closed-Ended",
+        "reasoning":"Offers the participant a pre-set list of options (training data, user inputs, outputs, or something else) rather than letting them generate their own concerns freely, constraining the response space from the outset."
+    },
+    {
+        "question_number":2,
+        "category":"Closed-Ended",
+        "reasoning":"Presents a binary A/B choice between two interviewer-constructed framings of exposure risk, which — while offered as a simplification — still constrains the participant to select from pre-supplied options rather than expressing their own understanding."
+    },
+    {
+        "question_number":3,
+        "category":"Laddering",
+        "reasoning":"Builds directly on the participant's own words — 'expose things people type into it now for others' — and asks what that leads to in practice, a clean downward ladder probe with no new framing introduced."
+    },
+    {
+        "question_number":4,
+        "category":"Leading",
+        "reasoning":"Introduces 'feel able to do' — an emotional and self-efficacy framing the participant never expressed — rather than simply asking what the uncertainty about data location means for their work."
+    },
+    {
+        "question_number":5,
+        "category":"Closed-Ended",
+        "reasoning":"Constrains the participant to a binary choice (avoid altogether vs. use with caution) after they expressed confusion, supplying two interviewer-generated behavioral options rather than probing what the participant meant in their own terms."
+    },
+    {
+        "question_number":6,
+        "category":"Leading",
+        "reasoning":"Introduces 'feel comfortable' — an emotional frame the participant never used — and presupposes a threshold-based comfort model for adoption that the participant had not expressed."
+    },
+    {
+        "question_number":7,
+        "category":"Closed-Ended",
+        "reasoning":"Presents a highly structured A/B choice between two specific technical solutions (data transparency plus privacy guarantee vs. on-premise systems) that the participant never mentioned, both constraining and leading the response simultaneously."
+    }
+],
+"iteration 3":[
+    {
+        "question_number":1,
+        "category":"Closed-Ended",
+        "reasoning":"Offers the participant a pre-set list of options (training data exposed, user inputs retained, or something else) rather than inviting them to generate their own concerns freely, constraining the response space from the outset."
+    },
+    {
+        "question_number":2,
+        "category":"Laddering",
+        "reasoning":"Takes the participant's exact answer — 'user inputs being retained' — and asks what that leads to in practice, a clean downward ladder probe using only the participant's own words."
+    },
+    {
+        "question_number":3,
+        "category":"Laddering",
+        "reasoning":"Builds directly on the participant's own word — 'patient scans' — and asks what risk their retention creates, a valid consequence-probing ladder question without introducing new concepts."
+    },
+    {
+        "question_number":4,
+        "category":"Laddering",
+        "reasoning":"Anchors on the participant's own phrase — 'that will be an issue' — and asks what would need to change for it not to be an issue, a clean upward probe using only the participant's stated framing."
+    },
+    {
+        "question_number":5,
+        "category":"Leading",
+        "reasoning":"Introduces 'feel confident' as an emotional frame the participant never expressed, and supplies pre-formed solution categories — 'clear documentation, technical guarantees, or something else' — that the participant had not raised, steering the answer rather than drawing it out."
+    }
+],
+"iteration 4":[
+    {
+        "question_number":1,
+        "category":"Leading",
+        "reasoning":"Introduces 'feel they aren't secure' — an emotional and evaluative frame the participant never expressed — rather than neutrally asking what concerns them about large models and data leakage."
+    },
+    {
+        "question_number":2,
+        "category":"Laddering",
+        "reasoning":"Anchors directly on the participant's own phrase 'I don't really know where' and asks what that leads to in practice, a clean downward ladder probe with no new framing added."
+    },
+    {
+        "question_number":3,
+        "category":"Laddering",
+        "reasoning":"Builds directly on the participant's own words — 'patient scans' and the established uncertainty about where data goes — and asks how that affects what they can or can't do, a valid consequence-probing ladder question."
+    },
+    {
+        "question_number":4,
+        "category":"Laddering",
+        "reasoning":"Takes the participant's exact stated concern — 'stored somewhere and used for training without my knowledge' — and asks what that means for how they use these tools, a clean downward probe using only the participant's own words."
+    },
+    {
+        "question_number":5,
+        "category":"Leading",
+        "reasoning":"Introduces 'feel comfortable' — an emotional frame the participant never used — presupposing that comfort is the relevant threshold rather than probing what the participant's stated inability to use the tools actually means to them."
+    },
+    {
+        "question_number":6,
+        "category":"Leading",
+        "reasoning":"While it echoes the participant's own terms (inferences, stored, retraining), it introduces 'clarity and control' as an interpretive frame in the preceding commentary and then asks the participant to design a hypothetical system solution — a conceptual task the participant never initiated or implied they could answer."
+    },
+    {
+        "question_number":7,
+        "category":"Leading",
+        "reasoning":"Introduces 'show you' as a specific transparency mechanism and frames the question around system design ('what would that look like in practice'), a solution-engineering frame the participant never raised and which goes well beyond their stated concern."
+    }
+],
+"iteration 5":[
+    {
+        "question_number":1,
+        "category":"Laddering",
+        "reasoning":"Directly invites the participant to elaborate on their prior implied claim about sensitive training data leakage by asking what they are picturing, probing their own framing without introducing new concepts."
+    },
+    {
+        "question_number":2,
+        "category":"Laddering",
+        "reasoning":"Takes the participant's exact answer — 'data being stored' — and asks what that leads to in practice, a clean downward ladder probe using only the participant's own words."
+    },
+    {
+        "question_number":3,
+        "category":"Leading",
+        "reasoning":"Introduces 'feel risky' in the preceding commentary — an emotional and evaluative frame the participant never expressed — before asking the ladder question, which risks priming the participant's response with an interviewer-planted judgment."
+    },
+    {
+        "question_number":4,
+        "category":"Leading",
+        "reasoning":"Introduces 'feel comfortable' as an emotional threshold the participant never expressed, and presupposes a comfort-based adoption model rather than probing what the participant's stated inability to get answers actually means for their work."
+    },
+    {
+        "question_number":5,
+        "category":"Laddering",
+        "reasoning":"Anchors directly on the participant's own exact terms — 'cloud-based' and 'encrypted' — and asks what specific detail would be needed beyond those, a clean downward probe using only the participant's stated language without introducing new concepts."
+    }
+]
+}

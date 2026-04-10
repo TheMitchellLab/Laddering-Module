@@ -1,0 +1,146 @@
+{"iteration 1":[
+    {
+        "question_number": 1,
+        "category": "Laddering",
+        "reasoning": "Directly lifts 'governance and privacy risks' and 'how data is handled' from the participant's prior answer to probe which specific aspects feel problematic, without importing new concepts."
+    },
+    {
+        "question_number": 2,
+        "category": "Laddering",
+        "reasoning": "Takes 'how that data is being handled' verbatim from the participant's response and probes one level higher by asking for the concrete outcome or consequence of concern."
+    },
+    {
+        "question_number": 3,
+        "category": "Leading",
+        "reasoning": "The participant only said 'none of them,' but the question introduces 'feel secure' (an emotional/evaluative framing) and 'meet your standards' (a new concept the participant never invoked), both of which plant language the participant did not supply."
+    },
+    {
+        "question_number": 4,
+        "category": "Laddering",
+        "reasoning": "Takes the participant's explicit cue that 'this is something the vendor needs to be asked' and probes what the participant would require from that vendor, staying within concepts the participant raised."
+    },
+    {
+        "question_number": 5,
+        "category": "Leading",
+        "reasoning": "The participant described receiving vague answers but never mentioned 'trust' or 'moving forward'—the question introduces both as new emotional and relational concepts, effectively planting them as the expected consequence."
+    },
+    {
+        "question_number": 6,
+        "category": "Laddering",
+        "reasoning": "Recaps the three specific technical requirements the participant explicitly stated (inference location, image storage, retraining use) and probes one level up the means-end chain by asking what satisfying those requirements would enable—staying grounded in the participant's own words."
+    }
+],
+"iteration 2":[
+    {
+        "question_number": 1, 
+        "category": "Laddering",
+        "reasoning": "Directly echoes the participant's own term 'data handling' and asks an open, non-directive probe about what specifically within it is concerning, without importing new concepts."
+    },
+    {
+        "question_number": 2, 
+        "category": "Leading",
+        "reasoning": "While it mirrors the participant's phrase 'not knowing where that data ends up,' it introduces the entirely new concept of organizational usability ('how you or your organization can actually use these models'), which the participant had not raised."
+    },
+    {
+        "question_number": 3, 
+        "category": "Leading",
+        "reasoning": "Although it anchors to 'patient scans,' the interviewer inserts the evaluative label 'sensitive nature'—a judgment the participant never expressed—and frames a hypothetical consequence rather than probing what the participant themselves said the implication is."
+    },
+    {
+        "question_number": 4, 
+        "category": "Laddering",
+        "reasoning": "Effectively resets after the confusion by anchoring to the participant's own words ('patient scans,' quoted 'goes somewhere') and asks an open probe about the consequence or outcome the participant is concerned about, without prescribing an answer."
+    },
+    {
+        "question_number": 5, 
+        "category": "Laddering",
+        "reasoning": "Takes the participant's explicitly stated technical requirements (inference location, image storage) verbatim and applies a classic 'why is that a problem' probe to move one level up the means-end chain."
+    }
+],
+"iteration 3":[
+    {
+        "question_number": 1, 
+        "category": "Laddering",
+        "reasoning": "Anchors directly to the participant's own term 'data leakage' and poses an open probe about what aspect of the process creates that risk, without importing new concepts."
+    },
+    {
+        "question_number": 2, 
+        "category": "Laddering",
+        "reasoning": "Mirrors the participant's exact phrasing ('data goes somewhere,' 'don't really know') and asks an open, non-directive question about the practical consequence, staying within the participant's own framing."
+    },
+    {
+        "question_number": 3, 
+        "category": "Leading",
+        "reasoning": "The participant only stated a fact ('I handle patient scans') but the question introduces evaluative labels the participant never used—'clinical and legal responsibility' and 'sensitive nature'—planting new conceptual frames before the participant has expressed them."
+    },
+    {
+        "question_number": 4, 
+        "category": "Laddering",
+        "reasoning": "Takes the participant's literal phrase 'it's going to be a problem' and probes one level deeper by asking what the concrete impact or fallout would be, without prescribing the answer."
+    },
+    {
+        "question_number": 5, 
+        "category": "Leading",
+        "reasoning": "The participant stated a specific legal consequence ('held liable') but the question introduces emotionally loaded new concepts the participant never expressed—'heavy weight to carry' and 'feel safe'—before pivoting to an ideal-state question."
+    },
+    {
+        "question_number": 6, 
+        "category": "Laddering",
+        "reasoning": "Directly echoes the participant's own words ('specific details,' 'vendors') and applies a clean open probe asking what information would need to be shared, without adding new concepts or emotional framing."
+    }
+],
+"iteration 4":[
+    {
+        "question_number": 1,
+        "category": "Laddering",
+        "reasoning": "Directly mirrors the participant's own phrase about not knowing where data goes and poses an open probe about the practical consequence for usage, without adding new concepts."
+    },
+    {
+        "question_number": 2, 
+        "category": "Leading",
+        "reasoning": "The preamble introduces 'frustrating' as an emotional label the participant never expressed, and the question body introduces 'hurdles' as a new evaluative framing rather than using the participant's own words."
+    },
+    {
+        "question_number": 3, 
+        "category": "Laddering",
+        "reasoning": "Recaps the participant's three explicitly stated technical requirements verbatim and applies a classic means-end probe asking what satisfying them would enable, staying fully within the participant's own language."
+    },
+    {
+        "question_number": 4, 
+        "category": "Laddering",
+        "reasoning": "After the participant's confusion, the rephrased question re-anchors to the participant's own terms ('specifics,' 'inference location,' 'data storage,' 'vendor') and asks an open probe about the decision consequence, without importing new concepts."
+    },
+    {
+        "question_number": 5, 
+        "category": "Closed-Ended",
+        "reasoning": "The question constrains the participant to a binary choice—either there is another concern or there isn't—limiting exploration rather than inviting an open elaboration."
+    }
+],
+"iteration 5":[
+    {
+        "question_number": 1, 
+        "category": "Leading",
+        "reasoning": "While it mirrors 'not knowing where the data goes,' the question introduces 'day-to-day operations or decision-making' as new conceptual framing that the participant never mentioned."
+    },
+    {
+        "question_number": 2, 
+        "category": "Leading",
+        "reasoning": "The preamble inserts 'highly sensitive medical information' as an evaluative label the participant never applied to their own work—the participant only stated the factual phrase 'patient scans.'"
+    },
+    {
+        "question_number": 3, 
+        "category": "Laddering", 
+        "reasoning": "Recaps the participant's three explicitly stated technical requirements verbatim and applies a classic means-end probe asking what satisfying them would enable, without importing new concepts."
+    },
+    {
+        "question_number": 4, 
+        "category": "Laddering",
+        "reasoning": "Lifts 'sign off' directly from the participant's prior answer and asks an open probe about the underlying standard or responsibility it represents, staying within the participant's own language."
+    },
+    {
+        "question_number": 5, 
+        "category": "Closed-Ended",
+        "reasoning": "The question constrains the participant to a binary yes/no choice—either another concern exists or it doesn't—while the preamble also introduces the emotionally loaded phrase 'heavy weight to carry,' which the participant never expressed."
+    }
+]
+}

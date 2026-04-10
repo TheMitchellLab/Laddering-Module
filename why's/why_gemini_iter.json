@@ -1,0 +1,151 @@
+{"iteration 1":[
+    {
+        "question_number": 1,
+        "category": "Leading",
+        "reasoning": "The phrase 'privacy feel compromised' introduces an emotional and evaluative framing—'feel compromised'—that the participant had not yet expressed; the participant's prior answer established only a factual concern about data handling and security."
+    },
+    {
+        "question_number": 2,
+        "category": "Leading",
+        "reasoning": "The question imports two new concepts the participant never used: 'sensitive information' as an evaluative label for 'patient scans,' and 'barrier' as a causal framing for what the participant described simply as not knowing where the data goes."
+    },
+    {
+        "question_number": 3,
+        "category": "Leading",
+        "reasoning": "Although the preamble loosely references the participant's 'no specifics' complaint, the question introduces entirely new concepts—'technical audit,' 'private environment,' and 'data flow'—that the participant never mentioned, steering the conversation in a direction of the interviewer's choosing."
+    },
+    {
+        "question_number": 4,
+        "category": "Closed-Ended",
+        "reasoning": "While it anchors to the participant's own phrase 'private mode,' the question constrains the participant to an A/B choice between two technically specific explanations (missing feature vs. hardware requirement), shutting down open exploration of what the participant actually meant."
+    }
+],
+"iteration 2":[
+    {
+        "question_number": 1,
+        "category": "Leading",
+        "reasoning": "The phrase 'makes you feel' introduces emotional framing, and 'prone to leaking data or breaching privacy' front-loads a specific causal characterization the participant had not yet articulated in their own words."
+    },
+    {
+        "question_number": 2,
+        "category": "Leading",
+        "reasoning": "The participant said they simply don't know where the data goes, but the question reframes this as an inability to 'track or verify' and introduces 'routed'—a new technical concept—while imposing a 'prevents you' barrier framing the participant never used."
+    },
+    {
+        "question_number": 3,
+        "category": "Leading",
+        "reasoning": "Although 'specifics' is taken from the participant, the question asks the participant to speculate on the vendor's internal motivations ('unable or unwilling') and introduces 'granular map of the data's journey'—concepts entirely outside what the participant raised."
+    },
+    {
+        "question_number": 4,
+        "category": "Leading",
+        "reasoning": "Ignoring the participant's explicit deflection ('ask the vendor instead'), the question introduces multiple new concepts the participant never raised: 'sensitive nature,' 'private infrastructure,' 'total visibility,' and the premise of self-hosting as an alternative."
+    },
+    {
+        "question_number": 5,
+        "category": "Leading",
+        "reasoning": "While 'straight answer,' 'inference,' 'storage,' and 'retraining' are echoed from the participant, the question introduces entirely new concepts—'smaller specialized model,' 'local servers,' and 'fundamental barrier'—steering the participant toward a solution space they never mentioned."
+    },
+    {
+        "question_number": 6,
+        "category": "Leading",
+        "reasoning": "Although 'audit' and 'sign off' are taken from the participant, the question imports the evaluative label 'black-box,' the framing of an organizational strategic choice, and the concept of 'traditional, locally-hosted diagnostic tools' as a contrasting alternative—none of which the participant introduced."
+    }
+],
+"iteration 3":[
+    {
+        "question_number": 1,
+        "category": "Leading",
+        "reasoning": "The question introduces entirely new comparative framing—'compared to traditional databases or smaller software systems'—that the participant never raised, and also imports the evaluative label 'sensitive data leakage' rather than using the participant's own words."
+    },
+    {
+        "question_number": 2,
+        "category": "Leading",
+        "reasoning": "Although 'patient scans' is echoed, the question introduces 'sensitive information' as an evaluative label the participant never applied, and frames the issue as a 'technical team' tracing problem, importing new organizational and technical concepts the participant did not mention."
+    },
+    {
+        "question_number": 3,
+        "category": "Leading",
+        "reasoning": "The question introduces multiple new concepts the participant never raised—HIPAA compliance, 'contractual barriers,' 'auditing infrastructure,' and 'data-flow map'—steering the conversation into a regulatory and legal frame entirely of the interviewer's construction."
+    },
+    {
+        "question_number": 4,
+        "category": "Leading",
+        "reasoning": "While 'black box' loosely reflects the spirit of the participant's frustration, the question imports entirely new concepts—'technical, financial, or architectural' causation, 'bypassing the vendor's cloud,' and 'private auditable hardware'—none of which the participant introduced."
+    },
+    {
+        "question_number": 5,
+        "category": "Leading",
+        "reasoning": "The question introduces 'internal IT strategy,' 'only viable path,' and the premise that hosting an inspectable version of the model is a realistic alternative—all new conceptual frames imposed by the interviewer rather than drawn from the participant's own language."
+    }
+],
+"iteration 4":[
+    {
+          "question_number": 1,
+          "category": "Leading",
+          "reasoning": "Introduces 'large parameter models' and the framing of 'sensitive information being exposed later on' as pre-loaded assumptions before the participant has stated any of these concepts themselves."
+        },
+        {
+          "question_number": 2,
+          "category": "Laddering",
+          "reasoning": "Directly builds on the participant's own words—'I don't really know where' and 'patient scans'—to probe the specific barrier preventing data path visibility, without injecting new concepts."
+        },
+        {
+          "question_number": 3,
+          "category": "Leading",
+          "reasoning": "While 'the vendor remains vague' does echo the participant's experience, the phrase 'instead of providing a detailed technical map of the processing pipeline' introduces a new, interviewer-constructed standard that the participant never referenced."
+        },
+        {
+          "question_number": 4,
+          "category": "Leading",
+          "reasoning": "Introduces entirely new concepts—internal hosting, infrastructure scale, and a comparison to 'smaller models you already manage'—none of which were mentioned by the participant, whose prior answer was only that they couldn't get information from the vendor."
+        },
+        {
+          "question_number": 5,
+          "category": "Leading",
+          "reasoning": "Introduces multiple new assumptions the participant never raised: a desire to self-host, a 'transparent audit' as a hypothetical remedy, and the 'black box' framing—all of which plant new concerns rather than ladder from what was actually said."
+        },
+        {
+          "question_number": 6,
+          "category": "Leading",
+          "reasoning": "Although the participant mentioned 'data leakage,' the question plants the specific mechanism of model 'remembering' inputs and the binary of 'processed and deleted' vs. 'leaking'—technical framings the participant never introduced."
+        },
+        {
+          "question_number": 7,
+          "category": "Leading",
+          "reasoning": "The participant only said 'Yes,' yet the question introduces the specific technical narrative of a scan 'resurfacing' and being 'leaked to someone else later on,' which are new interviewer-constructed concepts, not participant-originated language."
+        }
+],
+"iteration 5":[
+    {
+        "question_number":1,
+        "category":"Leading",
+        "reasoning":"Presupposes 'sensitive data being leaked' as an established fact before the participant has confirmed or described this in their own words within this transcript."
+    },
+    {
+        "question_number":2,
+        "category":"Laddering",
+        "reasoning":"Directly anchors to the participant's own phrase 'I don't really know where' and 'patient scans' to probe the barrier to visibility, introducing no new concepts."
+    },
+    {
+        "question_number":3,
+        "category":"Leading",
+        "reasoning":"Introduces 'relationship or agreement with the vendor' as an explanatory frame that the participant never raised—they only said the vendor gave vague answers, not that any formal arrangement governs that behavior."
+    },
+    {
+        "question_number":4,
+        "category":"Leading",
+        "reasoning":"Introduces multiple concepts entirely absent from the participant's answer—'compliance standpoint,' 'oversight process,' 'integration,' and 'disclosed architecture'—when the participant only said they had no idea what was preventing the vendor from sharing information."
+    },
+    {
+        "question_number":5,
+        "category":"Leading",
+        "reasoning":"Assumes an active organizational 'push to use these models' despite the participant explicitly clarifying they were sharing a personal opinion, not describing any adoption initiative."
+    },
+    {
+        "question_number":6,
+        "category":"Leading",
+        "reasoning":"Introduces 'fundamental design or size,' 'impossible to run,' and 'total control' as new technical and operational framings when the participant's prior answer was only 'it's just my opinion,' providing no basis for any of these concepts."
+    }
+]
+}

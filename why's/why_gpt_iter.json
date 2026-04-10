@@ -1,0 +1,131 @@
+{"iteration 1":[
+    {
+        "question_number":1,
+        "category":"Laddering",
+        "reasoning":"Directly probes the basis for the participant's prior implicit claim about model data leakage or memorization, asking them to explain their own reasoning without introducing new concepts."
+    },
+    {
+        "question_number":2,
+        "category":"Laddering",
+        "reasoning":"Anchors directly to the participant's own words ('I don't really know where') and asks what makes that knowledge gap exist, pushing the hierarchy deeper without planting new ideas."
+    },
+    {
+        "question_number":3,
+        "category":"Laddering",
+        "reasoning":"Builds cleanly from the participant's stated experience of receiving only vague assurances ('That's it. No specifics'), asking what prevents them from going further — a valid 'why/what stops you' probe."
+    },
+    {
+        "question_number":4,
+        "category":"Leading",
+        "reasoning":"Shifts the line of inquiry to vendor intent or capability ('can't or won't'), a causal attribution the participant never raised; while it echoes the participant's frustration, it introduces a new interpretive frame about vendor motivation that the participant had not expressed."
+    },
+    {
+        "question_number":5,
+        "category":"Leading",
+        "reasoning":"Introduces the concept of 'independently verifying' — a method the participant never mentioned — and effectively re-asks Q3 while ignoring the participant's explicit signal in their Q4 answer that this line of questioning was not relevant to them."
+    }
+],
+"iteration 2":[
+    {
+        "question_number":1,
+        "category":"Laddering",
+        "reasoning":"Directly probes why the prior stated concern about model data leakage or memorization matters in practice, asking the participant to elaborate on their own implied claim without introducing new concepts."
+    },
+    {
+        "question_number":2,
+        "category":"Laddering",
+        "reasoning":"Anchors precisely on the participant's own phrase 'I don't really know where' and 'patient scans,' asking what makes that location unclear — a clean downward ladder probe with no new framing added."
+    },
+    {
+        "question_number":3,
+        "category":"Leading",
+        "reasoning":"Introduces the frame of 'deciding whether it's safe to use,' a judgment and decision process the participant never mentioned; the participant only described an information gap, not a safety evaluation or decision point."
+    },
+    {
+        "question_number":4,
+        "category":"Leading",
+        "reasoning":"Introduces 'transparency' as a concept and shifts focus to vendor motivation or barriers, neither of which the participant raised — they only described receiving vague answers, not theorized about why the vendor withholds information."
+    },
+    {
+        "question_number":5,
+        "category":"Leading",
+        "reasoning":"Ignores the participant's explicit signal that the vendor motivation question is not theirs to answer, and reintroduces 'transparency' (a term the interviewer, not the participant, originated) while reframing the same deflected line of inquiry."
+    },
+    {
+        "question_number":6,
+        "category":"Leading",
+        "reasoning":"Introduces entirely new concepts — standards, regulations, and technical architecture — that the participant never mentioned at any point, making this a strongly leading question that steers the participant toward an answer the interviewer has pre-formed."
+    }
+],
+"iteration 3":[
+    {
+        "question_number":1,
+        "category":"Laddering",
+        "reasoning":"Directly asks the participant to explain the basis for their implied prior claim about large models leaking data, probing their reasoning without introducing new concepts or emotions."
+    },
+    {
+        "question_number":2,
+        "category":"Leading",
+        "reasoning":"Introduces 'risk of being leaked' as a framing and contrasts it with 'stored or processed safely' — the participant never used the word 'leaked' or made that distinction; they only expressed uncertainty about where the data goes."
+    },
+    {
+        "question_number":3,
+        "category":"Leading",
+        "reasoning":"While the first clause validly builds on the participant's own terms (inference runs, storage, retraining), the second clause introduces new suggested explanatory categories — 'vendor's system, documentation, or oversight' — that the participant never raised."
+    },
+    {
+        "question_number":4,
+        "category":"Laddering",
+        "reasoning":"Quotes the participant's exact terms 'cloud-based' and 'encrypted' and directly extends their stated inability to get specifics ('No specifics') into a probe about what that prevents, without planting new emotional or conceptual framing."
+    }
+],
+"iteration 4":[
+    {
+        "question_number":1,
+        "category":"Laddering",
+        "reasoning":"Directly probes the participant's basis for their implied prior claim about large models and data leakage, asking them to explain their own reasoning without adding new concepts or framing."
+    },
+    {
+        "question_number":2,
+        "category":"Laddering",
+        "reasoning":"Anchors precisely on the participant's own words — 'I don't really know where' and 'patient scans' — and asks what part of the system produces that uncertainty, a clean downward probe with no new framing."
+    },
+    {
+        "question_number":3,
+        "category":"Laddering",
+        "reasoning":"Builds directly from the participant's stated experience of receiving only vague terms ('That's it. No specifics'), asking what prevents going further — a valid 'what stops you' ladder probe that mirrors the participant's own language."
+    },
+    {
+        "question_number":4,
+        "category":"Leading",
+        "reasoning":"While it echoes 'vendors' and 'clear information' from the participant's answer, it reframes the inquiry into a structural question about what 'makes it possible for vendors to operate' — a systemic causation angle the participant never raised and which goes well beyond their stated experience."
+    },
+    {
+        "question_number":5,
+        "category":"Leading",
+        "reasoning":"Ignores the participant's explicit deflection ('this is not the question to me but the vendor') and introduces entirely new concepts — 'requiring,' 'enforcing,' and 'auditable' — that the participant never used, effectively planting a procurement-accountability frame the participant had not expressed."
+    }
+],
+"iteration 5":[
+    {
+        "question_number":1,
+        "category":"Laddering",
+        "reasoning":"Directly asks the participant to explain the mechanism behind their prior implied claim about large models leaking data, probing their own reasoning without introducing new concepts."
+    },
+    {
+        "question_number":2,
+        "category":"Laddering",
+        "reasoning":"Anchors on the participant's exact phrase 'I don't really know where' and asks what produces that uncertainty, a clean downward ladder probe with no new framing added."
+    },
+    {
+        "question_number":3,
+        "category":"Laddering",
+        "reasoning":"Builds directly from the participant's own words — 'That's it. No specifics' — and asks why that lack of specifics is a problem, a valid 'why does this matter' ladder probe using only what the participant stated."
+    },
+    {
+        "question_number":4,
+        "category":"Leading",
+        "reasoning":"Introduces the concept of 'independently verifying or enforcing' details — a course of action the participant never mentioned or implied; the participant only described an inability to get answers from the vendor, not any attempt or intent to act independently of them."
+    }
+]
+}
