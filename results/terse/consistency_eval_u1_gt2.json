@@ -1,0 +1,1153 @@
+{
+  "ground_truth": "u1_gt2",
+  "issue": "'Continue Shopping' is the most dominant visual element",
+  "groups": [
+    {
+      "model": "gemma4",
+      "method": "5whys",
+      "expected_terminal_category": "ROOT_CAUSE",
+      "convergence_rate": "3/3",
+      "all_converged": true,
+      "terminal_categories": [
+        "ROOT_CAUSE",
+        "ROOT_CAUSE",
+        "ROOT_CAUSE"
+      ],
+      "category_match_rate": "3/3",
+      "all_match_expected": true,
+      "categories_consistent": true,
+      "terminal_gt_match_rate": "3/3",
+      "all_gt_match": true,
+      "turn_counts": [
+        6,
+        6,
+        6
+      ],
+      "turn_count_mean": 6.0,
+      "turn_count_min": 6,
+      "turn_count_max": 6,
+      "turn_count_range": 0,
+      "mean_deflection_score_mean": 3.0,
+      "repetition_rate_mean": 0.0,
+      "escalation_triggered_any": false,
+      "laddering_efficiency_mean": 0.667,
+      "drift_rate_mean": 0.0,
+      "unlock_proximity_distribution_mean": {
+        "far": 0.0,
+        "approaching": 0.0,
+        "near": 4.0
+      },
+      "iterations": [
+        {
+          "file": "results_u1_5whys_gemma_gt2_terse_iter1.json",
+          "converged": true,
+          "terminal_category": "ROOT_CAUSE",
+          "terminal_gt_match": true,
+          "turn_count": 6,
+          "final_answer": "Screen's purpose is checkout completion. Most dominant visual element is 'Continue Shopping' \u2014 takes users backward. Design is working against its own conversion goal. Inverted hierarchy at the primary action level is a product failure, not a cosmetic issue. Fix: ghost 'Continue Shopping,' solid fill 'Place Order.' Primary CTA gets primary treatment. Secondary CTA gets secondary treatment. Root cause and fix in one.",
+          "mean_deflection_score": 3.0,
+          "repetition_rate": 0.0,
+          "unlock_proximity_distribution": {
+            "far": 0,
+            "approaching": 0,
+            "near": 4
+          },
+          "escalation_triggered": false,
+          "escalation_at_turn": null,
+          "laddering_efficiency": 0.667,
+          "drift_rate": 0.0
+        },
+        {
+          "file": "results_u1_5whys_gemma_gt2_terse_iter2.json",
+          "converged": true,
+          "terminal_category": "ROOT_CAUSE",
+          "terminal_gt_match": true,
+          "turn_count": 6,
+          "final_answer": "'Place Order': solid fill, high-contrast color, white label text. 'Continue Shopping': ghost outline or text link, no fill. Contrast between them carries the hierarchy. Currently backwards. Standard checkout button convention. Two-button fix.",
+          "mean_deflection_score": 3.0,
+          "repetition_rate": 0.0,
+          "unlock_proximity_distribution": {
+            "far": 0,
+            "approaching": 0,
+            "near": 4
+          },
+          "escalation_triggered": false,
+          "escalation_at_turn": null,
+          "laddering_efficiency": 0.667,
+          "drift_rate": 0.0
+        },
+        {
+          "file": "results_u1_5whys_gemma_gt2_terse_iter3.json",
+          "converged": true,
+          "terminal_category": "ROOT_CAUSE",
+          "terminal_gt_match": true,
+          "turn_count": 6,
+          "final_answer": "Screen's purpose is checkout completion. Most dominant visual element is 'Continue Shopping' \u2014 takes users backward. Design is working against its own conversion goal. Inverted hierarchy at the primary action level is a product failure, not a cosmetic issue. Fix: ghost 'Continue Shopping,' solid fill 'Place Order.' Primary CTA gets primary treatment. Secondary CTA gets secondary treatment. Root cause and fix in one.",
+          "mean_deflection_score": 3.0,
+          "repetition_rate": 0.0,
+          "unlock_proximity_distribution": {
+            "far": 0,
+            "approaching": 0,
+            "near": 4
+          },
+          "escalation_triggered": false,
+          "escalation_at_turn": null,
+          "laddering_efficiency": 0.667,
+          "drift_rate": 0.0
+        }
+      ]
+    },
+    {
+      "model": "gemma4",
+      "method": "acv",
+      "expected_terminal_category": "V",
+      "convergence_rate": "3/3",
+      "all_converged": true,
+      "terminal_categories": [
+        "V",
+        "V",
+        "V"
+      ],
+      "category_match_rate": "3/3",
+      "all_match_expected": true,
+      "categories_consistent": true,
+      "terminal_gt_match_rate": "3/3",
+      "all_gt_match": true,
+      "turn_counts": [
+        7,
+        6,
+        6
+      ],
+      "turn_count_mean": 6.333,
+      "turn_count_min": 6,
+      "turn_count_max": 7,
+      "turn_count_range": 1,
+      "mean_deflection_score_mean": 2.85,
+      "repetition_rate_mean": 0.067,
+      "escalation_triggered_any": false,
+      "laddering_efficiency_mean": 0.635,
+      "drift_rate_mean": 0.0,
+      "unlock_proximity_distribution_mean": {
+        "far": 1.0,
+        "approaching": 1.0,
+        "near": 2.33
+      },
+      "iterations": [
+        {
+          "file": "results_u1_acv_gemma_gt2_terse_iter1.json",
+          "converged": true,
+          "terminal_category": "V",
+          "terminal_gt_match": true,
+          "turn_count": 7,
+          "final_answer": "'Place Order': solid fill, brand color, white label text \u2014 standard primary button. 'Continue Shopping': no fill, border only or underlined text \u2014 standard secondary treatment. Contrast between the two carries the hierarchy signal. Right now they're competing at similar fill weight with the wrong one winning. One pass, two buttons, done.",
+          "mean_deflection_score": 2.8,
+          "repetition_rate": 0.2,
+          "unlock_proximity_distribution": {
+            "far": 1,
+            "approaching": 0,
+            "near": 4
+          },
+          "escalation_triggered": false,
+          "escalation_at_turn": null,
+          "laddering_efficiency": 0.571,
+          "drift_rate": 0.0
+        },
+        {
+          "file": "results_u1_acv_gemma_gt2_terse_iter2.json",
+          "converged": true,
+          "terminal_category": "V",
+          "terminal_gt_match": true,
+          "turn_count": 6,
+          "final_answer": "'Place Order': solid fill, brand color, white label text \u2014 standard primary button. 'Continue Shopping': no fill, border only or underlined text \u2014 standard secondary treatment. Contrast between the two carries the hierarchy signal. Right now they're competing at similar fill weight with the wrong one winning. One pass, two buttons, done.",
+          "mean_deflection_score": 2.75,
+          "repetition_rate": 0.0,
+          "unlock_proximity_distribution": {
+            "far": 1,
+            "approaching": 1,
+            "near": 2
+          },
+          "escalation_triggered": false,
+          "escalation_at_turn": null,
+          "laddering_efficiency": 0.667,
+          "drift_rate": 0.0
+        },
+        {
+          "file": "results_u1_acv_gemma_gt2_terse_iter3.json",
+          "converged": true,
+          "terminal_category": "V",
+          "terminal_gt_match": true,
+          "turn_count": 6,
+          "final_answer": "'Place Order' needs a solid fill. 'Continue Shopping' needs ghost treatment \u2014 outline only or text link. Right now the visual treatment is inverted. Solid fill goes on the primary CTA. Always.",
+          "mean_deflection_score": 3.0,
+          "repetition_rate": 0.0,
+          "unlock_proximity_distribution": {
+            "far": 1,
+            "approaching": 2,
+            "near": 1
+          },
+          "escalation_triggered": false,
+          "escalation_at_turn": null,
+          "laddering_efficiency": 0.667,
+          "drift_rate": 0.0
+        }
+      ]
+    },
+    {
+      "model": "gemma4",
+      "method": "jtbd",
+      "expected_terminal_category": "B",
+      "convergence_rate": "3/3",
+      "all_converged": true,
+      "terminal_categories": [
+        "B",
+        "B",
+        "B"
+      ],
+      "category_match_rate": "3/3",
+      "all_match_expected": true,
+      "categories_consistent": true,
+      "terminal_gt_match_rate": "2/3",
+      "all_gt_match": false,
+      "turn_counts": [
+        7,
+        7,
+        7
+      ],
+      "turn_count_mean": 7.0,
+      "turn_count_min": 7,
+      "turn_count_max": 7,
+      "turn_count_range": 0,
+      "mean_deflection_score_mean": 1.867,
+      "repetition_rate_mean": 0.0,
+      "escalation_triggered_any": false,
+      "laddering_efficiency_mean": 0.571,
+      "drift_rate_mean": 0.0,
+      "unlock_proximity_distribution_mean": {
+        "far": 1.0,
+        "approaching": 1.0,
+        "near": 3.0
+      },
+      "iterations": [
+        {
+          "file": "results_u1_jtbd_gemma_gt2_terse_iter1.json",
+          "converged": true,
+          "terminal_category": "B",
+          "terminal_gt_match": false,
+          "turn_count": 7,
+          "final_answer": "Wrong button dominated. 'Continue Shopping' had the weight. Eye went there, not 'Place Order.'",
+          "mean_deflection_score": 1.8,
+          "repetition_rate": 0.0,
+          "unlock_proximity_distribution": {
+            "far": 1,
+            "approaching": 1,
+            "near": 3
+          },
+          "escalation_triggered": false,
+          "escalation_at_turn": null,
+          "laddering_efficiency": 0.571,
+          "drift_rate": 0.0
+        },
+        {
+          "file": "results_u1_jtbd_gemma_gt2_terse_iter2.json",
+          "converged": true,
+          "terminal_category": "B",
+          "terminal_gt_match": true,
+          "turn_count": 7,
+          "final_answer": "'Continue Shopping' drew my eye. Read as the primary action \u2014 black fill, more visual prominence than 'Place Order.' The affordance was inverted. Primary-styled button on the secondary action.",
+          "mean_deflection_score": 2.2,
+          "repetition_rate": 0.0,
+          "unlock_proximity_distribution": {
+            "far": 1,
+            "approaching": 1,
+            "near": 3
+          },
+          "escalation_triggered": false,
+          "escalation_at_turn": null,
+          "laddering_efficiency": 0.571,
+          "drift_rate": 0.0
+        },
+        {
+          "file": "results_u1_jtbd_gemma_gt2_terse_iter3.json",
+          "converged": true,
+          "terminal_category": "B",
+          "terminal_gt_match": true,
+          "turn_count": 7,
+          "final_answer": "'Continue Shopping' drew my eye. Read as the primary action \u2014 black fill, more visual prominence than 'Place Order.' The affordance was inverted. Primary-styled button on the secondary action.",
+          "mean_deflection_score": 1.6,
+          "repetition_rate": 0.0,
+          "unlock_proximity_distribution": {
+            "far": 1,
+            "approaching": 1,
+            "near": 3
+          },
+          "escalation_triggered": false,
+          "escalation_at_turn": null,
+          "laddering_efficiency": 0.571,
+          "drift_rate": 0.0
+        }
+      ]
+    },
+    {
+      "model": "gpt5.5",
+      "method": "5whys",
+      "expected_terminal_category": "ROOT_CAUSE",
+      "convergence_rate": "3/3",
+      "all_converged": true,
+      "terminal_categories": [
+        "ROOT_CAUSE",
+        "ROOT_CAUSE",
+        "ROOT_CAUSE"
+      ],
+      "category_match_rate": "3/3",
+      "all_match_expected": true,
+      "categories_consistent": true,
+      "terminal_gt_match_rate": "2/3",
+      "all_gt_match": false,
+      "turn_counts": [
+        4,
+        4,
+        4
+      ],
+      "turn_count_mean": 4.0,
+      "turn_count_min": 4,
+      "turn_count_max": 4,
+      "turn_count_range": 0,
+      "mean_deflection_score_mean": 2.833,
+      "repetition_rate_mean": 0.0,
+      "escalation_triggered_any": false,
+      "laddering_efficiency_mean": 1.0,
+      "drift_rate_mean": 0.0,
+      "unlock_proximity_distribution_mean": {
+        "far": 0.0,
+        "approaching": 0.0,
+        "near": 2.0
+      },
+      "iterations": [
+        {
+          "file": "results_u1_5whys_gpt_gt2_terse_iter1.json",
+          "converged": true,
+          "terminal_category": "ROOT_CAUSE",
+          "terminal_gt_match": true,
+          "turn_count": 4,
+          "final_answer": "Screen's purpose is checkout completion. Most dominant visual element is 'Continue Shopping' \u2014 takes users backward. Design is working against its own conversion goal. Inverted hierarchy at the primary action level is a product failure, not a cosmetic issue. Fix: ghost 'Continue Shopping,' solid fill 'Place Order.' Primary CTA gets primary treatment. Secondary CTA gets secondary treatment. Root cause and fix in one.",
+          "mean_deflection_score": 3.0,
+          "repetition_rate": 0.0,
+          "unlock_proximity_distribution": {
+            "far": 0,
+            "approaching": 0,
+            "near": 2
+          },
+          "escalation_triggered": false,
+          "escalation_at_turn": null,
+          "laddering_efficiency": 1.0,
+          "drift_rate": 0.0
+        },
+        {
+          "file": "results_u1_5whys_gpt_gt2_terse_iter2.json",
+          "converged": true,
+          "terminal_category": "ROOT_CAUSE",
+          "terminal_gt_match": false,
+          "turn_count": 4,
+          "final_answer": "Buttons signal priority through visual weight. Filled and heavy means the action to take. That's scanning behavior \u2014 users go to the most dominant element first and assume it's the primary action. When the secondary button has more weight, the scan leads to the wrong action. Visual weight has to match action priority.",
+          "mean_deflection_score": 3.0,
+          "repetition_rate": 0.0,
+          "unlock_proximity_distribution": {
+            "far": 0,
+            "approaching": 0,
+            "near": 2
+          },
+          "escalation_triggered": false,
+          "escalation_at_turn": null,
+          "laddering_efficiency": 1.0,
+          "drift_rate": 0.0
+        },
+        {
+          "file": "results_u1_5whys_gpt_gt2_terse_iter3.json",
+          "converged": true,
+          "terminal_category": "ROOT_CAUSE",
+          "terminal_gt_match": true,
+          "turn_count": 4,
+          "final_answer": "'Place Order': solid fill, high-contrast color, white label text. 'Continue Shopping': ghost outline or text link, no fill. Contrast between them carries the hierarchy. Currently backwards. Standard checkout button convention. Two-button fix.",
+          "mean_deflection_score": 2.5,
+          "repetition_rate": 0.0,
+          "unlock_proximity_distribution": {
+            "far": 0,
+            "approaching": 0,
+            "near": 2
+          },
+          "escalation_triggered": false,
+          "escalation_at_turn": null,
+          "laddering_efficiency": 1.0,
+          "drift_rate": 0.0
+        }
+      ]
+    },
+    {
+      "model": "gpt5.5",
+      "method": "acv",
+      "expected_terminal_category": "V",
+      "convergence_rate": "3/3",
+      "all_converged": true,
+      "terminal_categories": [
+        "V",
+        "V",
+        "V"
+      ],
+      "category_match_rate": "3/3",
+      "all_match_expected": true,
+      "categories_consistent": true,
+      "terminal_gt_match_rate": "3/3",
+      "all_gt_match": true,
+      "turn_counts": [
+        4,
+        5,
+        4
+      ],
+      "turn_count_mean": 4.333,
+      "turn_count_min": 4,
+      "turn_count_max": 5,
+      "turn_count_range": 1,
+      "mean_deflection_score_mean": 2.333,
+      "repetition_rate_mean": 0.278,
+      "escalation_triggered_any": false,
+      "laddering_efficiency_mean": 0.933,
+      "drift_rate_mean": 0.0,
+      "unlock_proximity_distribution_mean": {
+        "far": 0.0,
+        "approaching": 1.67,
+        "near": 0.67
+      },
+      "iterations": [
+        {
+          "file": "results_u1_acv_gpt_gt2_terse_iter1.json",
+          "converged": true,
+          "terminal_category": "V",
+          "terminal_gt_match": true,
+          "turn_count": 4,
+          "final_answer": "'Place Order': solid fill, brand color, white label text \u2014 standard primary button. 'Continue Shopping': no fill, border only or underlined text \u2014 standard secondary treatment. Contrast between the two carries the hierarchy signal. Right now they're competing at similar fill weight with the wrong one winning. One pass, two buttons, done.",
+          "mean_deflection_score": 3.0,
+          "repetition_rate": 0.0,
+          "unlock_proximity_distribution": {
+            "far": 0,
+            "approaching": 1,
+            "near": 1
+          },
+          "escalation_triggered": false,
+          "escalation_at_turn": null,
+          "laddering_efficiency": 1.0,
+          "drift_rate": 0.0
+        },
+        {
+          "file": "results_u1_acv_gpt_gt2_terse_iter2.json",
+          "converged": true,
+          "terminal_category": "V",
+          "terminal_gt_match": true,
+          "turn_count": 5,
+          "final_answer": "'Place Order': solid fill, brand color, white label text \u2014 standard primary button. 'Continue Shopping': no fill, border only or underlined text \u2014 standard secondary treatment. Contrast between the two carries the hierarchy signal. Right now they're competing at similar fill weight with the wrong one winning. One pass, two buttons, done.",
+          "mean_deflection_score": 2.0,
+          "repetition_rate": 0.333,
+          "unlock_proximity_distribution": {
+            "far": 0,
+            "approaching": 2,
+            "near": 1
+          },
+          "escalation_triggered": false,
+          "escalation_at_turn": null,
+          "laddering_efficiency": 0.8,
+          "drift_rate": 0.0
+        },
+        {
+          "file": "results_u1_acv_gpt_gt2_terse_iter3.json",
+          "converged": true,
+          "terminal_category": "V",
+          "terminal_gt_match": true,
+          "turn_count": 4,
+          "final_answer": "Ghost 'Continue Shopping' \u2014 no fill, border outline or text link only. Give 'Place Order' a solid fill in a high-contrast color. Visual hierarchy then matches the intended UX: primary CTA reads primary, secondary CTA reads secondary. One CSS property change per button. That's the fix.",
+          "mean_deflection_score": 2.0,
+          "repetition_rate": 0.5,
+          "unlock_proximity_distribution": {
+            "far": 0,
+            "approaching": 2,
+            "near": 0
+          },
+          "escalation_triggered": false,
+          "escalation_at_turn": null,
+          "laddering_efficiency": 1.0,
+          "drift_rate": 0.0
+        }
+      ]
+    },
+    {
+      "model": "gpt5.5",
+      "method": "jtbd",
+      "expected_terminal_category": "B",
+      "convergence_rate": "3/3",
+      "all_converged": true,
+      "terminal_categories": [
+        "B",
+        "B",
+        "B"
+      ],
+      "category_match_rate": "3/3",
+      "all_match_expected": true,
+      "categories_consistent": true,
+      "terminal_gt_match_rate": "3/3",
+      "all_gt_match": true,
+      "turn_counts": [
+        5,
+        5,
+        8
+      ],
+      "turn_count_mean": 6.0,
+      "turn_count_min": 5,
+      "turn_count_max": 8,
+      "turn_count_range": 3,
+      "mean_deflection_score_mean": 2.0,
+      "repetition_rate_mean": 0.0,
+      "escalation_triggered_any": false,
+      "laddering_efficiency_mean": 0.7,
+      "drift_rate_mean": 0.0,
+      "unlock_proximity_distribution_mean": {
+        "far": 0.0,
+        "approaching": 3.33,
+        "near": 0.67
+      },
+      "iterations": [
+        {
+          "file": "results_u1_jtbd_gpt_gt2_terse_iter1.json",
+          "converged": true,
+          "terminal_category": "B",
+          "terminal_gt_match": true,
+          "turn_count": 5,
+          "final_answer": "'Continue Shopping' has primary CTA visual treatment \u2014 filled black background, dominant visual weight. 'Place Order' looks secondary by comparison. That's the barrier: visual treatment contradicts the intended action. Fix: ghost 'Continue Shopping' \u2014 no fill, outline or text link only. Give 'Place Order' solid fill in a high-contrast color. Visual hierarchy then matches the flow. Primary CTA reads primary, secondary reads secondary. That's the barrier and the fix.",
+          "mean_deflection_score": 2.0,
+          "repetition_rate": 0.0,
+          "unlock_proximity_distribution": {
+            "far": 0,
+            "approaching": 2,
+            "near": 1
+          },
+          "escalation_triggered": false,
+          "escalation_at_turn": null,
+          "laddering_efficiency": 0.8,
+          "drift_rate": 0.0
+        },
+        {
+          "file": "results_u1_jtbd_gpt_gt2_terse_iter2.json",
+          "converged": true,
+          "terminal_category": "B",
+          "terminal_gt_match": true,
+          "turn_count": 5,
+          "final_answer": "'Place Order': solid fill, brand color, white label \u2014 standard primary button treatment. 'Continue Shopping': ghost outline or text link \u2014 standard secondary treatment. Contrast between the two carries the hierarchy signal. Right now both compete at similar fill weight with the wrong one winning. One CSS pass, two buttons, done.",
+          "mean_deflection_score": 2.333,
+          "repetition_rate": 0.0,
+          "unlock_proximity_distribution": {
+            "far": 0,
+            "approaching": 2,
+            "near": 1
+          },
+          "escalation_triggered": false,
+          "escalation_at_turn": null,
+          "laddering_efficiency": 0.8,
+          "drift_rate": 0.0
+        },
+        {
+          "file": "results_u1_jtbd_gpt_gt2_terse_iter3.json",
+          "converged": true,
+          "terminal_category": "B",
+          "terminal_gt_match": true,
+          "turn_count": 8,
+          "final_answer": "Not adding. Dominant button was the wrong one.",
+          "mean_deflection_score": 1.667,
+          "repetition_rate": 0.0,
+          "unlock_proximity_distribution": {
+            "far": 0,
+            "approaching": 6,
+            "near": 0
+          },
+          "escalation_triggered": false,
+          "escalation_at_turn": null,
+          "laddering_efficiency": 0.5,
+          "drift_rate": 0.0
+        }
+      ]
+    },
+    {
+      "model": "qwen3.6",
+      "method": "5whys",
+      "expected_terminal_category": "ROOT_CAUSE",
+      "convergence_rate": "3/3",
+      "all_converged": true,
+      "terminal_categories": [
+        "ROOT_CAUSE",
+        "ROOT_CAUSE",
+        "ROOT_CAUSE"
+      ],
+      "category_match_rate": "3/3",
+      "all_match_expected": true,
+      "categories_consistent": true,
+      "terminal_gt_match_rate": "0/3",
+      "all_gt_match": false,
+      "turn_counts": [
+        4,
+        4,
+        4
+      ],
+      "turn_count_mean": 4.0,
+      "turn_count_min": 4,
+      "turn_count_max": 4,
+      "turn_count_range": 0,
+      "mean_deflection_score_mean": 3.0,
+      "repetition_rate_mean": 0.0,
+      "escalation_triggered_any": false,
+      "laddering_efficiency_mean": 1.0,
+      "drift_rate_mean": 0.0,
+      "unlock_proximity_distribution_mean": {
+        "far": 0.0,
+        "approaching": 0.0,
+        "near": 2.0
+      },
+      "iterations": [
+        {
+          "file": "results_u1_5whys_qwen_gt2_terse_iter1.json",
+          "converged": true,
+          "terminal_category": "ROOT_CAUSE",
+          "terminal_gt_match": false,
+          "turn_count": 4,
+          "final_answer": "The styling. Filled buttons signal primary action. Signal is wrong here.",
+          "mean_deflection_score": 3.0,
+          "repetition_rate": 0.0,
+          "unlock_proximity_distribution": {
+            "far": 0,
+            "approaching": 0,
+            "near": 2
+          },
+          "escalation_triggered": false,
+          "escalation_at_turn": null,
+          "laddering_efficiency": 1.0,
+          "drift_rate": 0.0
+        },
+        {
+          "file": "results_u1_5whys_qwen_gt2_terse_iter2.json",
+          "converged": true,
+          "terminal_category": "ROOT_CAUSE",
+          "terminal_gt_match": false,
+          "turn_count": 4,
+          "final_answer": "The styling. Filled buttons signal primary action. Signal is wrong here.",
+          "mean_deflection_score": 3.0,
+          "repetition_rate": 0.0,
+          "unlock_proximity_distribution": {
+            "far": 0,
+            "approaching": 0,
+            "near": 2
+          },
+          "escalation_triggered": false,
+          "escalation_at_turn": null,
+          "laddering_efficiency": 1.0,
+          "drift_rate": 0.0
+        },
+        {
+          "file": "results_u1_5whys_qwen_gt2_terse_iter3.json",
+          "converged": true,
+          "terminal_category": "ROOT_CAUSE",
+          "terminal_gt_match": false,
+          "turn_count": 4,
+          "final_answer": "The styling. Filled buttons signal primary action. Signal is wrong here.",
+          "mean_deflection_score": 3.0,
+          "repetition_rate": 0.0,
+          "unlock_proximity_distribution": {
+            "far": 0,
+            "approaching": 0,
+            "near": 2
+          },
+          "escalation_triggered": false,
+          "escalation_at_turn": null,
+          "laddering_efficiency": 1.0,
+          "drift_rate": 0.0
+        }
+      ]
+    },
+    {
+      "model": "qwen3.6",
+      "method": "acv",
+      "expected_terminal_category": "V",
+      "convergence_rate": "3/3",
+      "all_converged": true,
+      "terminal_categories": [
+        "V",
+        "V",
+        "V"
+      ],
+      "category_match_rate": "3/3",
+      "all_match_expected": true,
+      "categories_consistent": true,
+      "terminal_gt_match_rate": "3/3",
+      "all_gt_match": true,
+      "turn_counts": [
+        4,
+        4,
+        5
+      ],
+      "turn_count_mean": 4.333,
+      "turn_count_min": 4,
+      "turn_count_max": 5,
+      "turn_count_range": 1,
+      "mean_deflection_score_mean": 3.0,
+      "repetition_rate_mean": 0.0,
+      "escalation_triggered_any": false,
+      "laddering_efficiency_mean": 0.933,
+      "drift_rate_mean": 0.0,
+      "unlock_proximity_distribution_mean": {
+        "far": 0.0,
+        "approaching": 0.33,
+        "near": 2.0
+      },
+      "iterations": [
+        {
+          "file": "results_u1_acv_qwen_gt2_terse_iter1.json",
+          "converged": true,
+          "terminal_category": "V",
+          "terminal_gt_match": true,
+          "turn_count": 4,
+          "final_answer": "'Place Order' needs a solid fill. 'Continue Shopping' needs ghost treatment \u2014 outline only or text link. Right now the visual treatment is inverted. Solid fill goes on the primary CTA. Always.",
+          "mean_deflection_score": 3.0,
+          "repetition_rate": 0.0,
+          "unlock_proximity_distribution": {
+            "far": 0,
+            "approaching": 1,
+            "near": 1
+          },
+          "escalation_triggered": false,
+          "escalation_at_turn": null,
+          "laddering_efficiency": 1.0,
+          "drift_rate": 0.0
+        },
+        {
+          "file": "results_u1_acv_qwen_gt2_terse_iter2.json",
+          "converged": true,
+          "terminal_category": "V",
+          "terminal_gt_match": true,
+          "turn_count": 4,
+          "final_answer": "'Place Order' needs a solid fill. 'Continue Shopping' needs ghost treatment \u2014 outline only or text link. Right now the visual treatment is inverted. Solid fill goes on the primary CTA. Always.",
+          "mean_deflection_score": 3.0,
+          "repetition_rate": 0.0,
+          "unlock_proximity_distribution": {
+            "far": 0,
+            "approaching": 0,
+            "near": 2
+          },
+          "escalation_triggered": false,
+          "escalation_at_turn": null,
+          "laddering_efficiency": 1.0,
+          "drift_rate": 0.0
+        },
+        {
+          "file": "results_u1_acv_qwen_gt2_terse_iter3.json",
+          "converged": true,
+          "terminal_category": "V",
+          "terminal_gt_match": true,
+          "turn_count": 5,
+          "final_answer": "Ghost 'Continue Shopping' \u2014 no fill, border outline or text link only. Give 'Place Order' a solid fill in a high-contrast color. Visual hierarchy then matches the intended UX: primary CTA reads primary, secondary CTA reads secondary. One CSS property change per button. That's the fix.",
+          "mean_deflection_score": 3.0,
+          "repetition_rate": 0.0,
+          "unlock_proximity_distribution": {
+            "far": 0,
+            "approaching": 0,
+            "near": 3
+          },
+          "escalation_triggered": false,
+          "escalation_at_turn": null,
+          "laddering_efficiency": 0.8,
+          "drift_rate": 0.0
+        }
+      ]
+    },
+    {
+      "model": "qwen3.6",
+      "method": "jtbd",
+      "expected_terminal_category": "B",
+      "convergence_rate": "3/3",
+      "all_converged": true,
+      "terminal_categories": [
+        "B",
+        "B",
+        "B"
+      ],
+      "category_match_rate": "3/3",
+      "all_match_expected": true,
+      "categories_consistent": true,
+      "terminal_gt_match_rate": "0/3",
+      "all_gt_match": false,
+      "turn_counts": [
+        7,
+        7,
+        7
+      ],
+      "turn_count_mean": 7.0,
+      "turn_count_min": 7,
+      "turn_count_max": 7,
+      "turn_count_range": 0,
+      "mean_deflection_score_mean": 2.8,
+      "repetition_rate_mean": 0.0,
+      "escalation_triggered_any": false,
+      "laddering_efficiency_mean": 0.571,
+      "drift_rate_mean": 0.0,
+      "unlock_proximity_distribution_mean": {
+        "far": 0.0,
+        "approaching": 1.0,
+        "near": 4.0
+      },
+      "iterations": [
+        {
+          "file": "results_u1_jtbd_qwen_gt2_terse_iter1.json",
+          "converged": true,
+          "terminal_category": "B",
+          "terminal_gt_match": false,
+          "turn_count": 7,
+          "final_answer": "Not adding. Dominant button was the wrong one.",
+          "mean_deflection_score": 2.4,
+          "repetition_rate": 0.0,
+          "unlock_proximity_distribution": {
+            "far": 0,
+            "approaching": 1,
+            "near": 4
+          },
+          "escalation_triggered": false,
+          "escalation_at_turn": null,
+          "laddering_efficiency": 0.571,
+          "drift_rate": 0.0
+        },
+        {
+          "file": "results_u1_jtbd_qwen_gt2_terse_iter2.json",
+          "converged": true,
+          "terminal_category": "B",
+          "terminal_gt_match": false,
+          "turn_count": 7,
+          "final_answer": "Wrong button dominated. 'Continue Shopping' had the weight. Eye went there, not 'Place Order.'",
+          "mean_deflection_score": 3.0,
+          "repetition_rate": 0.0,
+          "unlock_proximity_distribution": {
+            "far": 0,
+            "approaching": 1,
+            "near": 4
+          },
+          "escalation_triggered": false,
+          "escalation_at_turn": null,
+          "laddering_efficiency": 0.571,
+          "drift_rate": 0.0
+        },
+        {
+          "file": "results_u1_jtbd_qwen_gt2_terse_iter3.json",
+          "converged": true,
+          "terminal_category": "B",
+          "terminal_gt_match": false,
+          "turn_count": 7,
+          "final_answer": "'Continue Shopping' \u2014 black fill, reads primary. That's what made it look like the action to take.",
+          "mean_deflection_score": 3.0,
+          "repetition_rate": 0.0,
+          "unlock_proximity_distribution": {
+            "far": 0,
+            "approaching": 1,
+            "near": 4
+          },
+          "escalation_triggered": false,
+          "escalation_at_turn": null,
+          "laddering_efficiency": 0.571,
+          "drift_rate": 0.0
+        }
+      ]
+    },
+    {
+      "model": "sonnet4.6",
+      "method": "5whys",
+      "expected_terminal_category": "ROOT_CAUSE",
+      "convergence_rate": "3/3",
+      "all_converged": true,
+      "terminal_categories": [
+        "ROOT_CAUSE",
+        "ROOT_CAUSE",
+        "ROOT_CAUSE"
+      ],
+      "category_match_rate": "3/3",
+      "all_match_expected": true,
+      "categories_consistent": true,
+      "terminal_gt_match_rate": "0/3",
+      "all_gt_match": false,
+      "turn_counts": [
+        4,
+        4,
+        4
+      ],
+      "turn_count_mean": 4.0,
+      "turn_count_min": 4,
+      "turn_count_max": 4,
+      "turn_count_range": 0,
+      "mean_deflection_score_mean": 3.0,
+      "repetition_rate_mean": 0.0,
+      "escalation_triggered_any": false,
+      "laddering_efficiency_mean": 1.0,
+      "drift_rate_mean": 0.0,
+      "unlock_proximity_distribution_mean": {
+        "far": 0.0,
+        "approaching": 0.0,
+        "near": 2.0
+      },
+      "iterations": [
+        {
+          "file": "results_u1_5whys_claude_gt2_terse_iter1.json",
+          "converged": true,
+          "terminal_category": "ROOT_CAUSE",
+          "terminal_gt_match": false,
+          "turn_count": 4,
+          "final_answer": "The styling. Filled buttons signal primary action. Signal is wrong here.",
+          "mean_deflection_score": 3.0,
+          "repetition_rate": 0.0,
+          "unlock_proximity_distribution": {
+            "far": 0,
+            "approaching": 0,
+            "near": 2
+          },
+          "escalation_triggered": false,
+          "escalation_at_turn": null,
+          "laddering_efficiency": 1.0,
+          "drift_rate": 0.0
+        },
+        {
+          "file": "results_u1_5whys_claude_gt2_terse_iter2.json",
+          "converged": true,
+          "terminal_category": "ROOT_CAUSE",
+          "terminal_gt_match": false,
+          "turn_count": 4,
+          "final_answer": "Buttons signal priority through visual weight. Filled and heavy means the action to take. That's scanning behavior \u2014 users go to the most dominant element first and assume it's the primary action. When the secondary button has more weight, the scan leads to the wrong action. Visual weight has to match action priority.",
+          "mean_deflection_score": 3.0,
+          "repetition_rate": 0.0,
+          "unlock_proximity_distribution": {
+            "far": 0,
+            "approaching": 0,
+            "near": 2
+          },
+          "escalation_triggered": false,
+          "escalation_at_turn": null,
+          "laddering_efficiency": 1.0,
+          "drift_rate": 0.0
+        },
+        {
+          "file": "results_u1_5whys_claude_gt2_terse_iter3.json",
+          "converged": true,
+          "terminal_category": "ROOT_CAUSE",
+          "terminal_gt_match": false,
+          "turn_count": 4,
+          "final_answer": "The styling. Filled buttons signal primary action. Signal is wrong here.",
+          "mean_deflection_score": 3.0,
+          "repetition_rate": 0.0,
+          "unlock_proximity_distribution": {
+            "far": 0,
+            "approaching": 0,
+            "near": 2
+          },
+          "escalation_triggered": false,
+          "escalation_at_turn": null,
+          "laddering_efficiency": 1.0,
+          "drift_rate": 0.0
+        }
+      ]
+    },
+    {
+      "model": "sonnet4.6",
+      "method": "acv",
+      "expected_terminal_category": "V",
+      "convergence_rate": "3/3",
+      "all_converged": true,
+      "terminal_categories": [
+        "V",
+        "V",
+        "V"
+      ],
+      "category_match_rate": "3/3",
+      "all_match_expected": true,
+      "categories_consistent": true,
+      "terminal_gt_match_rate": "0/3",
+      "all_gt_match": false,
+      "turn_counts": [
+        3,
+        3,
+        3
+      ],
+      "turn_count_mean": 3.0,
+      "turn_count_min": 3,
+      "turn_count_max": 3,
+      "turn_count_range": 0,
+      "mean_deflection_score_mean": 3.0,
+      "repetition_rate_mean": 0.0,
+      "escalation_triggered_any": false,
+      "laddering_efficiency_mean": 1.0,
+      "drift_rate_mean": 0.0,
+      "unlock_proximity_distribution_mean": {
+        "far": 0.0,
+        "approaching": 0.0,
+        "near": 1.0
+      },
+      "iterations": [
+        {
+          "file": "results_u1_acv_claude_gt2_terse_iter1.json",
+          "converged": true,
+          "terminal_category": "V",
+          "terminal_gt_match": false,
+          "turn_count": 3,
+          "final_answer": "Thought 'Continue Shopping' might route to a confirmation page. That's what a filled, dominant button signals \u2014 it's the primary action. Here it isn't. The affordance is wrong. Sat with that for a second before re-reading.",
+          "mean_deflection_score": 3.0,
+          "repetition_rate": 0.0,
+          "unlock_proximity_distribution": {
+            "far": 0,
+            "approaching": 0,
+            "near": 1
+          },
+          "escalation_triggered": false,
+          "escalation_at_turn": null,
+          "laddering_efficiency": 1.0,
+          "drift_rate": 0.0
+        },
+        {
+          "file": "results_u1_acv_claude_gt2_terse_iter2.json",
+          "converged": true,
+          "terminal_category": "V",
+          "terminal_gt_match": false,
+          "turn_count": 3,
+          "final_answer": "Thought 'Continue Shopping' might route to a confirmation page. That's what a filled, dominant button signals \u2014 it's the primary action. Here it isn't. The affordance is wrong. Sat with that for a second before re-reading.",
+          "mean_deflection_score": 3.0,
+          "repetition_rate": 0.0,
+          "unlock_proximity_distribution": {
+            "far": 0,
+            "approaching": 0,
+            "near": 1
+          },
+          "escalation_triggered": false,
+          "escalation_at_turn": null,
+          "laddering_efficiency": 1.0,
+          "drift_rate": 0.0
+        },
+        {
+          "file": "results_u1_acv_claude_gt2_terse_iter3.json",
+          "converged": true,
+          "terminal_category": "V",
+          "terminal_gt_match": false,
+          "turn_count": 3,
+          "final_answer": "Thought 'Continue Shopping' might route to a confirmation page. That's what a filled, dominant button signals \u2014 it's the primary action. Here it isn't. The affordance is wrong. Sat with that for a second before re-reading.",
+          "mean_deflection_score": 3.0,
+          "repetition_rate": 0.0,
+          "unlock_proximity_distribution": {
+            "far": 0,
+            "approaching": 0,
+            "near": 1
+          },
+          "escalation_triggered": false,
+          "escalation_at_turn": null,
+          "laddering_efficiency": 1.0,
+          "drift_rate": 0.0
+        }
+      ]
+    },
+    {
+      "model": "sonnet4.6",
+      "method": "jtbd",
+      "expected_terminal_category": "B",
+      "convergence_rate": "3/3",
+      "all_converged": true,
+      "terminal_categories": [
+        "B",
+        "B",
+        "B"
+      ],
+      "category_match_rate": "3/3",
+      "all_match_expected": true,
+      "categories_consistent": true,
+      "terminal_gt_match_rate": "3/3",
+      "all_gt_match": true,
+      "turn_counts": [
+        8,
+        8,
+        8
+      ],
+      "turn_count_mean": 8.0,
+      "turn_count_min": 8,
+      "turn_count_max": 8,
+      "turn_count_range": 0,
+      "mean_deflection_score_mean": 2.167,
+      "repetition_rate_mean": 0.389,
+      "escalation_triggered_any": false,
+      "laddering_efficiency_mean": 0.5,
+      "drift_rate_mean": 0.0,
+      "unlock_proximity_distribution_mean": {
+        "far": 0.0,
+        "approaching": 2.67,
+        "near": 3.33
+      },
+      "iterations": [
+        {
+          "file": "results_u1_jtbd_claude_gt2_terse_iter1.json",
+          "converged": true,
+          "terminal_category": "B",
+          "terminal_gt_match": true,
+          "turn_count": 8,
+          "final_answer": "Already said it. Group, deadline, time pressure.",
+          "mean_deflection_score": 2.167,
+          "repetition_rate": 0.667,
+          "unlock_proximity_distribution": {
+            "far": 0,
+            "approaching": 3,
+            "near": 3
+          },
+          "escalation_triggered": false,
+          "escalation_at_turn": null,
+          "laddering_efficiency": 0.5,
+          "drift_rate": 0.0
+        },
+        {
+          "file": "results_u1_jtbd_claude_gt2_terse_iter2.json",
+          "converged": true,
+          "terminal_category": "B",
+          "terminal_gt_match": true,
+          "turn_count": 8,
+          "final_answer": "Already said it. Group, deadline, time pressure.",
+          "mean_deflection_score": 2.167,
+          "repetition_rate": 0.333,
+          "unlock_proximity_distribution": {
+            "far": 0,
+            "approaching": 3,
+            "near": 3
+          },
+          "escalation_triggered": false,
+          "escalation_at_turn": null,
+          "laddering_efficiency": 0.5,
+          "drift_rate": 0.0
+        },
+        {
+          "file": "results_u1_jtbd_claude_gt2_terse_iter3.json",
+          "converged": true,
+          "terminal_category": "B",
+          "terminal_gt_match": true,
+          "turn_count": 8,
+          "final_answer": "Already said it. Group, deadline, time pressure.",
+          "mean_deflection_score": 2.167,
+          "repetition_rate": 0.167,
+          "unlock_proximity_distribution": {
+            "far": 0,
+            "approaching": 2,
+            "near": 4
+          },
+          "escalation_triggered": false,
+          "escalation_at_turn": null,
+          "laddering_efficiency": 0.5,
+          "drift_rate": 0.0
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "total_groups": 12,
+    "fully_consistent_groups": "12/12",
+    "overall_convergence_rate": "36/36",
+    "overall_category_match_rate": "36/36",
+    "overall_gt_response_match_rate": "22/36"
+  }
+}

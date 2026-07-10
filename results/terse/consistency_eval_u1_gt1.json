@@ -1,0 +1,1153 @@
+{
+  "ground_truth": "u1_gt1",
+  "issue": "'Place Order' CTA is gray on gray and 12px \u2014 nearly invisible",
+  "groups": [
+    {
+      "model": "gemma4",
+      "method": "5whys",
+      "expected_terminal_category": "ROOT_CAUSE",
+      "convergence_rate": "3/3",
+      "all_converged": true,
+      "terminal_categories": [
+        "ROOT_CAUSE",
+        "ROOT_CAUSE",
+        "ROOT_CAUSE"
+      ],
+      "category_match_rate": "3/3",
+      "all_match_expected": true,
+      "categories_consistent": true,
+      "terminal_gt_match_rate": "2/3",
+      "all_gt_match": false,
+      "turn_counts": [
+        4,
+        4,
+        4
+      ],
+      "turn_count_mean": 4.0,
+      "turn_count_min": 4,
+      "turn_count_max": 4,
+      "turn_count_range": 0,
+      "mean_deflection_score_mean": 2.667,
+      "repetition_rate_mean": 0.0,
+      "escalation_triggered_any": false,
+      "laddering_efficiency_mean": 1.0,
+      "drift_rate_mean": 0.0,
+      "unlock_proximity_distribution_mean": {
+        "far": 0.33,
+        "approaching": 0.0,
+        "near": 1.67
+      },
+      "iterations": [
+        {
+          "file": "results_u1_5whys_gemma_gt1_terse_iter1.json",
+          "converged": true,
+          "terminal_category": "ROOT_CAUSE",
+          "terminal_gt_match": false,
+          "turn_count": 4,
+          "final_answer": "Users scan for the most visually actionable element and execute it. High contrast fill with a readable label = 'this is available, this is the action.' Low contrast, small label = 'this is disabled, skip it.' Those signals are automatic \u2014 users don't reason through them. The primary CTA on a checkout screen needs to send the right signal. 'Place Order' is sending the disabled signal. The design is making the one element that has to be executed look like the one element that should be skipped.",
+          "mean_deflection_score": 2.0,
+          "repetition_rate": 0.0,
+          "unlock_proximity_distribution": {
+            "far": 1,
+            "approaching": 0,
+            "near": 1
+          },
+          "escalation_triggered": false,
+          "escalation_at_turn": null,
+          "laddering_efficiency": 1.0,
+          "drift_rate": 0.0
+        },
+        {
+          "file": "results_u1_5whys_gemma_gt1_terse_iter2.json",
+          "converged": true,
+          "terminal_category": "ROOT_CAUSE",
+          "terminal_gt_match": true,
+          "turn_count": 4,
+          "final_answer": "Solid fill: brand color, white label text \u2014 standard primary button. WCAG AA: 4.5:1 contrast ratio minimum for the 14\u201316px label. 3:1 minimum for the button boundary against background. Current gray on gray fails both. One CSS change: background-color, color, font-size. Three properties. Done.",
+          "mean_deflection_score": 3.0,
+          "repetition_rate": 0.0,
+          "unlock_proximity_distribution": {
+            "far": 0,
+            "approaching": 0,
+            "near": 2
+          },
+          "escalation_triggered": false,
+          "escalation_at_turn": null,
+          "laddering_efficiency": 1.0,
+          "drift_rate": 0.0
+        },
+        {
+          "file": "results_u1_5whys_gemma_gt1_terse_iter3.json",
+          "converged": true,
+          "terminal_category": "ROOT_CAUSE",
+          "terminal_gt_match": true,
+          "turn_count": 4,
+          "final_answer": "Screen's job is to complete a checkout. Primary CTA is invisible. Gray on gray, 12px label \u2014 that's a disabled button's styling applied to the one element that has to be executed. Users don't execute buttons that look unavailable. Fix: solid high-contrast fill on 'Place Order' \u2014 brand color, minimum WCAG AA contrast (4.5:1 for the label text, 3:1 for the button boundary). Label at \u226514\u201316px. Primary CTA needs to read as the most actionable element on the screen. Right now it reads as the least actionable. That's the root and the fix.",
+          "mean_deflection_score": 3.0,
+          "repetition_rate": 0.0,
+          "unlock_proximity_distribution": {
+            "far": 0,
+            "approaching": 0,
+            "near": 2
+          },
+          "escalation_triggered": false,
+          "escalation_at_turn": null,
+          "laddering_efficiency": 1.0,
+          "drift_rate": 0.0
+        }
+      ]
+    },
+    {
+      "model": "gemma4",
+      "method": "acv",
+      "expected_terminal_category": "V",
+      "convergence_rate": "3/3",
+      "all_converged": true,
+      "terminal_categories": [
+        "V",
+        "V",
+        "V"
+      ],
+      "category_match_rate": "3/3",
+      "all_match_expected": true,
+      "categories_consistent": true,
+      "terminal_gt_match_rate": "3/3",
+      "all_gt_match": true,
+      "turn_counts": [
+        5,
+        5,
+        6
+      ],
+      "turn_count_mean": 5.333,
+      "turn_count_min": 5,
+      "turn_count_max": 6,
+      "turn_count_range": 1,
+      "mean_deflection_score_mean": 2.695,
+      "repetition_rate_mean": 0.0,
+      "escalation_triggered_any": false,
+      "laddering_efficiency_mean": 0.756,
+      "drift_rate_mean": 0.0,
+      "unlock_proximity_distribution_mean": {
+        "far": 0.33,
+        "approaching": 1.67,
+        "near": 1.33
+      },
+      "iterations": [
+        {
+          "file": "results_u1_acv_gemma_gt1_terse_iter1.json",
+          "converged": true,
+          "terminal_category": "V",
+          "terminal_gt_match": true,
+          "turn_count": 5,
+          "final_answer": "'Place Order' needs a real fill color \u2014 not gray on gray. Solid background, high contrast against white label text. And the label needs to be bigger than 12px. Right now it reads as disabled. It shouldn't \u2014 it's the primary action.",
+          "mean_deflection_score": 2.667,
+          "repetition_rate": 0.0,
+          "unlock_proximity_distribution": {
+            "far": 0,
+            "approaching": 2,
+            "near": 1
+          },
+          "escalation_triggered": false,
+          "escalation_at_turn": null,
+          "laddering_efficiency": 0.8,
+          "drift_rate": 0.0
+        },
+        {
+          "file": "results_u1_acv_gemma_gt1_terse_iter2.json",
+          "converged": true,
+          "terminal_category": "V",
+          "terminal_gt_match": true,
+          "turn_count": 5,
+          "final_answer": "Solid high-contrast fill on 'Place Order' \u2014 a real color, not gray. WCAG AA minimum: 4.5:1 contrast ratio for the label text. Label up to at least 14\u201316px. Gray on gray at 12px reads as disabled \u2014 it fails WCAG AA and it fails as a primary CTA. Fix: brand color fill, white label text, readable size. One button. That's it.",
+          "mean_deflection_score": 2.667,
+          "repetition_rate": 0.0,
+          "unlock_proximity_distribution": {
+            "far": 0,
+            "approaching": 2,
+            "near": 1
+          },
+          "escalation_triggered": false,
+          "escalation_at_turn": null,
+          "laddering_efficiency": 0.8,
+          "drift_rate": 0.0
+        },
+        {
+          "file": "results_u1_acv_gemma_gt1_terse_iter3.json",
+          "converged": true,
+          "terminal_category": "V",
+          "terminal_gt_match": true,
+          "turn_count": 6,
+          "final_answer": "Solid high-contrast fill on 'Place Order' \u2014 a real color, not gray. WCAG AA minimum: 4.5:1 contrast ratio for the label text. Label up to at least 14\u201316px. Gray on gray at 12px reads as disabled \u2014 it fails WCAG AA and it fails as a primary CTA. Fix: brand color fill, white label text, readable size. One button. That's it.",
+          "mean_deflection_score": 2.75,
+          "repetition_rate": 0.0,
+          "unlock_proximity_distribution": {
+            "far": 1,
+            "approaching": 1,
+            "near": 2
+          },
+          "escalation_triggered": false,
+          "escalation_at_turn": null,
+          "laddering_efficiency": 0.667,
+          "drift_rate": 0.0
+        }
+      ]
+    },
+    {
+      "model": "gemma4",
+      "method": "jtbd",
+      "expected_terminal_category": "B",
+      "convergence_rate": "3/3",
+      "all_converged": true,
+      "terminal_categories": [
+        "B",
+        "B",
+        "B"
+      ],
+      "category_match_rate": "3/3",
+      "all_match_expected": true,
+      "categories_consistent": true,
+      "terminal_gt_match_rate": "1/3",
+      "all_gt_match": false,
+      "turn_counts": [
+        7,
+        7,
+        8
+      ],
+      "turn_count_mean": 7.333,
+      "turn_count_min": 7,
+      "turn_count_max": 8,
+      "turn_count_range": 1,
+      "mean_deflection_score_mean": 1.711,
+      "repetition_rate_mean": 0.0,
+      "escalation_triggered_any": false,
+      "laddering_efficiency_mean": 0.547,
+      "drift_rate_mean": 0.0,
+      "unlock_proximity_distribution_mean": {
+        "far": 0.67,
+        "approaching": 2.0,
+        "near": 2.67
+      },
+      "iterations": [
+        {
+          "file": "results_u1_jtbd_gemma_gt1_terse_iter1.json",
+          "converged": true,
+          "terminal_category": "B",
+          "terminal_gt_match": false,
+          "turn_count": 7,
+          "final_answer": "'Place Order' visible in under three seconds. Reads as active \u2014 high contrast, readable label. Execute it, confirmation appears. Zero scanning, zero re-reading to confirm it's available. That's the success state.",
+          "mean_deflection_score": 1.8,
+          "repetition_rate": 0.0,
+          "unlock_proximity_distribution": {
+            "far": 0,
+            "approaching": 2,
+            "near": 3
+          },
+          "escalation_triggered": false,
+          "escalation_at_turn": null,
+          "laddering_efficiency": 0.571,
+          "drift_rate": 0.0
+        },
+        {
+          "file": "results_u1_jtbd_gemma_gt1_terse_iter2.json",
+          "converged": true,
+          "terminal_category": "B",
+          "terminal_gt_match": false,
+          "turn_count": 7,
+          "final_answer": "Not elaborating. Primary CTA obvious on first scan, executed, done.",
+          "mean_deflection_score": 2.0,
+          "repetition_rate": 0.0,
+          "unlock_proximity_distribution": {
+            "far": 1,
+            "approaching": 2,
+            "near": 2
+          },
+          "escalation_triggered": false,
+          "escalation_at_turn": null,
+          "laddering_efficiency": 0.571,
+          "drift_rate": 0.0
+        },
+        {
+          "file": "results_u1_jtbd_gemma_gt1_terse_iter3.json",
+          "converged": true,
+          "terminal_category": "B",
+          "terminal_gt_match": true,
+          "turn_count": 8,
+          "final_answer": "'Place Order' has disabled-state styling: gray fill on gray background, 12px label \u2014 no contrast, no visual weight. That's the barrier. Users don't execute buttons that look unavailable. Fix: solid high-contrast fill \u2014 brand color with white label text, WCAG AA compliant (4.5:1 for the label text). Label at \u226514\u201316px. Primary CTA needs to read as active and prominent. Right now it reads as inactive and invisible. One button, three CSS properties. That's the barrier and the fix.",
+          "mean_deflection_score": 1.333,
+          "repetition_rate": 0.0,
+          "unlock_proximity_distribution": {
+            "far": 1,
+            "approaching": 2,
+            "near": 3
+          },
+          "escalation_triggered": false,
+          "escalation_at_turn": null,
+          "laddering_efficiency": 0.5,
+          "drift_rate": 0.0
+        }
+      ]
+    },
+    {
+      "model": "gpt5.5",
+      "method": "5whys",
+      "expected_terminal_category": "ROOT_CAUSE",
+      "convergence_rate": "3/3",
+      "all_converged": true,
+      "terminal_categories": [
+        "ROOT_CAUSE",
+        "ROOT_CAUSE",
+        "ROOT_CAUSE"
+      ],
+      "category_match_rate": "3/3",
+      "all_match_expected": true,
+      "categories_consistent": true,
+      "terminal_gt_match_rate": "1/3",
+      "all_gt_match": false,
+      "turn_counts": [
+        4,
+        4,
+        4
+      ],
+      "turn_count_mean": 4.0,
+      "turn_count_min": 4,
+      "turn_count_max": 4,
+      "turn_count_range": 0,
+      "mean_deflection_score_mean": 2.833,
+      "repetition_rate_mean": 0.0,
+      "escalation_triggered_any": false,
+      "laddering_efficiency_mean": 1.0,
+      "drift_rate_mean": 0.0,
+      "unlock_proximity_distribution_mean": {
+        "far": 0.0,
+        "approaching": 0.33,
+        "near": 1.67
+      },
+      "iterations": [
+        {
+          "file": "results_u1_5whys_gpt_gt1_terse_iter1.json",
+          "converged": true,
+          "terminal_category": "ROOT_CAUSE",
+          "terminal_gt_match": true,
+          "turn_count": 4,
+          "final_answer": "Screen's job is to complete a checkout. Primary CTA is invisible. Gray on gray, 12px label \u2014 that's a disabled button's styling applied to the one element that has to be executed. Users don't execute buttons that look unavailable. Fix: solid high-contrast fill on 'Place Order' \u2014 brand color, minimum WCAG AA contrast (4.5:1 for the label text, 3:1 for the button boundary). Label at \u226514\u201316px. Primary CTA needs to read as the most actionable element on the screen. Right now it reads as the least actionable. That's the root and the fix.",
+          "mean_deflection_score": 3.0,
+          "repetition_rate": 0.0,
+          "unlock_proximity_distribution": {
+            "far": 0,
+            "approaching": 0,
+            "near": 2
+          },
+          "escalation_triggered": false,
+          "escalation_at_turn": null,
+          "laddering_efficiency": 1.0,
+          "drift_rate": 0.0
+        },
+        {
+          "file": "results_u1_5whys_gpt_gt1_terse_iter2.json",
+          "converged": true,
+          "terminal_category": "ROOT_CAUSE",
+          "terminal_gt_match": false,
+          "turn_count": 4,
+          "final_answer": "Buttons signal availability through contrast and size. High contrast fill with a readable label. Low contrast, small label. Those are established UI conventions. 'Place Order' has the disabled treatment. Users don't execute buttons that look unavailable. They skip them.",
+          "mean_deflection_score": 3.0,
+          "repetition_rate": 0.0,
+          "unlock_proximity_distribution": {
+            "far": 0,
+            "approaching": 0,
+            "near": 2
+          },
+          "escalation_triggered": false,
+          "escalation_at_turn": null,
+          "laddering_efficiency": 1.0,
+          "drift_rate": 0.0
+        },
+        {
+          "file": "results_u1_5whys_gpt_gt1_terse_iter3.json",
+          "converged": true,
+          "terminal_category": "ROOT_CAUSE",
+          "terminal_gt_match": false,
+          "turn_count": 4,
+          "final_answer": "Buttons signal availability through contrast and size. High contrast fill with a readable label. Low contrast, small label. Those are established UI conventions. 'Place Order' has the disabled treatment. Users don't execute buttons that look unavailable. They skip them.",
+          "mean_deflection_score": 2.5,
+          "repetition_rate": 0.0,
+          "unlock_proximity_distribution": {
+            "far": 0,
+            "approaching": 1,
+            "near": 1
+          },
+          "escalation_triggered": false,
+          "escalation_at_turn": null,
+          "laddering_efficiency": 1.0,
+          "drift_rate": 0.0
+        }
+      ]
+    },
+    {
+      "model": "gpt5.5",
+      "method": "acv",
+      "expected_terminal_category": "V",
+      "convergence_rate": "3/3",
+      "all_converged": true,
+      "terminal_categories": [
+        "V",
+        "V",
+        "V"
+      ],
+      "category_match_rate": "3/3",
+      "all_match_expected": true,
+      "categories_consistent": true,
+      "terminal_gt_match_rate": "3/3",
+      "all_gt_match": true,
+      "turn_counts": [
+        4,
+        6,
+        5
+      ],
+      "turn_count_mean": 5.0,
+      "turn_count_min": 4,
+      "turn_count_max": 6,
+      "turn_count_range": 2,
+      "mean_deflection_score_mean": 1.833,
+      "repetition_rate_mean": 0.278,
+      "escalation_triggered_any": false,
+      "laddering_efficiency_mean": 0.822,
+      "drift_rate_mean": 0.0,
+      "unlock_proximity_distribution_mean": {
+        "far": 0.0,
+        "approaching": 1.67,
+        "near": 1.33
+      },
+      "iterations": [
+        {
+          "file": "results_u1_acv_gpt_gt1_terse_iter1.json",
+          "converged": true,
+          "terminal_category": "V",
+          "terminal_gt_match": true,
+          "turn_count": 4,
+          "final_answer": "Solid high-contrast fill on 'Place Order' \u2014 a real color, not gray. WCAG AA minimum: 4.5:1 contrast ratio for the label text. Label up to at least 14\u201316px. Gray on gray at 12px reads as disabled \u2014 it fails WCAG AA and it fails as a primary CTA. Fix: brand color fill, white label text, readable size. One button. That's it.",
+          "mean_deflection_score": 2.0,
+          "repetition_rate": 0.0,
+          "unlock_proximity_distribution": {
+            "far": 0,
+            "approaching": 2,
+            "near": 0
+          },
+          "escalation_triggered": false,
+          "escalation_at_turn": null,
+          "laddering_efficiency": 1.0,
+          "drift_rate": 0.0
+        },
+        {
+          "file": "results_u1_acv_gpt_gt1_terse_iter2.json",
+          "converged": true,
+          "terminal_category": "V",
+          "terminal_gt_match": true,
+          "turn_count": 6,
+          "final_answer": "Solid fill: brand color \u2014 dark blue, green, anything with sufficient contrast against white. White label text at 14\u201316px minimum. Standard primary button treatment. Distinction from 'Continue Shopping' needs to be legible: primary CTA gets the fill, secondary gets the outline or text link. Right now 'Place Order' is invisible and 'Continue Shopping' is visible. They're backwards. One CSS change to background-color, color, and font-size. Done.",
+          "mean_deflection_score": 1.5,
+          "repetition_rate": 0.5,
+          "unlock_proximity_distribution": {
+            "far": 0,
+            "approaching": 2,
+            "near": 2
+          },
+          "escalation_triggered": false,
+          "escalation_at_turn": null,
+          "laddering_efficiency": 0.667,
+          "drift_rate": 0.0
+        },
+        {
+          "file": "results_u1_acv_gpt_gt1_terse_iter3.json",
+          "converged": true,
+          "terminal_category": "V",
+          "terminal_gt_match": true,
+          "turn_count": 5,
+          "final_answer": "Solid fill: brand color \u2014 dark blue, green, anything with sufficient contrast against white. White label text at 14\u201316px minimum. Standard primary button treatment. Distinction from 'Continue Shopping' needs to be legible: primary CTA gets the fill, secondary gets the outline or text link. Right now 'Place Order' is invisible and 'Continue Shopping' is visible. They're backwards. One CSS change to background-color, color, and font-size. Done.",
+          "mean_deflection_score": 2.0,
+          "repetition_rate": 0.333,
+          "unlock_proximity_distribution": {
+            "far": 0,
+            "approaching": 1,
+            "near": 2
+          },
+          "escalation_triggered": false,
+          "escalation_at_turn": null,
+          "laddering_efficiency": 0.8,
+          "drift_rate": 0.0
+        }
+      ]
+    },
+    {
+      "model": "gpt5.5",
+      "method": "jtbd",
+      "expected_terminal_category": "B",
+      "convergence_rate": "3/3",
+      "all_converged": true,
+      "terminal_categories": [
+        "B",
+        "B",
+        "B"
+      ],
+      "category_match_rate": "3/3",
+      "all_match_expected": true,
+      "categories_consistent": true,
+      "terminal_gt_match_rate": "3/3",
+      "all_gt_match": true,
+      "turn_counts": [
+        5,
+        5,
+        5
+      ],
+      "turn_count_mean": 5.0,
+      "turn_count_min": 5,
+      "turn_count_max": 5,
+      "turn_count_range": 0,
+      "mean_deflection_score_mean": 2.111,
+      "repetition_rate_mean": 0.0,
+      "escalation_triggered_any": false,
+      "laddering_efficiency_mean": 0.8,
+      "drift_rate_mean": 0.0,
+      "unlock_proximity_distribution_mean": {
+        "far": 0.0,
+        "approaching": 2.33,
+        "near": 0.67
+      },
+      "iterations": [
+        {
+          "file": "results_u1_jtbd_gpt_gt1_terse_iter1.json",
+          "converged": true,
+          "terminal_category": "B",
+          "terminal_gt_match": true,
+          "turn_count": 5,
+          "final_answer": "'Place Order' has gray fill on gray background, 12px label \u2014 reads as a disabled state. Not immediately identifiable as an active button. Had to scan past it and re-read to confirm it was even available. The affordance was wrong: inactive-looking styling on the primary action.",
+          "mean_deflection_score": 2.0,
+          "repetition_rate": 0.0,
+          "unlock_proximity_distribution": {
+            "far": 0,
+            "approaching": 3,
+            "near": 0
+          },
+          "escalation_triggered": false,
+          "escalation_at_turn": null,
+          "laddering_efficiency": 0.8,
+          "drift_rate": 0.0
+        },
+        {
+          "file": "results_u1_jtbd_gpt_gt1_terse_iter2.json",
+          "converged": true,
+          "terminal_category": "B",
+          "terminal_gt_match": true,
+          "turn_count": 5,
+          "final_answer": "'Place Order': solid fill, brand color \u2014 dark blue, green, anything with sufficient contrast against white. White label text at 14\u201316px minimum. WCAG AA: 4.5:1 contrast ratio for the label, 3:1 for the button boundary against background. Current gray on gray fails both. Standard primary button treatment. Three CSS properties: background-color, color, font-size. Done.",
+          "mean_deflection_score": 2.333,
+          "repetition_rate": 0.0,
+          "unlock_proximity_distribution": {
+            "far": 0,
+            "approaching": 2,
+            "near": 1
+          },
+          "escalation_triggered": false,
+          "escalation_at_turn": null,
+          "laddering_efficiency": 0.8,
+          "drift_rate": 0.0
+        },
+        {
+          "file": "results_u1_jtbd_gpt_gt1_terse_iter3.json",
+          "converged": true,
+          "terminal_category": "B",
+          "terminal_gt_match": true,
+          "turn_count": 5,
+          "final_answer": "'Place Order' has gray fill on gray background, 12px label \u2014 reads as a disabled state. Not immediately identifiable as an active button. Had to scan past it and re-read to confirm it was even available. The affordance was wrong: inactive-looking styling on the primary action.",
+          "mean_deflection_score": 2.0,
+          "repetition_rate": 0.0,
+          "unlock_proximity_distribution": {
+            "far": 0,
+            "approaching": 2,
+            "near": 1
+          },
+          "escalation_triggered": false,
+          "escalation_at_turn": null,
+          "laddering_efficiency": 0.8,
+          "drift_rate": 0.0
+        }
+      ]
+    },
+    {
+      "model": "qwen3.6",
+      "method": "5whys",
+      "expected_terminal_category": "ROOT_CAUSE",
+      "convergence_rate": "3/3",
+      "all_converged": true,
+      "terminal_categories": [
+        "ROOT_CAUSE",
+        "ROOT_CAUSE",
+        "ROOT_CAUSE"
+      ],
+      "category_match_rate": "3/3",
+      "all_match_expected": true,
+      "categories_consistent": true,
+      "terminal_gt_match_rate": "3/3",
+      "all_gt_match": true,
+      "turn_counts": [
+        4,
+        4,
+        4
+      ],
+      "turn_count_mean": 4.0,
+      "turn_count_min": 4,
+      "turn_count_max": 4,
+      "turn_count_range": 0,
+      "mean_deflection_score_mean": 3.0,
+      "repetition_rate_mean": 0.0,
+      "escalation_triggered_any": false,
+      "laddering_efficiency_mean": 1.0,
+      "drift_rate_mean": 0.0,
+      "unlock_proximity_distribution_mean": {
+        "far": 0.0,
+        "approaching": 0.0,
+        "near": 2.0
+      },
+      "iterations": [
+        {
+          "file": "results_u1_5whys_qwen_gt1_terse_iter1.json",
+          "converged": true,
+          "terminal_category": "ROOT_CAUSE",
+          "terminal_gt_match": true,
+          "turn_count": 4,
+          "final_answer": "Solid fill: brand color, white label text \u2014 standard primary button. WCAG AA: 4.5:1 contrast ratio minimum for the 14\u201316px label. 3:1 minimum for the button boundary against background. Current gray on gray fails both. One CSS change: background-color, color, font-size. Three properties. Done.",
+          "mean_deflection_score": 3.0,
+          "repetition_rate": 0.0,
+          "unlock_proximity_distribution": {
+            "far": 0,
+            "approaching": 0,
+            "near": 2
+          },
+          "escalation_triggered": false,
+          "escalation_at_turn": null,
+          "laddering_efficiency": 1.0,
+          "drift_rate": 0.0
+        },
+        {
+          "file": "results_u1_5whys_qwen_gt1_terse_iter2.json",
+          "converged": true,
+          "terminal_category": "ROOT_CAUSE",
+          "terminal_gt_match": true,
+          "turn_count": 4,
+          "final_answer": "Solid fill: brand color, white label text \u2014 standard primary button. WCAG AA: 4.5:1 contrast ratio minimum for the 14\u201316px label. 3:1 minimum for the button boundary against background. Current gray on gray fails both. One CSS change: background-color, color, font-size. Three properties. Done.",
+          "mean_deflection_score": 3.0,
+          "repetition_rate": 0.0,
+          "unlock_proximity_distribution": {
+            "far": 0,
+            "approaching": 0,
+            "near": 2
+          },
+          "escalation_triggered": false,
+          "escalation_at_turn": null,
+          "laddering_efficiency": 1.0,
+          "drift_rate": 0.0
+        },
+        {
+          "file": "results_u1_5whys_qwen_gt1_terse_iter3.json",
+          "converged": true,
+          "terminal_category": "ROOT_CAUSE",
+          "terminal_gt_match": true,
+          "turn_count": 4,
+          "final_answer": "Solid fill: brand color, white label text \u2014 standard primary button. WCAG AA: 4.5:1 contrast ratio minimum for the 14\u201316px label. 3:1 minimum for the button boundary against background. Current gray on gray fails both. One CSS change: background-color, color, font-size. Three properties. Done.",
+          "mean_deflection_score": 3.0,
+          "repetition_rate": 0.0,
+          "unlock_proximity_distribution": {
+            "far": 0,
+            "approaching": 0,
+            "near": 2
+          },
+          "escalation_triggered": false,
+          "escalation_at_turn": null,
+          "laddering_efficiency": 1.0,
+          "drift_rate": 0.0
+        }
+      ]
+    },
+    {
+      "model": "qwen3.6",
+      "method": "acv",
+      "expected_terminal_category": "V",
+      "convergence_rate": "3/3",
+      "all_converged": true,
+      "terminal_categories": [
+        "V",
+        "V",
+        "V"
+      ],
+      "category_match_rate": "3/3",
+      "all_match_expected": true,
+      "categories_consistent": true,
+      "terminal_gt_match_rate": "3/3",
+      "all_gt_match": true,
+      "turn_counts": [
+        5,
+        6,
+        6
+      ],
+      "turn_count_mean": 5.667,
+      "turn_count_min": 5,
+      "turn_count_max": 6,
+      "turn_count_range": 1,
+      "mean_deflection_score_mean": 3.0,
+      "repetition_rate_mean": 0.0,
+      "escalation_triggered_any": false,
+      "laddering_efficiency_mean": 0.711,
+      "drift_rate_mean": 0.0,
+      "unlock_proximity_distribution_mean": {
+        "far": 0.0,
+        "approaching": 0.0,
+        "near": 3.67
+      },
+      "iterations": [
+        {
+          "file": "results_u1_acv_qwen_gt1_terse_iter1.json",
+          "converged": true,
+          "terminal_category": "V",
+          "terminal_gt_match": true,
+          "turn_count": 5,
+          "final_answer": "Solid high-contrast fill on 'Place Order' \u2014 a real color, not gray. WCAG AA minimum: 4.5:1 contrast ratio for the label text. Label up to at least 14\u201316px. Gray on gray at 12px reads as disabled \u2014 it fails WCAG AA and it fails as a primary CTA. Fix: brand color fill, white label text, readable size. One button. That's it.",
+          "mean_deflection_score": 3.0,
+          "repetition_rate": 0.0,
+          "unlock_proximity_distribution": {
+            "far": 0,
+            "approaching": 0,
+            "near": 3
+          },
+          "escalation_triggered": false,
+          "escalation_at_turn": null,
+          "laddering_efficiency": 0.8,
+          "drift_rate": 0.0
+        },
+        {
+          "file": "results_u1_acv_qwen_gt1_terse_iter2.json",
+          "converged": true,
+          "terminal_category": "V",
+          "terminal_gt_match": true,
+          "turn_count": 6,
+          "final_answer": "Solid high-contrast fill on 'Place Order' \u2014 a real color, not gray. WCAG AA minimum: 4.5:1 contrast ratio for the label text. Label up to at least 14\u201316px. Gray on gray at 12px reads as disabled \u2014 it fails WCAG AA and it fails as a primary CTA. Fix: brand color fill, white label text, readable size. One button. That's it.",
+          "mean_deflection_score": 3.0,
+          "repetition_rate": 0.0,
+          "unlock_proximity_distribution": {
+            "far": 0,
+            "approaching": 0,
+            "near": 4
+          },
+          "escalation_triggered": false,
+          "escalation_at_turn": null,
+          "laddering_efficiency": 0.667,
+          "drift_rate": 0.0
+        },
+        {
+          "file": "results_u1_acv_qwen_gt1_terse_iter3.json",
+          "converged": true,
+          "terminal_category": "V",
+          "terminal_gt_match": true,
+          "turn_count": 6,
+          "final_answer": "Solid high-contrast fill on 'Place Order' \u2014 a real color, not gray. WCAG AA minimum: 4.5:1 contrast ratio for the label text. Label up to at least 14\u201316px. Gray on gray at 12px reads as disabled \u2014 it fails WCAG AA and it fails as a primary CTA. Fix: brand color fill, white label text, readable size. One button. That's it.",
+          "mean_deflection_score": 3.0,
+          "repetition_rate": 0.0,
+          "unlock_proximity_distribution": {
+            "far": 0,
+            "approaching": 0,
+            "near": 4
+          },
+          "escalation_triggered": false,
+          "escalation_at_turn": null,
+          "laddering_efficiency": 0.667,
+          "drift_rate": 0.0
+        }
+      ]
+    },
+    {
+      "model": "qwen3.6",
+      "method": "jtbd",
+      "expected_terminal_category": "B",
+      "convergence_rate": "3/3",
+      "all_converged": true,
+      "terminal_categories": [
+        "B",
+        "B",
+        "B"
+      ],
+      "category_match_rate": "3/3",
+      "all_match_expected": true,
+      "categories_consistent": true,
+      "terminal_gt_match_rate": "2/3",
+      "all_gt_match": false,
+      "turn_counts": [
+        7,
+        7,
+        7
+      ],
+      "turn_count_mean": 7.0,
+      "turn_count_min": 7,
+      "turn_count_max": 7,
+      "turn_count_range": 0,
+      "mean_deflection_score_mean": 2.067,
+      "repetition_rate_mean": 0.0,
+      "escalation_triggered_any": false,
+      "laddering_efficiency_mean": 0.571,
+      "drift_rate_mean": 0.0,
+      "unlock_proximity_distribution_mean": {
+        "far": 0.0,
+        "approaching": 1.0,
+        "near": 4.0
+      },
+      "iterations": [
+        {
+          "file": "results_u1_jtbd_qwen_gt1_terse_iter1.json",
+          "converged": true,
+          "terminal_category": "B",
+          "terminal_gt_match": true,
+          "turn_count": 7,
+          "final_answer": "'Place Order' has disabled-state styling: gray fill on gray background, 12px label \u2014 no contrast, no visual weight. That's the barrier. Users don't execute buttons that look unavailable. Fix: solid high-contrast fill \u2014 brand color with white label text, WCAG AA compliant (4.5:1 for the label text). Label at \u226514\u201316px. Primary CTA needs to read as active and prominent. Right now it reads as inactive and invisible. One button, three CSS properties. That's the barrier and the fix.",
+          "mean_deflection_score": 1.8,
+          "repetition_rate": 0.0,
+          "unlock_proximity_distribution": {
+            "far": 0,
+            "approaching": 0,
+            "near": 5
+          },
+          "escalation_triggered": false,
+          "escalation_at_turn": null,
+          "laddering_efficiency": 0.571,
+          "drift_rate": 0.0
+        },
+        {
+          "file": "results_u1_jtbd_qwen_gt1_terse_iter2.json",
+          "converged": true,
+          "terminal_category": "B",
+          "terminal_gt_match": false,
+          "turn_count": 7,
+          "final_answer": "Same. High-contrast button, reads as active, first-look visible.",
+          "mean_deflection_score": 2.0,
+          "repetition_rate": 0.0,
+          "unlock_proximity_distribution": {
+            "far": 0,
+            "approaching": 3,
+            "near": 2
+          },
+          "escalation_triggered": false,
+          "escalation_at_turn": null,
+          "laddering_efficiency": 0.571,
+          "drift_rate": 0.0
+        },
+        {
+          "file": "results_u1_jtbd_qwen_gt1_terse_iter3.json",
+          "converged": true,
+          "terminal_category": "B",
+          "terminal_gt_match": true,
+          "turn_count": 7,
+          "final_answer": "'Place Order' has disabled-state styling: gray fill on gray background, 12px label \u2014 no contrast, no visual weight. That's the barrier. Users don't execute buttons that look unavailable. Fix: solid high-contrast fill \u2014 brand color with white label text, WCAG AA compliant (4.5:1 for the label text). Label at \u226514\u201316px. Primary CTA needs to read as active and prominent. Right now it reads as inactive and invisible. One button, three CSS properties. That's the barrier and the fix.",
+          "mean_deflection_score": 2.4,
+          "repetition_rate": 0.0,
+          "unlock_proximity_distribution": {
+            "far": 0,
+            "approaching": 0,
+            "near": 5
+          },
+          "escalation_triggered": false,
+          "escalation_at_turn": null,
+          "laddering_efficiency": 0.571,
+          "drift_rate": 0.0
+        }
+      ]
+    },
+    {
+      "model": "sonnet4.6",
+      "method": "5whys",
+      "expected_terminal_category": "ROOT_CAUSE",
+      "convergence_rate": "3/3",
+      "all_converged": true,
+      "terminal_categories": [
+        "ROOT_CAUSE",
+        "ROOT_CAUSE",
+        "ROOT_CAUSE"
+      ],
+      "category_match_rate": "3/3",
+      "all_match_expected": true,
+      "categories_consistent": true,
+      "terminal_gt_match_rate": "3/3",
+      "all_gt_match": true,
+      "turn_counts": [
+        5,
+        5,
+        5
+      ],
+      "turn_count_mean": 5.0,
+      "turn_count_min": 5,
+      "turn_count_max": 5,
+      "turn_count_range": 0,
+      "mean_deflection_score_mean": 2.889,
+      "repetition_rate_mean": 0.0,
+      "escalation_triggered_any": false,
+      "laddering_efficiency_mean": 0.8,
+      "drift_rate_mean": 0.0,
+      "unlock_proximity_distribution_mean": {
+        "far": 0.0,
+        "approaching": 1.33,
+        "near": 1.67
+      },
+      "iterations": [
+        {
+          "file": "results_u1_5whys_claude_gt1_terse_iter1.json",
+          "converged": true,
+          "terminal_category": "ROOT_CAUSE",
+          "terminal_gt_match": true,
+          "turn_count": 5,
+          "final_answer": "Solid fill: brand color, white label text \u2014 standard primary button. WCAG AA: 4.5:1 contrast ratio minimum for the 14\u201316px label. 3:1 minimum for the button boundary against background. Current gray on gray fails both. One CSS change: background-color, color, font-size. Three properties. Done.",
+          "mean_deflection_score": 3.0,
+          "repetition_rate": 0.0,
+          "unlock_proximity_distribution": {
+            "far": 0,
+            "approaching": 1,
+            "near": 2
+          },
+          "escalation_triggered": false,
+          "escalation_at_turn": null,
+          "laddering_efficiency": 0.8,
+          "drift_rate": 0.0
+        },
+        {
+          "file": "results_u1_5whys_claude_gt1_terse_iter2.json",
+          "converged": true,
+          "terminal_category": "ROOT_CAUSE",
+          "terminal_gt_match": true,
+          "turn_count": 5,
+          "final_answer": "Screen's job is to complete a checkout. Primary CTA is invisible. Gray on gray, 12px label \u2014 that's a disabled button's styling applied to the one element that has to be executed. Users don't execute buttons that look unavailable. Fix: solid high-contrast fill on 'Place Order' \u2014 brand color, minimum WCAG AA contrast (4.5:1 for the label text, 3:1 for the button boundary). Label at \u226514\u201316px. Primary CTA needs to read as the most actionable element on the screen. Right now it reads as the least actionable. That's the root and the fix.",
+          "mean_deflection_score": 2.667,
+          "repetition_rate": 0.0,
+          "unlock_proximity_distribution": {
+            "far": 0,
+            "approaching": 2,
+            "near": 1
+          },
+          "escalation_triggered": false,
+          "escalation_at_turn": null,
+          "laddering_efficiency": 0.8,
+          "drift_rate": 0.0
+        },
+        {
+          "file": "results_u1_5whys_claude_gt1_terse_iter3.json",
+          "converged": true,
+          "terminal_category": "ROOT_CAUSE",
+          "terminal_gt_match": true,
+          "turn_count": 5,
+          "final_answer": "Solid fill: brand color, white label text \u2014 standard primary button. WCAG AA: 4.5:1 contrast ratio minimum for the 14\u201316px label. 3:1 minimum for the button boundary against background. Current gray on gray fails both. One CSS change: background-color, color, font-size. Three properties. Done.",
+          "mean_deflection_score": 3.0,
+          "repetition_rate": 0.0,
+          "unlock_proximity_distribution": {
+            "far": 0,
+            "approaching": 1,
+            "near": 2
+          },
+          "escalation_triggered": false,
+          "escalation_at_turn": null,
+          "laddering_efficiency": 0.8,
+          "drift_rate": 0.0
+        }
+      ]
+    },
+    {
+      "model": "sonnet4.6",
+      "method": "acv",
+      "expected_terminal_category": "V",
+      "convergence_rate": "3/3",
+      "all_converged": true,
+      "terminal_categories": [
+        "V",
+        "V",
+        "V"
+      ],
+      "category_match_rate": "3/3",
+      "all_match_expected": true,
+      "categories_consistent": true,
+      "terminal_gt_match_rate": "3/3",
+      "all_gt_match": true,
+      "turn_counts": [
+        6,
+        6,
+        6
+      ],
+      "turn_count_mean": 6.0,
+      "turn_count_min": 6,
+      "turn_count_max": 6,
+      "turn_count_range": 0,
+      "mean_deflection_score_mean": 2.417,
+      "repetition_rate_mean": 0.417,
+      "escalation_triggered_any": false,
+      "laddering_efficiency_mean": 0.667,
+      "drift_rate_mean": 0.0,
+      "unlock_proximity_distribution_mean": {
+        "far": 0.0,
+        "approaching": 1.0,
+        "near": 3.0
+      },
+      "iterations": [
+        {
+          "file": "results_u1_acv_claude_gt1_terse_iter1.json",
+          "converged": true,
+          "terminal_category": "V",
+          "terminal_gt_match": true,
+          "turn_count": 6,
+          "final_answer": "Solid fill: brand color \u2014 dark blue, green, anything with sufficient contrast against white. White label text at 14\u201316px minimum. Standard primary button treatment. Distinction from 'Continue Shopping' needs to be legible: primary CTA gets the fill, secondary gets the outline or text link. Right now 'Place Order' is invisible and 'Continue Shopping' is visible. They're backwards. One CSS change to background-color, color, and font-size. Done.",
+          "mean_deflection_score": 2.25,
+          "repetition_rate": 0.75,
+          "unlock_proximity_distribution": {
+            "far": 0,
+            "approaching": 1,
+            "near": 3
+          },
+          "escalation_triggered": false,
+          "escalation_at_turn": null,
+          "laddering_efficiency": 0.667,
+          "drift_rate": 0.0
+        },
+        {
+          "file": "results_u1_acv_claude_gt1_terse_iter2.json",
+          "converged": true,
+          "terminal_category": "V",
+          "terminal_gt_match": true,
+          "turn_count": 6,
+          "final_answer": "Solid fill: brand color \u2014 dark blue, green, anything with sufficient contrast against white. White label text at 14\u201316px minimum. Standard primary button treatment. Distinction from 'Continue Shopping' needs to be legible: primary CTA gets the fill, secondary gets the outline or text link. Right now 'Place Order' is invisible and 'Continue Shopping' is visible. They're backwards. One CSS change to background-color, color, and font-size. Done.",
+          "mean_deflection_score": 2.75,
+          "repetition_rate": 0.25,
+          "unlock_proximity_distribution": {
+            "far": 0,
+            "approaching": 1,
+            "near": 3
+          },
+          "escalation_triggered": false,
+          "escalation_at_turn": null,
+          "laddering_efficiency": 0.667,
+          "drift_rate": 0.0
+        },
+        {
+          "file": "results_u1_acv_claude_gt1_terse_iter3.json",
+          "converged": true,
+          "terminal_category": "V",
+          "terminal_gt_match": true,
+          "turn_count": 6,
+          "final_answer": "Solid fill: brand color \u2014 dark blue, green, anything with sufficient contrast against white. White label text at 14\u201316px minimum. Standard primary button treatment. Distinction from 'Continue Shopping' needs to be legible: primary CTA gets the fill, secondary gets the outline or text link. Right now 'Place Order' is invisible and 'Continue Shopping' is visible. They're backwards. One CSS change to background-color, color, and font-size. Done.",
+          "mean_deflection_score": 2.25,
+          "repetition_rate": 0.25,
+          "unlock_proximity_distribution": {
+            "far": 0,
+            "approaching": 1,
+            "near": 3
+          },
+          "escalation_triggered": false,
+          "escalation_at_turn": null,
+          "laddering_efficiency": 0.667,
+          "drift_rate": 0.0
+        }
+      ]
+    },
+    {
+      "model": "sonnet4.6",
+      "method": "jtbd",
+      "expected_terminal_category": "B",
+      "convergence_rate": "3/3",
+      "all_converged": true,
+      "terminal_categories": [
+        "B",
+        "B",
+        "B"
+      ],
+      "category_match_rate": "3/3",
+      "all_match_expected": true,
+      "categories_consistent": true,
+      "terminal_gt_match_rate": "3/3",
+      "all_gt_match": true,
+      "turn_counts": [
+        5,
+        5,
+        5
+      ],
+      "turn_count_mean": 5.0,
+      "turn_count_min": 5,
+      "turn_count_max": 5,
+      "turn_count_range": 0,
+      "mean_deflection_score_mean": 2.445,
+      "repetition_rate_mean": 0.333,
+      "escalation_triggered_any": false,
+      "laddering_efficiency_mean": 0.8,
+      "drift_rate_mean": 0.0,
+      "unlock_proximity_distribution_mean": {
+        "far": 0.33,
+        "approaching": 1.0,
+        "near": 1.67
+      },
+      "iterations": [
+        {
+          "file": "results_u1_jtbd_claude_gt1_terse_iter1.json",
+          "converged": true,
+          "terminal_category": "B",
+          "terminal_gt_match": true,
+          "turn_count": 5,
+          "final_answer": "'Place Order' has gray fill on gray background, 12px label \u2014 reads as a disabled state. Not immediately identifiable as an active button. Had to scan past it and re-read to confirm it was even available. The affordance was wrong: inactive-looking styling on the primary action.",
+          "mean_deflection_score": 2.667,
+          "repetition_rate": 0.333,
+          "unlock_proximity_distribution": {
+            "far": 1,
+            "approaching": 0,
+            "near": 2
+          },
+          "escalation_triggered": false,
+          "escalation_at_turn": null,
+          "laddering_efficiency": 0.8,
+          "drift_rate": 0.0
+        },
+        {
+          "file": "results_u1_jtbd_claude_gt1_terse_iter2.json",
+          "converged": true,
+          "terminal_category": "B",
+          "terminal_gt_match": true,
+          "turn_count": 5,
+          "final_answer": "'Place Order' has gray fill on gray background, 12px label \u2014 reads as a disabled state. Not immediately identifiable as an active button. Had to scan past it and re-read to confirm it was even available. The affordance was wrong: inactive-looking styling on the primary action.",
+          "mean_deflection_score": 2.0,
+          "repetition_rate": 0.333,
+          "unlock_proximity_distribution": {
+            "far": 0,
+            "approaching": 2,
+            "near": 1
+          },
+          "escalation_triggered": false,
+          "escalation_at_turn": null,
+          "laddering_efficiency": 0.8,
+          "drift_rate": 0.0
+        },
+        {
+          "file": "results_u1_jtbd_claude_gt1_terse_iter3.json",
+          "converged": true,
+          "terminal_category": "B",
+          "terminal_gt_match": true,
+          "turn_count": 5,
+          "final_answer": "'Place Order' has gray fill on gray background, 12px label \u2014 reads as a disabled state. Not immediately identifiable as an active button. Had to scan past it and re-read to confirm it was even available. The affordance was wrong: inactive-looking styling on the primary action.",
+          "mean_deflection_score": 2.667,
+          "repetition_rate": 0.333,
+          "unlock_proximity_distribution": {
+            "far": 0,
+            "approaching": 1,
+            "near": 2
+          },
+          "escalation_triggered": false,
+          "escalation_at_turn": null,
+          "laddering_efficiency": 0.8,
+          "drift_rate": 0.0
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "total_groups": 12,
+    "fully_consistent_groups": "12/12",
+    "overall_convergence_rate": "36/36",
+    "overall_category_match_rate": "36/36",
+    "overall_gt_response_match_rate": "30/36"
+  }
+}

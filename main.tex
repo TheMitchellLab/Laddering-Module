@@ -1,0 +1,455 @@
+%%
+%% This is file `sigconf-authordraft.tex',
+%% generated with the docstrip utility.
+%%
+%% The original source files were:
+%%
+%% samples.dtx  (with options: `all,proceedings,sigconf,authordraft')
+%% 
+%% IMPORTANT NOTICE:
+%% 
+%% For the copyright see the source file.
+%% 
+%% Any modified versions of this file must be renamed
+%% with new filenames distinct from sigconf-authordraft.tex.
+%% 
+%% For distribution of the original source see the terms
+%% for copying and modification in the file samples.dtx.
+%% 
+%% This generated file may be distributed as long as the
+%% original source files, as listed above, are part of the
+%% same distribution. (The sources need not necessarily be
+%% in the same archive or directory.)
+%%
+%%
+%% Commands for TeXCount
+%TC:macro \cite [option:text,text]
+%TC:macro \citep [option:text,text]
+%TC:macro \citet [option:text,text]
+%TC:envir table 0 1
+%TC:envir table* 0 1
+%TC:envir tabular [ignore] word
+%TC:envir displaymath 0 word
+%TC:envir math 0 word
+%TC:envir comment 0 0
+%%
+%% The first command in your LaTeX source must be the \documentclass
+%% command.
+%%
+%% For submission and review of your manuscript please change the
+%% command to \documentclass[manuscript, screen, review]{acmart}.
+%%
+%% When submitting camera ready or to TAPS, please change the command
+%% to \documentclass[sigconf]{acmart} or whichever template is required
+%% for your publication.
+%%
+%%
+\documentclass[sigconf,authordraft]{acmart}
+% \documentclass[sigconf,anonymous]{acmart}
+\usepackage{xcolor}
+\newcommand{\bad}[1]{\textcolor{red}{\textbf{#1}}}
+\usepackage{multirow}
+%%
+%% \BibTeX command to typeset BibTeX logo in the docs
+\AtBeginDocument{%
+  \providecommand\BibTeX{{%
+    Bib\TeX}}}
+
+%% Rights management information.  This information is sent to you
+%% when you complete the rights form.  These commands have SAMPLE
+%% values in them; it is your responsibility as an author to replace
+%% the commands and values with those provided to you when you
+%% complete the rights form.
+\setcopyright{acmlicensed}
+\copyrightyear{2026}
+\acmYear{2026}
+% \acmDOI{XXXXXXX.XXXXXXX}
+%% These commands are for a PROCEEDINGS abstract or paper.
+% \acmConference[Conference acronym 'XX]{Make sure to enter the correct
+%   conference title from your rights confirmation email}{June 03--05,
+%   2018}{Woodstock, NY}
+\acmConference[ACM AI'26]{ACM AI Leadership Summit 2026}{August 30 -- September 2, 2026}{Atlanta, Georgia, USA}
+%%
+%%  Uncomment \acmBooktitle if the title of the proceedings is different
+%%  from ``Proceedings of ...''!
+%%
+%%\acmBooktitle{Woodstock '18: ACM Symposium on Neural Gaze Detection,
+%%  June 03--05, 2018, Woodstock, NY}
+% \acmISBN{978-1-4503-XXXX-X/2018/06}
+
+
+%%
+%% Submission ID.
+%% Use this when submitting an article to a sponsored event. You'll
+%% receive a unique submission ID from the organizers
+%% of the event, and this ID should be used as the parameter to this command.
+%%\acmSubmissionID{123-A56-BU3}
+
+%%
+%% For managing citations, it is recommended to use bibliography
+%% files in BibTeX format.
+%%
+%% You can then either use BibTeX with the ACM-Reference-Format style,
+%% or BibLaTeX with the acmnumeric or acmauthoryear sytles, that include
+%% support for advanced citation of software artefact from the
+%% biblatex-software package, also separately available on CTAN.
+%%
+%% Look at the sample-*-biblatex.tex files for templates showcasing
+%% the biblatex styles.
+%%
+%%
+%% The majority of ACM publications use numbered citations and
+%% references.  The command \citestyle{authoryear} switches to the
+%% "author year" style.
+%%
+%% If you are preparing content for an event
+%% sponsored by ACM SIGGRAPH, you must use the "author year" style of
+%% citations and references.
+%% Uncommenting
+%% the next command will enable that style.
+%%\citestyle{acmauthoryear}
+
+
+%%
+%% end of the preamble, start of the body of the document source.
+\begin{document}
+
+%%
+%% The "title" command has an optional parameter,
+%% allowing the author to define a "short title" to be used in page headers.
+% \title{Fathom: Scaling Qualitative UX Interviews via Dual-Agent LLM Moderation}
+\title{LadderTeam: Dual-Agent Laddering Elicitation Framework}
+% OTHER TITLES:
+% SAVE FOR LATER - "From Feedback to Requirements: Transforming vague and ambiguous software feedback into actionable software requirements."
+
+
+
+%%
+%% The "author" command and its associated commands are used to define
+%% the authors and their affiliations.
+%% Of note is the shared affiliation of the first two authors, and the
+%% "authornote" and "authornotemark" commands
+%% used to denote shared contribution to the research.
+
+\author{Manjushree Aithal, PhD}
+\affiliation{%
+  \institution{University of Colorado Anschutz}
+  \city{Aurora}
+  \country{United States}}
+\email{manjushree.aithal@cuanschutz.edu}
+
+\author{Alexander Kotz}
+\affiliation{%
+  \institution{University of Colorado Anschutz}
+  \city{Aurora}
+  \country{United States}}
+\email{alexander.kotz@cuanschutz.edu}
+
+\author{James Mitchell, PhD}
+\affiliation{%
+  \institution{University of Colorado Anschutz}
+  \city{Aurora}
+  \country{United States}}
+\email{james.2.mitchell@cuanschutz.edu}
+
+%%
+%% By default, the full list of authors will be used in the page
+%% headers. Often, this list is too long, and will overlap
+%% other information printed in the page headers. This command allows
+%% the author to define a more concise list
+%% of authors' names for this purpose.
+\renewcommand{\shortauthors}{Aithal et al.}
+
+%%
+%% The abstract is a short summary of the work to be presented in the
+%% article.
+\begin{abstract}
+
+% Capturing why users struggle with a product demands qualitative laddering interviews that is powerful enough to surfgace hierarchical motivation chains from observable attributes to actionable design requirements, yet too slow for interactive UX practice. Effective moderation demands the simultaneous ability to probe for depth, redirect deflection, and recognize genuine chain termination. Due to the complexity of these tasks, few practitioners achieve mastery, resulting in poor session-to-session consistency. We present \textbf{LadderTeam} that scaffolds interviews with real users around software wireframes by pairing an Large-Language Model~(LLM) moderator with a concurrent background Judge agent. The moderator in the proposed method conducts sessions via hree complementary strategies i.e., Attribute-Consequence-Value (ACV) laddering towards actionable design requirements, 5-Whys root-cause tracing of usability friction, and Job Story construction via the JTBD method, while the Judge evaluates every probe-response pair and triggers gaurdrails as needed. While LLM-mediated laddering has been demonstrated in prior work, no open, reusable implementation exists for the qualitative research. \textbf{LadderTeam} is a fully specified, reproducible framework for LLM-moderated laddering interviews. We further introduce a \emph{controlled simulation} evaluation method in which scripted ground-truth transcripts hold participant responses constant so that interviewer probe quality is the sole experimental variable. Across 108 interviews, \textbf{LadderTeam} achieves 100\% chain convergence and 91.7\% (\textbf{**upadte this number after complete analysis}) ground-truth actionable response match with zero topic drift. All evaluation scripts, ground-truth transcripts, natural intervuew transcripts from the human-user and seven person-agents validation session, and a live demo platform for interacting with and testing LadderTeam will be made avaialble upon acceptance. poor session-to-session consistency
+
+% V1: Capturing why users struggle with a product demands qualitative laddering interviews that is powerful enough to surfgace hierarchical motivation chains from observable attributes to actionable design requirements, yet too slow for interactive UX practice. Effective moderation demands the simultaneous ability to probe for depth, redirect deflection, and recognize genuine chain termination. Due to the complexity of these tasks, very few practitioners achieve mastery, resulting in session-to-session consistency. 
+
+% V2: Qualitative laddering interviews effectively uncover why users struggle by linking observable attributes to actionable design requirements. However, this methodology scales poorly in iterative user experience practice because expert interviewer must simultaneously probe for depth, redirect deflections, and recognize proper termination points. Few practitioners master these complex demands, which results in poor consistency across sessions.
+
+
+% V3: To elicit detailed and actionable software requirements from end-users, software teams must collect feedback from these users. A common technique for collecting this form of feedback is through one-on-one laddering interviews. 
+
+Eliciting detailed and actionable software requirements from end-users is a critical phase in the iterative development of a software product or application. To ensure the feedback collected is detailed and actionable, software teams can leverage the laddering interview technique. While effective for ensuring granular and actionable items from the software feedback, these interviews are subject to several limitations. They are traditionally a manual process associated with a time and financial burden, limiting scalability; interviewers must balance probing for depth while managing interviewee behavioral and cultural constraints. To address these limitations, we present \textbf{LadderTeam}, an open, reproducible framework that automates UX wireframe interviews using a dual-agent Large Language Model (LLM) architecture. An active interviewer agent executes one of three probing strategies (ACV, 5-Whys, and JTBD) to elicit actionable software requirements from usability feedback comments, while a concurrent background Judge agent evaluates probe-response pairs and triggers real-time guardrails to prevent topic drift. To rigorously evaluate LLM laddering without participant variance confounds, we introduce a controlled simulation methodology utilizing scripted ground-truth transcripts to isolate probe quality as the sole experimental variable. Across 216 interviews, \textbf{LadderTeam} achieved 99.1\% chain convergence and an 81.0\% ground-truth actionable response match (86.1\% reluctant personality, 75.9\% terse personality) with zero drift across all runs. All evaluation code, transcripts, and a live demonstration platform will be open-sourced upon acceptance.
+\end{abstract}
+
+
+%%
+%% The code below is generated by the tool at http://dl.acm.org/ccs.cfm.
+%% Please copy and paste the code instead of the example below.
+%%
+\begin{CCSXML}
+<ccs2012>
+   <concept>
+       <concept_id>10003120.10003121.10003122.10010854</concept_id>
+       <concept_desc>Human-centered computing~Usability testing</concept_desc>
+       <concept_significance>500</concept_significance>
+       </concept>
+   <concept>
+       <concept_id>10010147.10010178.10010179</concept_id>
+       <concept_desc>Computing methodologies~Natural language processing</concept_desc>
+       <concept_significance>300</concept_significance>
+       </concept>
+   <concept>
+       <concept_id>10010147.10010178.10010219.10010221</concept_id>
+       <concept_desc>Computing methodologies~Intelligent agents</concept_desc>
+       <concept_significance>300</concept_significance>
+       </concept>
+   <concept>
+       <concept_id>10003120.10003121.10011748</concept_id>
+       <concept_desc>Human-centered computing~Empirical studies in HCI</concept_desc>
+       <concept_significance>100</concept_significance>
+       </concept>
+ </ccs2012>
+\end{CCSXML}
+
+\ccsdesc[500]{Human-centered computing~Usability testing}
+\ccsdesc[300]{Computing methodologies~Natural language processing}
+\ccsdesc[300]{Computing methodologies~Intelligent agents}
+\ccsdesc[100]{Human-centered computing~Empirical studies in HCI}
+
+\keywords{Laddering interviews, LLMs, Usability feedback, dual-agent}
+
+%% A "teaser" image appears between the author and affiliation
+%% information and the body of the document, and typically spans the
+%% page.
+\begin{teaserfigure}
+ \includegraphics[width=\textwidth]{teaser_final.png}
+  % \caption{\textsc{LadderTeam} system overview. Inputs route to a chosen probing method (ACV, 5-Whys, or JTBD). After extracting a seed anchor from the user's initial reaction to establish context, the system executes a five-step per-turn loop. This loop continues until natural completion or guardrail intervention, generating a final transcript, laddering chain, pipeline report, and termination status. Note**: restyling of the image was performed using AI.}
+  \caption{\textsc{LadderTeam} system overview. \textbf{Left:} wireframe + user + models
+  feed a method branch (ACV / 5-Whys / JTBD). \textbf{Center:} vague seed extraction
+  from the prior response and MCQ clarification phase. \textbf{Right:} five-step
+  per-turn loop with Drift Guard and Abort Path guardrails. Natural termination
+  generates the interview transcript, chain, and \texttt{PipelineReport}. Note: Restyling of the image was performed using AI.}
+  \Description{System overview of LadderTeam. Left panel: wireframe screens, user, and LLM models feeding into one of three method branches (ACV, 5-Whys, JTBD). Center panel: vague seed extraction from the user's prior response followed by an MCQ clarification phase. Right panel: five-step per-turn loop comprising Extract, State Gate, Judge, Generate Question, and User Response steps, with Drift Guard and Abort Path guardrails. Natural termination produces the interview transcript, laddering chain, and PipelineReport.}
+  \label{fig:teaser}
+\end{teaserfigure}
+
+%% This command processes the author and affiliation and title
+%% information and builds the first part of the formatted document.
+\maketitle
+
+% --------------------------------------------------------------------------------------------------
+\section{Introduction}
+% --------------------------------------------------------------------------------------------------
+
+Software usability feedback is critical to identify bugs, assess overall usability, and collect ideas for new features~\cite{abedini_hybrid_2025, maalej_automated_2024}. While incredibly valuable, this feedback is often too vague for software developers, designers, or engineers to directly act on~\cite{folstad_users_2017, yusop_reporting_2017, galavi_online_2023}, often leaving responses such as, \textit{"This alert is useless"} or \textit{"The design is good"}. To collect usability feedback on software or applications, software teams leverage several common data collection techniques, including, but not limited to surveys or questionnaires~\cite{brooke_sus_1996}, focus groups (both in-person and online)~\cite{kontio_using_2004, galavi_online_2023}, and one-on-one interviews~\cite{rietz_ladderbot_2019, folstad_ladderchat_2025, maramba_methods_2019}. Surveys/questionnaires offer the advantage of scalable data collection, while focus groups offer the advantage of group ideation, but both lack a clear and effective method for clarifying vagueness in real-time. A common one-on-one interview technique, Laddering, addresses this limitation. Laddering is a structured interviewing technique that uses a series of directed probes to progressively surface the relationships between a user's stated problem, its functional implications, and the underlying goals or values driving them (e.g., a respondent states "The population health table on the dashboard is not surfacing the right data," which ladders up to a functional requirement of "Add height, weight, and BMI to the population health table" and an underlying value of "ensuring care management metrics are met for billing") — moving beyond what users volunteer upfront to uncover the richer structure of what they actually need~\cite{rugg_laddering_1995, reynolds_laddering_1988, corbridge_laddering_1994}. Laddering has been implemented as a knowledge elicitation interview technique across many domains including collecting medical student attitudes towards specific professional behaviors favored in medical doctors~\cite{miles_identifying_2010}, understanding effective teaching qualities of lectures in a university setting~\cite{voss_service_2007}, and collecting software requirements from users of an application (simulated through collecting common smartphone use cases)~\cite{rietz_ladderbot_2019}. More recently, Hanschmann et al.~\cite{folstad_ladderchat_2025} developed a conversational agent, LadderChat, to automate the Laddering interview process by tasking an LLM to act as the interviewer and collect information from participants on the topic of smartwatches. While preliminary, this work supports the use of LLMs to act as interviewers in Laddering interviews, which greatly reduces the manual burden of collecting software feedback and ensuring no vagueness exists in feedback~\cite{hamalainen_evaluating_2023, argyle_out_2023}. 
+%More broadly, LLMs have shown promise as qualitative research instruments both as interview conductors~\cite{hamalainen_evaluating_2023} and as synthetic participant simulators~\cite{argyle_out_2023}.
+%More recently, Hanschmann et al.~\cite{folstad_ladderchat_2025} developed a conversational agent, LadderChat, to automate the Laddering interview process by tasking an LLM to act as the interviewer and collect information from participants on the topic of smartwatches. While preliminary, this work supports the use of LLMs to act as interviewers in Laddering interviews, which greatly reduces the manual burden of collecting software feedback and ensuring no vagueness exists in said feedback. 
+%Different research objectives call for different probing strategies: ACV~\cite{gutman_means-end_1982} extracts design requirements, 5-Whys~\cite{ohno_toyota_2019} traces root causes, and JTBD~\cite{ulwick_what_2005} captures functional job stories — yet no unified open implementation supports all three.
+% In this work, we introduce a highly transparent and reproducible LLM-assisted laddering mechanism, that addresses the core limitation in granular and actionable software feedback data collection. This laddering mechanism is part of an LLM-assisted pipeline, CRAVES, which is not the core focus of this paper. CRAVES is composed of four LLM-assisted modules: (1) A \underline{C}ontextual \underline{R}elevance classifier that identifies if a given feedback response is addressing the informational intent of the original question; (2) an \underline{A}mbiguity and \underline{V}agueness classifier that flags phrases or sentences containing vague or ambiguous content; (3) an Information \underline{E}licitation module that tasks an LLM to conduct a laddering interview with a participant which clarifies any vagueness or ambiguity identified in (2) and ensures specific and actionable feedback data; and (4) a \underline{S}ummarization and refactorization module that tasks an LLM to extract any new and granular information elicited during the interview and reformats the initial feedback response to contain this new, granular information. This work focuses on the development and validation of the third module in this pipeline, Information Elicitation. 
+% This paper contributes: 
+% \begin{enumerate}
+%   \item a transparent and reproducible laddering mechansim that can be used as a standalone system or plugged into the CRAVES pipeline for a comprehensive software feedback collection pipeline;
+%   \item empirical evidence to validate the effectiveness of our laddering mechanism for clarifying vagueness or ambiguity in software feedback; and
+%   \item a publicly available data set of laddering transcripts used to validate our laddering mechanism to support to support reproducibility and future benchmarking\footnote{Laddering transcripts (7 personality, 1 rubric based consistency), wireframe,  and chatbot demo will be released on GitHub for public consumption among publications}
+% \end{enumerate}
+
+We present \textsc{LadderTeam}, an LLM-based scaffolding system for structured laddering interviews with users in software usability feedback contexts. Our study is scoped to this domain: participants view wireframe screens of a software product and respond to an LLM-moderated interview, with all methods, extractors, and Judge rubrics instantiated for software usability feedback. Our contributions are: 
+(1)~a unified interview engine supporting ACV, 5-Whys, and JTBD for software usability
+feedback, with a shared laddering seed-extraction and clarification phase and per-method state machine;
+(2)~a reproducible five-step per-turn loop with explicit state gating, drift detection, and abort logic;
+(3)~a background LLM Judge agent with Drift Guard and Abort Path guardrails that operate
+without interrupting the conversational flow; and
+(4)~preliminary evidence of high chain convergence rates and a working implementation of active Judge injection with Drift Guard and Abort Path guardrails across all three probing methods.
+
+% --------------------------------------------------------------------------------------------------
+\section{Methods \& Framework}
+% --------------------------------------------------------------------------------------------------
+
+LadderTeam employs a dual-agent architecture comprising two distinct LLM roles (Figure~\ref{fig:teaser}): an \emph{Interviewer} that actively conducts the user probing session and a background \emph{Judge} that silently evaluates every probe-response pair without interrupting the flow. To prevent evaluative bias from a fixed Judge, roles are reciprocally assigned: for cloud models, GPT-5.5 serves as Interviewer with Claude Sonnet~4.6 as Judge and vice-versa (local: Gemma4:12B/Qwen3.6:27B swapped accordingly).
+
+\subsection{Pre-Interview Setup}
+% Consider a typical software feedback setup where a participant is sent wireframe screens of a
+% product under evaluation and asked to share their initial impressions. The participant
+% gives a \emph{prior response}, an unprompted reaction to what they see. For the purposes
+% of this study, we assume all prior responses are vague and obtuse (e.g., ``I'm not sure,
+% something feels off but I can't quite say what''), reflecting real-world feedback that
+% lacks the specificity a design team can act on. This vagueness is what triggers the
+% interview protocol.
+
+%Consider a typical software usability evaluations, participants review wireframes then share initial, unprompted impressions. These initial responses are often vague (e.g., "Something feels off"), lacking the actionable specificity required by design teams. This inherent vague triggers the LadderTeam interview protocol.
+
+Consider a typical software usability evaluation: participants review wireframes and share initial, unprompted impressions, which are often vague (e.g., ``Something feels off'') and lack the actionable specificity design teams require, thus triggering the LadderTeam interview protocol.
+
+%Once a vague initial response is received, the facilitator (human actor) identifies a vague \emph{laddering seed}, a phrase selected by the facilitator, from the initial response, that is subject to multiple interpretations. 
+Once a vague initial response is received, the facilitator (human actor) identifies a \emph{laddering seed} from the initial response, which is a phrase subject to multiple interpretations. This seed, along with the initial response, wireframe image, and selected probing method, is passed to the Interviewer as the entry point for the
+session.
+
+The Interviewer begins with a mandatory clarification round, presenting the user with a four-option multiple-choice question to firmly anchor the conversational topic before laddering commences. The user's selection is logged as ``confirmed-concern'' and persists across all subsequent turns to prevent topic drift. A DecayingMemoryBuffer ($\lambda = 0.85$, max 20 turns) maintains the session history, caching the prior response. 
+%Following clarification, the structured Q\&A proceeds according to the selected probing method.
+
+\subsection{Probing Method}\label{sec:probing}
+The system routes the session through one of three probing methodologies, each governed by a dedicated extractor, questioner, and state machine (Table~\ref{tab:methods}). While we evaluated these methods independently to isolate their performance characteristics, in practice, the facilitator can select the probing method that best aligns with their specific research objectives.
+
+\begin{table}[t]
+\caption{Summary of the three probing methodologies. Label Description in Section~\ref{sec:probing}}
+\label{tab:methods}
+% \small
+\begin{tabular}{@{}p{1.5cm}p{1.5cm}p{1.8cm}p{1.7cm}@{}}
+\toprule
+Property               & ACV~\cite{gutman_means-end_1982}            & 5-Whys~\cite{ohno_toyota_2019}            & JTBD~\cite{ulwick_what_2005}              \\
+\midrule
+Labels      & A, C, V        & INT, ROOT         & S, J, O, B        \\
+Chain order & A$\to$C$\to$V & causal depth   & S$\to$J$\to$O$\to$B \\
+Termination & $\geq$1 each; C$\prec$V; d$\geq$3 & ROOT or depth & $\geq$1 each; S$\prec$J; d$\geq$3 \\
+Cycling guard & C $\geq$2 & 3-tier circularity & O $\geq$3 \\
+State class & \texttt{ChainState} & \texttt{FiveWhysState} & \texttt{JTBDState} \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\paragraph{ACV} is where the \texttt{ChainState} tracks observable UI elements [A] - the \textit{attribute}, functional or experiential UX impacts [C] - the \textit{consequence}, and actionable design requirements [V] - the \textit{value}~\cite{goodwin_designing_2011}. The value must be a concrete requirement (or set of requirements) that software teams can implement. The extractor is depth-aware at $C \geq 3$. Any required design directive is classified as~[V].
+
+\paragraph{5-Whys} is where the \texttt{FiveWhysState} maps a causal chain utilizing a semantic question ban and three-tier circularity detection. Responses indicating a domain departure are automatically promoted to ``root-cause'' at a depth~$\geq$4.
+%Domain-departure answers are auto-promoted to root-cause at depth~$\geq$4.
+
+\paragraph{JTBD (Jobs To Be Done)} is where the \texttt{JTBDState} isolates the situation or trigger [S], a solution-free functional objective [J], an Outcome-Driven Innovation outcome [O], and the underlying design friction [B]. The questioner strictly targets ``next-expected-level'', and the extractor remains locked to this target. The final artifact takes a standardized Job-Story form where it states ``When [S], I want to [J], so I can [O], but [B].'' 
+
+\subsection{Per-Turn Loop} \label{sec:loop}
+% Regardless of the active method, every probe and response exchange executes a rigid 5-step sequence (illustrated in Interview-Loop Per-Turn block in Figure~\ref{fig:teaser})is performed as follows:
+Regardless of the active method, every probe and response exchange executes a rigid 5-step sequence (Figure~\ref{fig:teaser}) as follows:
+
+(1)~\textbf{Extract} where an LLM classifies the user's answer into the method's specific label set as described in Table~\ref{tab:methods}, incorporating depth and target awareness.
+
+(2)~\textbf{State Gate} where authoritative and non-LLM programmatic logic evaluates state completion, circularity, and stall conditions.
+
+(3)~\textbf{Judge} where the background LLM scores the probe-response pair. When in active mode, the Judge's suggested tactic passes as a mandatory override into Step 4, otherwise scores are logged silently.
+%where the background LLM scores the probe-response pair. When in active mode, the Judge suggested tactic is passed as a mandatory override into Step 4.
+% where the background LLM scores the probe-response pair \& triggers a Drift Gaurd if it detects topic departure. For instance, if a probe asks about team workflows when the confirmed concern was specifically a UI layout issue. When operating in shadow-mode, the Judge scores the Interviewer's performance silently and does not influence the active session. When operating in active-mode, the Judge suggests a specific tactic for the next probe, which is then passed as mandatory override into Step 4.
+
+(4)~\textbf{Generate Question} where the Interviewer LLM formulates the next probe. In active mode, the Judge's feedback influences probe generation for the next round.
+%where the Interviewer LLM formulates the next probe.
+
+(5)~\textbf{User Response} where the user's response is appended to the DecayingMemoryBuffer and fed back into Step 1.
+
+This loop repeats until the state machine registers natural termination or an Abort Path is triggered.
+
+\subsection{Judge Agent \& Guardrails}
+While the Interviewer drives the session, the background Judge evaluates each exchange to prevent probing degradation such as generic or repetitive questions. Operating silently, the Judge supports shadow, active, and skip configurations. Each evaluation produces a \texttt{JudgeFeedback} record detailing ladder and deflection scores, unlock proximity, repetition flags, and suggested tactics.
+
+To maintain session integrity, the system utilizes structural guardrails. The Drift Guard injects a re-anchoring instruction upon detecting divergence from the confirmed concern, and an escalation flag fires after three consecutive identical tactics. This occurs if a probe asks about team workflows when the confirmed concern was specifically a UI layout issue. Finally, the programmatic State Gate triggers an Abort Path to forcefully exit the loop when identifying circularity or stall limits. Following the session, the system generates a comprehensive report detailing drift patterns, missed deepening opportunities, and the overall laddering efficiency.
+
+\begin{table*}[t]
+\caption{Evaluation results across 216 runs (2 GT-scripts(P1=Reluctant, P2=Terse) $\times$ 4 models $\times$ 3 methods $\times$ 3 UI scenarios $\times$ 3 iterations) where values are aggregated across 9 iterations per cell. $\uparrow$=higher is better; $\downarrow$=lower is better. \textcolor{red}{\textbf{Red values}} indicate poor performance. $^\dagger$Judge-dependent metrics reflect the specific model applied and may vary accordingly. Drift rate 0.00 across all runs.}
+\label{tab:results}
+\scriptsize
+\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}ll ccccccc ccccccc}
+\toprule
+& & \multicolumn{7}{c}{\textbf{P1 — Reluctant}} & \multicolumn{7}{c}{\textbf{P2 — Terse}} \\
+\cmidrule(lr){3-9}\cmidrule(lr){10-16}
+Method & Model
+  & Conv.$\uparrow$ & GT$\uparrow$ & Turns$\downarrow$ & $\eta$$\uparrow$ & Defl.$^\dagger$$\downarrow$ & Rep.$^\dagger$$\downarrow$ & Esc.$^\dagger$$\downarrow$
+  & Conv.$\uparrow$ & GT$\uparrow$ & Turns$\downarrow$ & $\eta$$\uparrow$ & Defl.$^\dagger$$\downarrow$ & Rep.$^\dagger$$\downarrow$ & Esc.$^\dagger$$\downarrow$ \\
+\midrule
+\multirow{4}{*}{ACV}
+ & Gemma4:12B     & 9/9 & 9/9          & 6.33 & 0.64 & 2.12 & 0.03 & 0/3
+              & 9/9 & 9/9          & 5.56 & 0.73 & 2.66 & 0.02 & 0/3 \\
+ & Qwen3.6:27B    & 9/9 & \bad{7/9}  & 5.11 & \bad{0.80} & 2.78 & 0.00 & 1/3
+              & 9/9 & 9/9          & 5.22 & 0.79 & 3.00 & 0.00 & 0/3 \\
+ & GPT-5.5    & 9/9 & 9/9          & 5.67 & 0.73 & 1.62 & 0.28 & 0/3
+              & 9/9 & 7/9          & 4.56 & 0.90 & 1.96 & 0.19 & 0/3 \\
+ & Sonnet~4.6 & 9/9 & 9/9          & 5.45 & 0.76 & 2.77 & 0.05 & 0/3
+              & 9/9 & \bad{5/9}  & 4.33 & \bad{0.89} & 2.75 & 0.14 & 0/3 \\
+\midrule
+\multirow{4}{*}{5-Whys}
+ & Gemma4:12B     & 9/9        & 9/9        & 7.00 & 0.59 & 2.68 & 0.14 & 1/3
+              & 9/9        & 8/9        & 4.78 & 0.87 & 2.81 & 0.00 & 0/3 \\
+ & Qwen3.6:27B    & \bad{7/9} & 7/9        & 9.00 & 0.48 & 2.68 & 0.09 & 3/3
+              & 9/9        & \bad{6/9} & 4.00 & \bad{1.00} & 3.00 & 0.00 & 0/3 \\
+ & GPT-5.5    & 9/9        & \bad{6/9} & 7.11 & 0.60 & 1.95 & 0.28 & 0/3
+              & 9/9        & \bad{6/9} & 4.00 & \bad{1.00} & 2.89 & 0.00 & 0/3 \\
+ & Sonnet~4.6 & 9/9        & \bad{4/9} & 5.45 & 0.77 & 2.47 & 0.14 & 0/3
+              & 9/9        & \bad{6/9} & 4.67 & \bad{0.87} & 2.90 & 0.04 & 0/3 \\
+\midrule
+\multirow{4}{*}{JTBD}
+ & Gemma4:12B     & 9/9 & 9/9        & 6.78 & 0.59 & 2.02 & 0.11 & 0/3
+              & 9/9 & \bad{5/9} & 7.67 & 0.53 & 1.96 & 0.02 & 0/3 \\
+ & Qwen3.6:27B    & 9/9 & \bad{6/9} & 6.00 & 0.68 & 2.47 & 0.00 & 0/3
+              & 9/9 & \bad{3/9} & 7.11 & 0.56 & 2.29 & 0.00 & 0/3 \\
+ & GPT-5.5    & 9/9 & 9/9        & 6.22 & 0.65 & 2.11 & 0.00 & 0/3
+              & 9/9 & 9/9        & 5.33 & 0.77 & 2.04 & 0.00 & 0/3 \\
+ & Sonnet~4.6 & 9/9 & 9/9        & 6.56 & 0.62 & 2.30 & 0.38 & 0/3
+              & 9/9 & 9/9        & 6.11 & 0.69 & 2.28 & 0.33 & 0/3 \\
+\midrule
+\multicolumn{2}{@{}l}{\emph{Overall}}
+ & 106/108 & 93/108 & 6.39 & 0.66 & 2.33 & 0.12 & 5 grps
+ & 108/108 & 82/108 & 5.28 & 0.80 & 2.54 & 0.06 & 0 grps \\
+\bottomrule
+\end{tabular*}
+\end{table*}
+% --------------------------------------------------------------------------------------------------
+\section{Results}
+% --------------------------------------------------------------------------------------------------
+
+\subsection{Experimental Setup}
+\subsubsection{General Setup}
+Evaluation of the LadderTeam framework occurred in two stages. We first validated the end-to-end conversational flow, state transitions and natural termination across all three probing methods through an interview session involving one human and seven persona-based agents as interviewees. All sessions terminated naturally and produced actionable laddering chains, confirming the system operates as intended. Full transcripts from this stage will be released upon acceptance. Following this baseline establishment, the evaluation transitioned to scripted ground-truth transcripts to eliminate user response variance. By holding the user response as constant, the interviewer becomes the sole experimental variable. We executed 216 total interviews spanning four interviewer models, three probing methods, and three UI issue scenarios utilizing the P1= Reluctant \& P2= Terse (2 possible extreme cases) personality-type ground-truth transcripts~\cite{costa_neo_2014}. 
+
+\subsubsection{Evaluation Metrics}
+The following eight metrics are used for evaluation (*=Judge-dependent):
+
+\begin{itemize}
+  \item \textbf{Convergence~(Conv.)}: Binary value per run, 1 if the interview reached natural termination, 0 if the Abort Path fired; reported as $k/9$.
+  %A binary value per run where 1 indicates the interview reached natural termination and 0 means the Abort Path fired. This is reported as and average of $k/3$ across runs.
+
+  \item \textbf{GT Response Match~(GT)}: Measures whether the interviewer elicited a response matching the ground-truth script, via normalized sequence ratio $r = 2M/T$ ($M$=matched chars, $T$=total chars); a turn passes if $r \geq 0.85$; reported as $k/9$.
+  %The primary metric verifying if the actual response matches the ground truth script using a normalized sequence ratio $r = 2M/T$ where $M$ represents matched characters and $T$ represents total characters. A turn passes if $r \geq 0.85$  and is reported as $k/3$ passing runs.
+
+  % \item \textbf{Category Match}: Evaluates whether extractor correctly labeled the response as $k/3$.
+
+  \item \textbf{Mean Turns~(Turns)}: Average turns to natural termination calculated as $\bar{t} = \frac{1}{3}\sum_{i=1}^{3} t_i$.
+
+  \item \textbf{Laddering Efficiency~($\eta$)}: Measures ratio of minimum required depth to actual turns as $\eta = \min((d_{\min}+1)/\bar{t},\,1)$ where $d_{\min}=3$ for all three methods.
+  %Measures the ratio of minimum required depth to actual turns calculated as $\eta = \min((d_{\min}+1)/\bar{t},\,1)$ where \text{min\_depth} is determined from the active method's state machine i.e., 3 for all three methods.
+
+  \item \textbf{Deflection Score*~(Defl.)}: Mean of Judge assigned score ranging from 0 for direct answer to 3 for stall or loop.
+  % Alex Revision - which is an averged score, assined by the Judge, ranging from 0-3 indicating the number of stalls or loops across transcripts
+
+  \item \textbf{Repetition Rate*~(Rep.)}: Proportion of reused probing tactics sourced from \texttt{repetition\_flag} in each turn's \texttt{JudgeFeedback} records.
+
+  \item \textbf{Escalation*~(Esc.)}: A binary flag triggered when the Judge observed 3 consecutive identical tactics.
+
+  \item \textbf{Drift Rate*}: Proportion of turns flagged by the Judge as departing from the confirmed concern.
+\end{itemize}
+
+% \subsubsection{Person Agents}\label{persona-agents}
+% For stage 1 evaluation of the piepeline, we developed seven synthetic personas calibrated using the Big Five OCEAN framework [add citation] to model common deflection strategies. These agents acted as interviewees and interacted with the interviewer model. The persona definition includes narrative backgrounds, behavioral rules, and session memory. The persona-agents \& deflection strategies will be available in the code repository upon acceptance.
+
+\subsubsection{Curated Ground-truth Script}
+For stage 2 of evaluation, the controlled simulation with pre-scripted transcripts dictating every user response turn-by-turn was utilized. These scripts encode two distinct deflection behaviors acting as strict probe quality gates. The STALL behavior activates when an interviewer issues a generic question without anchoring it in the user's words, causing the user to repeat a non-advancing response. The LOOP behavior activates when a probe fails to build upon a newly provided substantive answer, prompting the user to revert to earlier and more dismissive language. Effectively anchored probes advance the conversation while generic probes inevitably trigger a stall or loop. 
+%These scripts also incorporate rotation variants to simulate participant fatigue over time.
+
+\subsection{Observations}
+Table~\ref{tab:results} reports results across 216 runs. Interviewers reached a terminal chain state in 98.1\% for P1 scripted responses (106/108) \& 100\% for P2 responses (108/108). The only failure occurred in Qwen3.6:27B for 5-Whys, where successive why probes generated sufficient lexical overlap to prematurely trigger the state machine's circularity detector before root cause was confirmed. This is a probe quality failure rather than a structural depth ceiling. However, chain convergence does not guarantee reaching the actionable terminal value. The interviewer achieved 86.1\% and 75.9\% final value match against P1 and P2 respectively. The characteristic failure is high laddering efficiency $\eta=1.00$ paired with a low ground-truth match, indicating the interviewer accepted an intermediate chain node as the terminal instead of issuing the anchored probe required to elicit the ground-truth terminal response.
+
+ACV proved the most reliable strategy against both scripts P1 \& P2, achieving 94.4\% against P1 and 83.3\% against P2. The 5-Whys \& JTBD methods tied at 72.2\% against P2. The 5-Whys ceiling reflects interviewers prematurely accepting brief causal answers as root-cause, while JTBD performance was limited by Qwen3.6:27B failing to pursue the B-level unlock. Cloud models (GPT-5.5 \& Sonnet~4.6) reached 9/9 ground-truth match ceilings on JTBD against P2, whereas local models diverged sharply, with Qwen3.6:27B dropping to 3/9. However, both local models recovered to 9/9 for ACV against P2. Escalation defined as 3 consecutive identical probe tactics was triggered exclusively on 5-Whys against P1 for Qwen3.6:27B and Gemma4:12B. However, against P2, interviews naturally concluded in 4 to 5 turns, leaving insufficient time for escalation.
+ 
+ \section{Discussion}
+The results demonstrate that controlled simulation effectively isolates failure modes obscured in uncontrolled environments, especially in qualitative research. The critical performance signal lies in the gap between chain convergence (99.1\%) and ground-truth match (81.0\%). This gap reveals that state machines often prematurely accept brief, non-specific answers, exposing a flaw invisible to convergence metrics. While zero drift confirms wireframe stimuli provide robust contextual anchoring, GPT-5.5 exposed a hidden issue: it achieved a perfect GT match through aggressive, repetitive questioning rather than careful probing, a behavioral flaw detectable only via deflection and repetition metrics. The selection of a probing method should align with a specific research objective. ACV is optimal for early-stage discovery because it extracts actionable design requirements suitable for immediate integration. Conversely, 5-Whys uncovers systematic root causes of known friction and JTBD validates mid-development functional goals. 
+%A multi-metric surface of GT-match, deflection, and repetition is necessary to expose both termination failures and probing quality degradation.
+
+Future work of the framework extends across three primary directions. First, we will formally validate the Judge rubrics against human experts to ensure strict alignment with qualitative research standards. Second, we will aim to address the system's current sensitivity to vague seed input by exploring mechanisms that prevent weak inputs from generating shallow laddering chains. Finally, we plan to broaden the evaluation beyond single persona and wireframe to establish generalizability across diverse product domains, user demographics, and behavioral deflection styles.
+
+\section{Conclusion}
+We introduce \textbf{LadderTeam}, an automated, reproducible framework that scaffolds software usability laddering interviews by pairing an LLM interviewer with a concurrent background Judge. A controlled simulation evaluation across two personas yielded \textbf{99.1\% chain convergence and 81.0\% overall terminal response match}. ACV emerged as the most robust strategy across all simulations (94.4\% P1, 83.3\% P2), followed by JTBD (91.7\% P1, 72.2\% P2). However, a persistent premature termination failure mode demonstrated that convergence alone is an insufficient success metric. Ultimately, these findings position \textbf{LadderTeam} as an open, scalable LLM-assisted framework that resolves critical qualitative interview bottlenecks, empowering human experts to orchestrate deep qualitative UX research at scale.
+
+% Use Zotero "ACM SIGCHI 2016" citation
+\bibliographystyle{ACM-Reference-Format}
+\bibliography{main}
+
+
+%%
+%% If your work has an appendix, this is the place to put it.
+% \appendix
+
+% \section{Research Methods}
+
+\end{document}
+\endinput
+%%
+%% End of file `sigconf-authordraft.tex'.

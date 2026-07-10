@@ -1,0 +1,1153 @@
+{
+  "ground_truth": "u1_gt3",
+  "issue": "Price breakdown mixes 8\u201322px type \u2014 no typographic scale",
+  "groups": [
+    {
+      "model": "gemma4",
+      "method": "5whys",
+      "expected_terminal_category": "ROOT_CAUSE",
+      "convergence_rate": "3/3",
+      "all_converged": true,
+      "terminal_categories": [
+        "ROOT_CAUSE",
+        "ROOT_CAUSE",
+        "ROOT_CAUSE"
+      ],
+      "category_match_rate": "3/3",
+      "all_match_expected": true,
+      "categories_consistent": true,
+      "terminal_gt_match_rate": "3/3",
+      "all_gt_match": true,
+      "turn_counts": [
+        6,
+        6,
+        5
+      ],
+      "turn_count_mean": 5.667,
+      "turn_count_min": 5,
+      "turn_count_max": 6,
+      "turn_count_range": 1,
+      "mean_deflection_score_mean": 2.806,
+      "repetition_rate_mean": 0.0,
+      "escalation_triggered_any": false,
+      "laddering_efficiency_mean": 0.711,
+      "drift_rate_mean": 0.0,
+      "unlock_proximity_distribution_mean": {
+        "far": 0.0,
+        "approaching": 0.0,
+        "near": 3.67
+      },
+      "iterations": [
+        {
+          "file": "results_u1_5whys_gemma_gt3_reluctant_iter1.json",
+          "converged": true,
+          "terminal_category": "ROOT_CAUSE",
+          "terminal_gt_match": true,
+          "turn_count": 6,
+          "final_answer": "Something like \u2014 the total at 18 or 20 pixels, the line items all at 13 or 14 \u2014 the same, consistently \u2014 and anything secondary at 11. Three sizes, not five. The current mix of arbitrarily different sizes doesn't resolve into anything legible. You can't scan it. If you reduce it to a proper scale, the total stands out immediately and the rest reads as context, not competition. That's the standard. This doesn't meet it.",
+          "mean_deflection_score": 3.0,
+          "repetition_rate": 0.0,
+          "unlock_proximity_distribution": {
+            "far": 0,
+            "approaching": 0,
+            "near": 4
+          },
+          "escalation_triggered": false,
+          "escalation_at_turn": null,
+          "laddering_efficiency": 0.667,
+          "drift_rate": 0.0
+        },
+        {
+          "file": "results_u1_5whys_gemma_gt3_reluctant_iter2.json",
+          "converged": true,
+          "terminal_category": "ROOT_CAUSE",
+          "terminal_gt_match": true,
+          "turn_count": 6,
+          "final_answer": "Something like \u2014 the total at 18 or 20 pixels, the line items all at 13 or 14 \u2014 the same, consistently \u2014 and anything secondary at 11. Three sizes, not five. The current mix of arbitrarily different sizes doesn't resolve into anything legible. You can't scan it. If you reduce it to a proper scale, the total stands out immediately and the rest reads as context, not competition. That's the standard. This doesn't meet it.",
+          "mean_deflection_score": 2.75,
+          "repetition_rate": 0.0,
+          "unlock_proximity_distribution": {
+            "far": 0,
+            "approaching": 0,
+            "near": 4
+          },
+          "escalation_triggered": false,
+          "escalation_at_turn": null,
+          "laddering_efficiency": 0.667,
+          "drift_rate": 0.0
+        },
+        {
+          "file": "results_u1_5whys_gemma_gt3_reluctant_iter3.json",
+          "converged": true,
+          "terminal_category": "ROOT_CAUSE",
+          "terminal_gt_match": true,
+          "turn_count": 5,
+          "final_answer": "Something like \u2014 the total at 18 or 20 pixels, the line items all at 13 or 14 \u2014 the same, consistently \u2014 and anything secondary at 11. Three sizes, not five. The current mix of arbitrarily different sizes doesn't resolve into anything legible. You can't scan it. If you reduce it to a proper scale, the total stands out immediately and the rest reads as context, not competition. That's the standard. This doesn't meet it.",
+          "mean_deflection_score": 2.667,
+          "repetition_rate": 0.0,
+          "unlock_proximity_distribution": {
+            "far": 0,
+            "approaching": 0,
+            "near": 3
+          },
+          "escalation_triggered": false,
+          "escalation_at_turn": null,
+          "laddering_efficiency": 0.8,
+          "drift_rate": 0.0
+        }
+      ]
+    },
+    {
+      "model": "gemma4",
+      "method": "acv",
+      "expected_terminal_category": "V",
+      "convergence_rate": "3/3",
+      "all_converged": true,
+      "terminal_categories": [
+        "V",
+        "V",
+        "V"
+      ],
+      "category_match_rate": "3/3",
+      "all_match_expected": true,
+      "categories_consistent": true,
+      "terminal_gt_match_rate": "3/3",
+      "all_gt_match": true,
+      "turn_counts": [
+        6,
+        6,
+        6
+      ],
+      "turn_count_mean": 6.0,
+      "turn_count_min": 6,
+      "turn_count_max": 6,
+      "turn_count_range": 0,
+      "mean_deflection_score_mean": 2.167,
+      "repetition_rate_mean": 0.0,
+      "escalation_triggered_any": false,
+      "laddering_efficiency_mean": 0.667,
+      "drift_rate_mean": 0.0,
+      "unlock_proximity_distribution_mean": {
+        "far": 0.0,
+        "approaching": 1.33,
+        "near": 2.67
+      },
+      "iterations": [
+        {
+          "file": "results_u1_acv_gemma_gt3_reluctant_iter1.json",
+          "converged": true,
+          "terminal_category": "V",
+          "terminal_gt_match": true,
+          "turn_count": 6,
+          "final_answer": "What I meant was... the numbers should have a clearer relationship to each other in terms of size. The total should obviously be the most prominent \u2014 clearly larger than the rest. And the smaller details \u2014 the breakdown items, the labels \u2014 should all be clearly smaller. Right now it feels like there are too many different sizes and none of them explain themselves. If the total stood out immediately as the most important number, I'd have found it without reading anything around it.",
+          "mean_deflection_score": 2.5,
+          "repetition_rate": 0.0,
+          "unlock_proximity_distribution": {
+            "far": 0,
+            "approaching": 2,
+            "near": 2
+          },
+          "escalation_triggered": false,
+          "escalation_at_turn": null,
+          "laddering_efficiency": 0.667,
+          "drift_rate": 0.0
+        },
+        {
+          "file": "results_u1_acv_gemma_gt3_reluctant_iter2.json",
+          "converged": true,
+          "terminal_category": "V",
+          "terminal_gt_match": true,
+          "turn_count": 6,
+          "final_answer": "What I meant was... the numbers should have a clearer relationship to each other in terms of size. The total should obviously be the most prominent \u2014 clearly larger than the rest. And the smaller details \u2014 the breakdown items, the labels \u2014 should all be clearly smaller. Right now it feels like there are too many different sizes and none of them explain themselves. If the total stood out immediately as the most important number, I'd have found it without reading anything around it.",
+          "mean_deflection_score": 2.0,
+          "repetition_rate": 0.0,
+          "unlock_proximity_distribution": {
+            "far": 0,
+            "approaching": 1,
+            "near": 3
+          },
+          "escalation_triggered": false,
+          "escalation_at_turn": null,
+          "laddering_efficiency": 0.667,
+          "drift_rate": 0.0
+        },
+        {
+          "file": "results_u1_acv_gemma_gt3_reluctant_iter3.json",
+          "converged": true,
+          "terminal_category": "V",
+          "terminal_gt_match": true,
+          "turn_count": 6,
+          "final_answer": "What I meant was... the numbers should have a clearer relationship to each other in terms of size. The total should obviously be the most prominent \u2014 clearly larger than the rest. And the smaller details \u2014 the breakdown items, the labels \u2014 should all be clearly smaller. Right now it feels like there are too many different sizes and none of them explain themselves. If the total stood out immediately as the most important number, I'd have found it without reading anything around it.",
+          "mean_deflection_score": 2.0,
+          "repetition_rate": 0.0,
+          "unlock_proximity_distribution": {
+            "far": 0,
+            "approaching": 1,
+            "near": 3
+          },
+          "escalation_triggered": false,
+          "escalation_at_turn": null,
+          "laddering_efficiency": 0.667,
+          "drift_rate": 0.0
+        }
+      ]
+    },
+    {
+      "model": "gemma4",
+      "method": "jtbd",
+      "expected_terminal_category": "B",
+      "convergence_rate": "3/3",
+      "all_converged": true,
+      "terminal_categories": [
+        "B",
+        "B",
+        "B"
+      ],
+      "category_match_rate": "3/3",
+      "all_match_expected": true,
+      "categories_consistent": true,
+      "terminal_gt_match_rate": "3/3",
+      "all_gt_match": true,
+      "turn_counts": [
+        7,
+        7,
+        7
+      ],
+      "turn_count_mean": 7.0,
+      "turn_count_min": 7,
+      "turn_count_max": 7,
+      "turn_count_range": 0,
+      "mean_deflection_score_mean": 2.4,
+      "repetition_rate_mean": 0.333,
+      "escalation_triggered_any": false,
+      "laddering_efficiency_mean": 0.571,
+      "drift_rate_mean": 0.0,
+      "unlock_proximity_distribution_mean": {
+        "far": 1.0,
+        "approaching": 1.0,
+        "near": 3.0
+      },
+      "iterations": [
+        {
+          "file": "results_u1_jtbd_gemma_gt3_iter1.json",
+          "converged": true,
+          "terminal_category": "B",
+          "terminal_gt_match": true,
+          "turn_count": 7,
+          "final_answer": "The price section had several different text sizes, but they weren't arranged in a way that made the total obvious. I had to read through the labels \u2014 subtotal, tax, total \u2014 to figure out which number I was looking for. The total didn't stand out from the rest as obviously the most important number.",
+          "mean_deflection_score": 2.6,
+          "repetition_rate": 0.4,
+          "unlock_proximity_distribution": {
+            "far": 1,
+            "approaching": 1,
+            "near": 3
+          },
+          "escalation_triggered": false,
+          "escalation_at_turn": null,
+          "laddering_efficiency": 0.571,
+          "drift_rate": 0.0
+        },
+        {
+          "file": "results_u1_jtbd_gemma_gt3_iter2.json",
+          "converged": true,
+          "terminal_category": "B",
+          "terminal_gt_match": true,
+          "turn_count": 7,
+          "final_answer": "I'm not sure that's what was specifically bothering me. The issue was more about the sizes and how they were arranged \u2014 there weren't any clear visual cues to distinguish the total, like a different color or weight. But it wasn't just the fill either; the sizes themselves were all over the place, making it hard to spot the total at a glance.",
+          "mean_deflection_score": 2.4,
+          "repetition_rate": 0.0,
+          "unlock_proximity_distribution": {
+            "far": 1,
+            "approaching": 1,
+            "near": 3
+          },
+          "escalation_triggered": false,
+          "escalation_at_turn": null,
+          "laddering_efficiency": 0.571,
+          "drift_rate": 0.0
+        },
+        {
+          "file": "results_u1_jtbd_gemma_gt3_iter3.json",
+          "converged": true,
+          "terminal_category": "B",
+          "terminal_gt_match": true,
+          "turn_count": 7,
+          "final_answer": "The price section had several different text sizes, but they weren't arranged in a way that made the total obvious. I had to read through the labels \u2014 subtotal, tax, total \u2014 to figure out which number I was looking for. The total didn't stand out from the rest as obviously the most important number.",
+          "mean_deflection_score": 2.2,
+          "repetition_rate": 0.6,
+          "unlock_proximity_distribution": {
+            "far": 1,
+            "approaching": 1,
+            "near": 3
+          },
+          "escalation_triggered": false,
+          "escalation_at_turn": null,
+          "laddering_efficiency": 0.571,
+          "drift_rate": 0.0
+        }
+      ]
+    },
+    {
+      "model": "gpt5.5",
+      "method": "5whys",
+      "expected_terminal_category": "ROOT_CAUSE",
+      "convergence_rate": "3/3",
+      "all_converged": true,
+      "terminal_categories": [
+        "ROOT_CAUSE",
+        "ROOT_CAUSE",
+        "ROOT_CAUSE"
+      ],
+      "category_match_rate": "3/3",
+      "all_match_expected": true,
+      "categories_consistent": true,
+      "terminal_gt_match_rate": "2/3",
+      "all_gt_match": false,
+      "turn_counts": [
+        11,
+        6,
+        8
+      ],
+      "turn_count_mean": 8.333,
+      "turn_count_min": 6,
+      "turn_count_max": 11,
+      "turn_count_range": 5,
+      "mean_deflection_score_mean": 1.787,
+      "repetition_rate_mean": 0.352,
+      "escalation_triggered_any": false,
+      "laddering_efficiency_mean": 0.51,
+      "drift_rate_mean": 0.0,
+      "unlock_proximity_distribution_mean": {
+        "far": 0.0,
+        "approaching": 2.0,
+        "near": 4.33
+      },
+      "iterations": [
+        {
+          "file": "results_u1_5whys_iter1.json",
+          "converged": true,
+          "terminal_category": "ROOT_CAUSE",
+          "terminal_gt_match": true,
+          "turn_count": 11,
+          "final_answer": "Because the whole point of a price section is to let someone confirm the total before they commit. If the total isn't immediately readable \u2014 if you have to read through labels to find it \u2014 then the section is failing at its one job. The fix is direct: consolidate the type in that section to two or three sizes that mean something. The total in a clearly dominant size \u2014 something obviously larger than everything else. The breakdown line items all the same size, clearly smaller. Any secondary labels or footnotes smaller still. Right now there are five sizes and none of them are doing that work. Pick two or three and make them mean something. That's the root of it and the fix for it.",
+          "mean_deflection_score": 1.444,
+          "repetition_rate": 0.556,
+          "unlock_proximity_distribution": {
+            "far": 0,
+            "approaching": 3,
+            "near": 6
+          },
+          "escalation_triggered": false,
+          "escalation_at_turn": null,
+          "laddering_efficiency": 0.364,
+          "drift_rate": 0.0
+        },
+        {
+          "file": "results_u1_5whys_iter2.json",
+          "converged": true,
+          "terminal_category": "ROOT_CAUSE",
+          "terminal_gt_match": true,
+          "turn_count": 6,
+          "final_answer": "Because the whole point of a price section is to let someone confirm the total before they commit. If the total isn't immediately readable \u2014 if you have to read through labels to find it \u2014 then the section is failing at its one job. The fix is direct: consolidate the type in that section to two or three sizes that mean something. The total in a clearly dominant size \u2014 something obviously larger than everything else. The breakdown line items all the same size, clearly smaller. Any secondary labels or footnotes smaller still. Right now there are five sizes and none of them are doing that work. Pick two or three and make them mean something. That's the root of it and the fix for it.",
+          "mean_deflection_score": 2.25,
+          "repetition_rate": 0.0,
+          "unlock_proximity_distribution": {
+            "far": 0,
+            "approaching": 1,
+            "near": 3
+          },
+          "escalation_triggered": false,
+          "escalation_at_turn": null,
+          "laddering_efficiency": 0.667,
+          "drift_rate": 0.0
+        },
+        {
+          "file": "results_u1_5whys_iter3.json",
+          "converged": true,
+          "terminal_category": "ROOT_CAUSE",
+          "terminal_gt_match": false,
+          "turn_count": 8,
+          "final_answer": "I think most people \u2014 most of the time \u2014 don't read every label in a price section. They scan for the number that's obviously the total, because the total is the only number that matters for the decision. The typographic scale is supposed to guide that scan \u2014 the total most prominent, the breakdown items clearly smaller, everything else smaller still. If those sizes don't form a clear step, you've lost the signal that tells you which number to look at. For a price section \u2014 where the whole point is to confirm the total before committing \u2014 making that number hard to find at a glance feels like the design is working against the task.",
+          "mean_deflection_score": 1.667,
+          "repetition_rate": 0.5,
+          "unlock_proximity_distribution": {
+            "far": 0,
+            "approaching": 2,
+            "near": 4
+          },
+          "escalation_triggered": false,
+          "escalation_at_turn": null,
+          "laddering_efficiency": 0.5,
+          "drift_rate": 0.0
+        }
+      ]
+    },
+    {
+      "model": "gpt5.5",
+      "method": "acv",
+      "expected_terminal_category": "V",
+      "convergence_rate": "3/3",
+      "all_converged": true,
+      "terminal_categories": [
+        "V",
+        "V",
+        "V"
+      ],
+      "category_match_rate": "3/3",
+      "all_match_expected": true,
+      "categories_consistent": true,
+      "terminal_gt_match_rate": "3/3",
+      "all_gt_match": true,
+      "turn_counts": [
+        6,
+        4,
+        4
+      ],
+      "turn_count_mean": 4.667,
+      "turn_count_min": 4,
+      "turn_count_max": 6,
+      "turn_count_range": 2,
+      "mean_deflection_score_mean": 1.833,
+      "repetition_rate_mean": 0.167,
+      "escalation_triggered_any": false,
+      "laddering_efficiency_mean": 0.889,
+      "drift_rate_mean": 0.0,
+      "unlock_proximity_distribution_mean": {
+        "far": 0.0,
+        "approaching": 2.0,
+        "near": 0.67
+      },
+      "iterations": [
+        {
+          "file": "results_u1_acv_iter1.json",
+          "converged": true,
+          "terminal_category": "V",
+          "terminal_gt_match": true,
+          "turn_count": 6,
+          "final_answer": "\"The price section needs to work on fewer type sizes \u2014 maybe two or three that actually form a clear step. The total should be the largest \u2014 something obviously bigger than everything else, so you can find it without reading labels. The breakdown items and their amounts should all be the same smaller size \u2014 consistent, so they read as a group. And anything that's a footnote or a secondary detail should be smaller still. Right now there are too many in-between sizes that don't tell you anything about what's important. If the total were clearly the biggest number in that section, I'd have spotted it immediately and not needed to read through everything.\"",
+          "mean_deflection_score": 1.5,
+          "repetition_rate": 0.5,
+          "unlock_proximity_distribution": {
+            "far": 0,
+            "approaching": 2,
+            "near": 2
+          },
+          "escalation_triggered": false,
+          "escalation_at_turn": null,
+          "laddering_efficiency": 0.667,
+          "drift_rate": 0.0
+        },
+        {
+          "file": "results_u1_acv_iter2.json",
+          "converged": true,
+          "terminal_category": "V",
+          "terminal_gt_match": true,
+          "turn_count": 4,
+          "final_answer": "\"What I meant was... the numbers should have a clearer relationship to each other in terms of size. The total should obviously be the most prominent \u2014 clearly larger than the rest. And the smaller details \u2014 the breakdown items, the labels \u2014 should all be clearly smaller. Right now it feels like there are too many different sizes and none of them explain themselves. If the total stood out immediately as the most important number, I'd have found it without reading anything around it.\"",
+          "mean_deflection_score": 2.0,
+          "repetition_rate": 0.0,
+          "unlock_proximity_distribution": {
+            "far": 0,
+            "approaching": 2,
+            "near": 0
+          },
+          "escalation_triggered": false,
+          "escalation_at_turn": null,
+          "laddering_efficiency": 1.0,
+          "drift_rate": 0.0
+        },
+        {
+          "file": "results_u1_acv_iter3.json",
+          "converged": true,
+          "terminal_category": "V",
+          "terminal_gt_match": true,
+          "turn_count": 4,
+          "final_answer": "\"What I meant was... the numbers should have a clearer relationship to each other in terms of size. The total should obviously be the most prominent \u2014 clearly larger than the rest. And the smaller details \u2014 the breakdown items, the labels \u2014 should all be clearly smaller. Right now it feels like there are too many different sizes and none of them explain themselves. If the total stood out immediately as the most important number, I'd have found it without reading anything around it.\"",
+          "mean_deflection_score": 2.0,
+          "repetition_rate": 0.0,
+          "unlock_proximity_distribution": {
+            "far": 0,
+            "approaching": 2,
+            "near": 0
+          },
+          "escalation_triggered": false,
+          "escalation_at_turn": null,
+          "laddering_efficiency": 1.0,
+          "drift_rate": 0.0
+        }
+      ]
+    },
+    {
+      "model": "gpt5.5",
+      "method": "jtbd",
+      "expected_terminal_category": "B",
+      "convergence_rate": "3/3",
+      "all_converged": true,
+      "terminal_categories": [
+        "B",
+        "B",
+        "B"
+      ],
+      "category_match_rate": "3/3",
+      "all_match_expected": true,
+      "categories_consistent": true,
+      "terminal_gt_match_rate": "3/3",
+      "all_gt_match": true,
+      "turn_counts": [
+        6,
+        6,
+        6
+      ],
+      "turn_count_mean": 6.0,
+      "turn_count_min": 6,
+      "turn_count_max": 6,
+      "turn_count_range": 0,
+      "mean_deflection_score_mean": 2.0,
+      "repetition_rate_mean": 0.0,
+      "escalation_triggered_any": false,
+      "laddering_efficiency_mean": 0.667,
+      "drift_rate_mean": 0.0,
+      "unlock_proximity_distribution_mean": {
+        "far": 0.0,
+        "approaching": 2.67,
+        "near": 1.33
+      },
+      "iterations": [
+        {
+          "file": "results_u1_jtbd_iter1.json",
+          "converged": true,
+          "terminal_category": "B",
+          "terminal_gt_match": true,
+          "turn_count": 6,
+          "final_answer": "The price section used too many different text sizes \u2014 some large, some small, some in between \u2014 and none of them clearly meant 'this is the total, this is the number you need to confirm.' The total wasn't obviously larger than the breakdown items in a way I could spot without reading. The barrier is the sizing: no coherent scale means every number competes equally and I have to read labels to know what I'm looking at. The fix: reduce to two or three sizes that mean something \u2014 the total in a clearly dominant size, the breakdown items all the same smaller size, any secondary labels smaller still. If those sizes were deliberate, I'd have spotted the total immediately without reading anything around it.",
+          "mean_deflection_score": 2.0,
+          "repetition_rate": 0.0,
+          "unlock_proximity_distribution": {
+            "far": 0,
+            "approaching": 3,
+            "near": 1
+          },
+          "escalation_triggered": false,
+          "escalation_at_turn": null,
+          "laddering_efficiency": 0.667,
+          "drift_rate": 0.0
+        },
+        {
+          "file": "results_u1_jtbd_iter2.json",
+          "converged": true,
+          "terminal_category": "B",
+          "terminal_gt_match": true,
+          "turn_count": 6,
+          "final_answer": "The price section used too many different text sizes \u2014 some large, some small, some in between \u2014 and none of them clearly meant 'this is the total, this is the number you need to confirm.' The total wasn't obviously larger than the breakdown items in a way I could spot without reading. The barrier is the sizing: no coherent scale means every number competes equally and I have to read labels to know what I'm looking at. The fix: reduce to two or three sizes that mean something \u2014 the total in a clearly dominant size, the breakdown items all the same smaller size, any secondary labels smaller still. If those sizes were deliberate, I'd have spotted the total immediately without reading anything around it.",
+          "mean_deflection_score": 2.0,
+          "repetition_rate": 0.0,
+          "unlock_proximity_distribution": {
+            "far": 0,
+            "approaching": 2,
+            "near": 2
+          },
+          "escalation_triggered": false,
+          "escalation_at_turn": null,
+          "laddering_efficiency": 0.667,
+          "drift_rate": 0.0
+        },
+        {
+          "file": "results_u1_jtbd_iter3.json",
+          "converged": true,
+          "terminal_category": "B",
+          "terminal_gt_match": true,
+          "turn_count": 6,
+          "final_answer": "The price section used too many different text sizes \u2014 some large, some small, some in between \u2014 and none of them clearly meant 'this is the total, this is the number you need to confirm.' The total wasn't obviously larger than the breakdown items in a way I could spot without reading. The barrier is the sizing: no coherent scale means every number competes equally and I have to read labels to know what I'm looking at. The fix: reduce to two or three sizes that mean something \u2014 the total in a clearly dominant size, the breakdown items all the same smaller size, any secondary labels smaller still. If those sizes were deliberate, I'd have spotted the total immediately without reading anything around it.",
+          "mean_deflection_score": 2.0,
+          "repetition_rate": 0.0,
+          "unlock_proximity_distribution": {
+            "far": 0,
+            "approaching": 3,
+            "near": 1
+          },
+          "escalation_triggered": false,
+          "escalation_at_turn": null,
+          "laddering_efficiency": 0.667,
+          "drift_rate": 0.0
+        }
+      ]
+    },
+    {
+      "model": "qwen3.6",
+      "method": "5whys",
+      "expected_terminal_category": "ROOT_CAUSE",
+      "convergence_rate": "1/3",
+      "all_converged": false,
+      "terminal_categories": [
+        "ROOT_CAUSE",
+        "ROOT_CAUSE",
+        "ROOT_CAUSE"
+      ],
+      "category_match_rate": "3/3",
+      "all_match_expected": true,
+      "categories_consistent": true,
+      "terminal_gt_match_rate": "1/3",
+      "all_gt_match": false,
+      "turn_counts": [
+        7,
+        16,
+        13
+      ],
+      "turn_count_mean": 12.0,
+      "turn_count_min": 7,
+      "turn_count_max": 16,
+      "turn_count_range": 9,
+      "mean_deflection_score_mean": 2.71,
+      "repetition_rate_mean": 0.271,
+      "escalation_triggered_any": true,
+      "laddering_efficiency_mean": 0.376,
+      "drift_rate_mean": 0.0,
+      "unlock_proximity_distribution_mean": {
+        "far": 0.0,
+        "approaching": 1.67,
+        "near": 8.33
+      },
+      "iterations": [
+        {
+          "file": "results_u1_5whys_qwen_gt3_iter1.json",
+          "converged": true,
+          "terminal_category": "ROOT_CAUSE",
+          "terminal_gt_match": true,
+          "turn_count": 7,
+          "final_answer": "Something like \u2014 the total at 18 or 20 pixels, the line items all at 13 or 14 \u2014 the same, consistently \u2014 and anything secondary at 11. Three sizes, not five. The current mix of arbitrarily different sizes doesn't resolve into anything legible. You can't scan it. If you reduce it to a proper scale, the total stands out immediately and the rest reads as context, not competition. That's the standard. This doesn't meet it.",
+          "mean_deflection_score": 3.0,
+          "repetition_rate": 0.0,
+          "unlock_proximity_distribution": {
+            "far": 0,
+            "approaching": 0,
+            "near": 5
+          },
+          "escalation_triggered": false,
+          "escalation_at_turn": null,
+          "laddering_efficiency": 0.571,
+          "drift_rate": 0.0
+        },
+        {
+          "file": "results_u1_5whys_qwen_gt3_iter2.json",
+          "converged": false,
+          "terminal_category": "ROOT_CAUSE",
+          "terminal_gt_match": false,
+          "turn_count": 16,
+          "final_answer": "I'm aware I keep saying the same thing, but it really does come down to that \u2014 there were too many different sizes and none of them clearly meant \"this is the most important.\" I don't have a sharper way to phrase it.",
+          "mean_deflection_score": 2.857,
+          "repetition_rate": 0.357,
+          "unlock_proximity_distribution": {
+            "far": 0,
+            "approaching": 3,
+            "near": 11
+          },
+          "escalation_triggered": true,
+          "escalation_at_turn": 4,
+          "laddering_efficiency": 0.25,
+          "drift_rate": 0.0
+        },
+        {
+          "file": "results_u1_5whys_qwen_gt3_iter3.json",
+          "converged": false,
+          "terminal_category": "ROOT_CAUSE",
+          "terminal_gt_match": false,
+          "turn_count": 13,
+          "final_answer": "I guess if I think about it, it's probably the sizing \u2014 there were so many different text sizes in that section that none of them felt dominant. Size usually signals importance, I'd think, but it wasn't doing that here. Nothing was clearly the main number.",
+          "mean_deflection_score": 2.273,
+          "repetition_rate": 0.455,
+          "unlock_proximity_distribution": {
+            "far": 0,
+            "approaching": 2,
+            "near": 9
+          },
+          "escalation_triggered": true,
+          "escalation_at_turn": 4,
+          "laddering_efficiency": 0.308,
+          "drift_rate": 0.0
+        }
+      ]
+    },
+    {
+      "model": "qwen3.6",
+      "method": "acv",
+      "expected_terminal_category": "V",
+      "convergence_rate": "3/3",
+      "all_converged": true,
+      "terminal_categories": [
+        "V",
+        "V",
+        "V"
+      ],
+      "category_match_rate": "3/3",
+      "all_match_expected": true,
+      "categories_consistent": true,
+      "terminal_gt_match_rate": "3/3",
+      "all_gt_match": true,
+      "turn_counts": [
+        5,
+        6,
+        6
+      ],
+      "turn_count_mean": 5.667,
+      "turn_count_min": 5,
+      "turn_count_max": 6,
+      "turn_count_range": 1,
+      "mean_deflection_score_mean": 3.0,
+      "repetition_rate_mean": 0.0,
+      "escalation_triggered_any": false,
+      "laddering_efficiency_mean": 0.711,
+      "drift_rate_mean": 0.0,
+      "unlock_proximity_distribution_mean": {
+        "far": 0.0,
+        "approaching": 0.33,
+        "near": 3.33
+      },
+      "iterations": [
+        {
+          "file": "results_u1_acv_qwen_gt3_reluctant_iter1.json",
+          "converged": true,
+          "terminal_category": "V",
+          "terminal_gt_match": true,
+          "turn_count": 5,
+          "final_answer": "The price section needs to work on fewer type sizes \u2014 maybe two or three that actually form a clear step. The total should be the largest \u2014 something obviously bigger than everything else, so you can find it without reading labels. The breakdown items and their amounts should all be the same smaller size \u2014 consistent, so they read as a group. And anything that's a footnote or a secondary detail should be smaller still. Right now there are too many in-between sizes that don't tell you anything about what's important. If the total were clearly the biggest number in that section, I'd have spotted it immediately and not needed to read through everything.",
+          "mean_deflection_score": 3.0,
+          "repetition_rate": 0.0,
+          "unlock_proximity_distribution": {
+            "far": 0,
+            "approaching": 0,
+            "near": 3
+          },
+          "escalation_triggered": false,
+          "escalation_at_turn": null,
+          "laddering_efficiency": 0.8,
+          "drift_rate": 0.0
+        },
+        {
+          "file": "results_u1_acv_qwen_gt3_reluctant_iter2.json",
+          "converged": true,
+          "terminal_category": "V",
+          "terminal_gt_match": true,
+          "turn_count": 6,
+          "final_answer": "What I meant was... the numbers should have a clearer relationship to each other in terms of size. The total should obviously be the most prominent \u2014 clearly larger than the rest. And the smaller details \u2014 the breakdown items, the labels \u2014 should all be clearly smaller. Right now it feels like there are too many different sizes and none of them explain themselves. If the total stood out immediately as the most important number, I'd have found it without reading anything around it.",
+          "mean_deflection_score": 3.0,
+          "repetition_rate": 0.0,
+          "unlock_proximity_distribution": {
+            "far": 0,
+            "approaching": 1,
+            "near": 3
+          },
+          "escalation_triggered": false,
+          "escalation_at_turn": null,
+          "laddering_efficiency": 0.667,
+          "drift_rate": 0.0
+        },
+        {
+          "file": "results_u1_acv_qwen_gt3_reluctant_iter3.json",
+          "converged": true,
+          "terminal_category": "V",
+          "terminal_gt_match": true,
+          "turn_count": 6,
+          "final_answer": "What I meant was... the numbers should have a clearer relationship to each other in terms of size. The total should obviously be the most prominent \u2014 clearly larger than the rest. And the smaller details \u2014 the breakdown items, the labels \u2014 should all be clearly smaller. Right now it feels like there are too many different sizes and none of them explain themselves. If the total stood out immediately as the most important number, I'd have found it without reading anything around it.",
+          "mean_deflection_score": 3.0,
+          "repetition_rate": 0.0,
+          "unlock_proximity_distribution": {
+            "far": 0,
+            "approaching": 0,
+            "near": 4
+          },
+          "escalation_triggered": false,
+          "escalation_at_turn": null,
+          "laddering_efficiency": 0.667,
+          "drift_rate": 0.0
+        }
+      ]
+    },
+    {
+      "model": "qwen3.6",
+      "method": "jtbd",
+      "expected_terminal_category": "B",
+      "convergence_rate": "3/3",
+      "all_converged": true,
+      "terminal_categories": [
+        "B",
+        "B",
+        "B"
+      ],
+      "category_match_rate": "3/3",
+      "all_match_expected": true,
+      "categories_consistent": true,
+      "terminal_gt_match_rate": "2/3",
+      "all_gt_match": false,
+      "turn_counts": [
+        5,
+        7,
+        5
+      ],
+      "turn_count_mean": 5.667,
+      "turn_count_min": 5,
+      "turn_count_max": 7,
+      "turn_count_range": 2,
+      "mean_deflection_score_mean": 2.778,
+      "repetition_rate_mean": 0.0,
+      "escalation_triggered_any": false,
+      "laddering_efficiency_mean": 0.724,
+      "drift_rate_mean": 0.0,
+      "unlock_proximity_distribution_mean": {
+        "far": 0.0,
+        "approaching": 0.33,
+        "near": 3.33
+      },
+      "iterations": [
+        {
+          "file": "results_u1_jtbd_iter1.json",
+          "converged": true,
+          "terminal_category": "B",
+          "terminal_gt_match": true,
+          "turn_count": 5,
+          "final_answer": "Something like the total at 18 or 20 pixels \u2014 clearly the biggest number in that section. The line items all at 13 or 14, consistent \u2014 the same, so they read as a group. Secondary labels or footnotes at 11 or below. Three sizes, not five. The current mix of sizes doesn't resolve into anything you can scan. If it were reduced to a proper scale, the total would stand out immediately and everything else would read as context, not competition. That's the only fix needed.\"",
+          "mean_deflection_score": 2.333,
+          "repetition_rate": 0.0,
+          "unlock_proximity_distribution": {
+            "far": 0,
+            "approaching": 1,
+            "near": 2
+          },
+          "escalation_triggered": false,
+          "escalation_at_turn": null,
+          "laddering_efficiency": 0.8,
+          "drift_rate": 0.0
+        },
+        {
+          "file": "results_u1_jtbd_iter2.json",
+          "converged": true,
+          "terminal_category": "B",
+          "terminal_gt_match": true,
+          "turn_count": 7,
+          "final_answer": "The price section had several different text sizes, but they weren't arranged in a way that made the total obvious. I had to read through the labels \u2014 subtotal, tax, total \u2014 to figure out which number I was looking for. The total didn't stand out from the rest as obviously the most important number.\"",
+          "mean_deflection_score": 3.0,
+          "repetition_rate": 0.0,
+          "unlock_proximity_distribution": {
+            "far": 0,
+            "approaching": 0,
+            "near": 5
+          },
+          "escalation_triggered": false,
+          "escalation_at_turn": null,
+          "laddering_efficiency": 0.571,
+          "drift_rate": 0.0
+        },
+        {
+          "file": "results_u1_jtbd_iter3.json",
+          "converged": true,
+          "terminal_category": "B",
+          "terminal_gt_match": false,
+          "turn_count": 5,
+          "final_answer": "The total wasn't obviously larger than the other numbers \u2014 there were too many different sizes and none of them clearly meant \"this is the most important.\" The barrier is the sizing: no coherent scale means every number competes equally and I have to read labels to know what I'm looking at.",
+          "mean_deflection_score": 3.0,
+          "repetition_rate": 0.0,
+          "unlock_proximity_distribution": {
+            "far": 0,
+            "approaching": 0,
+            "near": 3
+          },
+          "escalation_triggered": false,
+          "escalation_at_turn": null,
+          "laddering_efficiency": 0.8,
+          "drift_rate": 0.0
+        }
+      ]
+    },
+    {
+      "model": "sonnet4.6",
+      "method": "5whys",
+      "expected_terminal_category": "ROOT_CAUSE",
+      "convergence_rate": "3/3",
+      "all_converged": true,
+      "terminal_categories": [
+        "ROOT_CAUSE",
+        "ROOT_CAUSE",
+        "ROOT_CAUSE"
+      ],
+      "category_match_rate": "3/3",
+      "all_match_expected": true,
+      "categories_consistent": true,
+      "terminal_gt_match_rate": "1/3",
+      "all_gt_match": false,
+      "turn_counts": [
+        4,
+        6,
+        5
+      ],
+      "turn_count_mean": 5.0,
+      "turn_count_min": 4,
+      "turn_count_max": 6,
+      "turn_count_range": 2,
+      "mean_deflection_score_mean": 2.667,
+      "repetition_rate_mean": 0.083,
+      "escalation_triggered_any": false,
+      "laddering_efficiency_mean": 0.822,
+      "drift_rate_mean": 0.0,
+      "unlock_proximity_distribution_mean": {
+        "far": 0.0,
+        "approaching": 0.67,
+        "near": 2.33
+      },
+      "iterations": [
+        {
+          "file": "results_u1_5whys_iter1.json",
+          "converged": true,
+          "terminal_category": "ROOT_CAUSE",
+          "terminal_gt_match": false,
+          "turn_count": 4,
+          "final_answer": "\"What I meant was... the numbers should have a clearer relationship to each other in terms of size. The total should obviously be the most prominent \u2014 clearly larger than the rest. And the smaller details \u2014 the breakdown items, the labels \u2014 should all be clearly smaller. Right now it feels like there are too many different sizes and none of them explain themselves. If the total stood out immediately as the most important number, I'd have found it without reading anything around it.\"",
+          "mean_deflection_score": 2.5,
+          "repetition_rate": 0.0,
+          "unlock_proximity_distribution": {
+            "far": 0,
+            "approaching": 1,
+            "near": 1
+          },
+          "escalation_triggered": false,
+          "escalation_at_turn": null,
+          "laddering_efficiency": 1.0,
+          "drift_rate": 0.0
+        },
+        {
+          "file": "results_u1_5whys_iter2.json",
+          "converged": true,
+          "terminal_category": "ROOT_CAUSE",
+          "terminal_gt_match": false,
+          "turn_count": 6,
+          "final_answer": "\"What I meant was... the numbers should have a clearer relationship to each other in terms of size. The total should obviously be the most prominent \u2014 clearly larger than the rest. And the smaller details \u2014 the breakdown items, the labels \u2014 should all be clearly smaller. Right now it feels like there are too many different sizes and none of them explain themselves. If the total stood out immediately as the most important number, I'd have found it without reading anything around it.\"",
+          "mean_deflection_score": 2.5,
+          "repetition_rate": 0.25,
+          "unlock_proximity_distribution": {
+            "far": 0,
+            "approaching": 1,
+            "near": 3
+          },
+          "escalation_triggered": false,
+          "escalation_at_turn": null,
+          "laddering_efficiency": 0.667,
+          "drift_rate": 0.0
+        },
+        {
+          "file": "results_u1_5whys_iter3.json",
+          "converged": true,
+          "terminal_category": "ROOT_CAUSE",
+          "terminal_gt_match": true,
+          "turn_count": 5,
+          "final_answer": "Because the whole point of a price section is to let someone confirm the total before they commit. If the total isn't immediately readable \u2014 if you have to read through labels to find it \u2014 then the section is failing at its one job. The fix is direct: consolidate the type in that section to two or three sizes that mean something. The total in a clearly dominant size \u2014 something obviously larger than everything else. The breakdown line items all the same size, clearly smaller. Any secondary labels or footnotes smaller still. Right now there are five sizes and none of them are doing that work. Pick two or three and make them mean something. That's the root of it and the fix for it.",
+          "mean_deflection_score": 3.0,
+          "repetition_rate": 0.0,
+          "unlock_proximity_distribution": {
+            "far": 0,
+            "approaching": 0,
+            "near": 3
+          },
+          "escalation_triggered": false,
+          "escalation_at_turn": null,
+          "laddering_efficiency": 0.8,
+          "drift_rate": 0.0
+        }
+      ]
+    },
+    {
+      "model": "sonnet4.6",
+      "method": "acv",
+      "expected_terminal_category": "V",
+      "convergence_rate": "3/3",
+      "all_converged": true,
+      "terminal_categories": [
+        "V",
+        "V",
+        "V"
+      ],
+      "category_match_rate": "3/3",
+      "all_match_expected": true,
+      "categories_consistent": true,
+      "terminal_gt_match_rate": "3/3",
+      "all_gt_match": true,
+      "turn_counts": [
+        5,
+        4,
+        5
+      ],
+      "turn_count_mean": 4.667,
+      "turn_count_min": 4,
+      "turn_count_max": 5,
+      "turn_count_range": 1,
+      "mean_deflection_score_mean": 2.889,
+      "repetition_rate_mean": 0.0,
+      "escalation_triggered_any": false,
+      "laddering_efficiency_mean": 0.867,
+      "drift_rate_mean": 0.0,
+      "unlock_proximity_distribution_mean": {
+        "far": 0.0,
+        "approaching": 1.0,
+        "near": 1.67
+      },
+      "iterations": [
+        {
+          "file": "results_u1_acv_iter1.json",
+          "converged": true,
+          "terminal_category": "V",
+          "terminal_gt_match": true,
+          "turn_count": 5,
+          "final_answer": "\"What I meant was... the numbers should have a clearer relationship to each other in terms of size. The total should obviously be the most prominent \u2014 clearly larger than the rest. And the smaller details \u2014 the breakdown items, the labels \u2014 should all be clearly smaller. Right now it feels like there are too many different sizes and none of them explain themselves. If the total stood out immediately as the most important number, I'd have found it without reading anything around it.\"",
+          "mean_deflection_score": 2.667,
+          "repetition_rate": 0.0,
+          "unlock_proximity_distribution": {
+            "far": 0,
+            "approaching": 1,
+            "near": 2
+          },
+          "escalation_triggered": false,
+          "escalation_at_turn": null,
+          "laddering_efficiency": 0.8,
+          "drift_rate": 0.0
+        },
+        {
+          "file": "results_u1_acv_iter2.json",
+          "converged": true,
+          "terminal_category": "V",
+          "terminal_gt_match": true,
+          "turn_count": 4,
+          "final_answer": "\"What I meant was... the numbers should have a clearer relationship to each other in terms of size. The total should obviously be the most prominent \u2014 clearly larger than the rest. And the smaller details \u2014 the breakdown items, the labels \u2014 should all be clearly smaller. Right now it feels like there are too many different sizes and none of them explain themselves. If the total stood out immediately as the most important number, I'd have found it without reading anything around it.\"",
+          "mean_deflection_score": 3.0,
+          "repetition_rate": 0.0,
+          "unlock_proximity_distribution": {
+            "far": 0,
+            "approaching": 1,
+            "near": 1
+          },
+          "escalation_triggered": false,
+          "escalation_at_turn": null,
+          "laddering_efficiency": 1.0,
+          "drift_rate": 0.0
+        },
+        {
+          "file": "results_u1_acv_iter3.json",
+          "converged": true,
+          "terminal_category": "V",
+          "terminal_gt_match": true,
+          "turn_count": 5,
+          "final_answer": "\"What I meant was... the numbers should have a clearer relationship to each other in terms of size. The total should obviously be the most prominent \u2014 clearly larger than the rest. And the smaller details \u2014 the breakdown items, the labels \u2014 should all be clearly smaller. Right now it feels like there are too many different sizes and none of them explain themselves. If the total stood out immediately as the most important number, I'd have found it without reading anything around it.\"",
+          "mean_deflection_score": 3.0,
+          "repetition_rate": 0.0,
+          "unlock_proximity_distribution": {
+            "far": 0,
+            "approaching": 1,
+            "near": 2
+          },
+          "escalation_triggered": false,
+          "escalation_at_turn": null,
+          "laddering_efficiency": 0.8,
+          "drift_rate": 0.0
+        }
+      ]
+    },
+    {
+      "model": "sonnet4.6",
+      "method": "jtbd",
+      "expected_terminal_category": "B",
+      "convergence_rate": "3/3",
+      "all_converged": true,
+      "terminal_categories": [
+        "B",
+        "B",
+        "B"
+      ],
+      "category_match_rate": "3/3",
+      "all_match_expected": true,
+      "categories_consistent": true,
+      "terminal_gt_match_rate": "3/3",
+      "all_gt_match": true,
+      "turn_counts": [
+        6,
+        6,
+        6
+      ],
+      "turn_count_mean": 6.0,
+      "turn_count_min": 6,
+      "turn_count_max": 6,
+      "turn_count_range": 0,
+      "mean_deflection_score_mean": 2.0,
+      "repetition_rate_mean": 0.583,
+      "escalation_triggered_any": false,
+      "laddering_efficiency_mean": 0.667,
+      "drift_rate_mean": 0.0,
+      "unlock_proximity_distribution_mean": {
+        "far": 0.67,
+        "approaching": 1.67,
+        "near": 1.67
+      },
+      "iterations": [
+        {
+          "file": "results_u1_jtbd_iter1.json",
+          "converged": true,
+          "terminal_category": "B",
+          "terminal_gt_match": true,
+          "turn_count": 6,
+          "final_answer": "The price section used too many different text sizes \u2014 some large, some small, some in between \u2014 and none of them clearly meant 'this is the total, this is the number you need to confirm.' The total wasn't obviously larger than the breakdown items in a way I could spot without reading. The barrier is the sizing: no coherent scale means every number competes equally and I have to read labels to know what I'm looking at. The fix: reduce to two or three sizes that mean something \u2014 the total in a clearly dominant size, the breakdown items all the same smaller size, any secondary labels smaller still. If those sizes were deliberate, I'd have spotted the total immediately without reading anything around it.",
+          "mean_deflection_score": 2.0,
+          "repetition_rate": 0.75,
+          "unlock_proximity_distribution": {
+            "far": 0,
+            "approaching": 2,
+            "near": 2
+          },
+          "escalation_triggered": false,
+          "escalation_at_turn": null,
+          "laddering_efficiency": 0.667,
+          "drift_rate": 0.0
+        },
+        {
+          "file": "results_u1_jtbd_iter2.json",
+          "converged": true,
+          "terminal_category": "B",
+          "terminal_gt_match": true,
+          "turn_count": 6,
+          "final_answer": "The price section used too many different text sizes \u2014 some large, some small, some in between \u2014 and none of them clearly meant 'this is the total, this is the number you need to confirm.' The total wasn't obviously larger than the breakdown items in a way I could spot without reading. The barrier is the sizing: no coherent scale means every number competes equally and I have to read labels to know what I'm looking at. The fix: reduce to two or three sizes that mean something \u2014 the total in a clearly dominant size, the breakdown items all the same smaller size, any secondary labels smaller still. If those sizes were deliberate, I'd have spotted the total immediately without reading anything around it.",
+          "mean_deflection_score": 1.75,
+          "repetition_rate": 0.75,
+          "unlock_proximity_distribution": {
+            "far": 1,
+            "approaching": 2,
+            "near": 1
+          },
+          "escalation_triggered": false,
+          "escalation_at_turn": null,
+          "laddering_efficiency": 0.667,
+          "drift_rate": 0.0
+        },
+        {
+          "file": "results_u1_jtbd_iter3.json",
+          "converged": true,
+          "terminal_category": "B",
+          "terminal_gt_match": true,
+          "turn_count": 6,
+          "final_answer": "The price section used too many different text sizes \u2014 some large, some small, some in between \u2014 and none of them clearly meant 'this is the total, this is the number you need to confirm.' The total wasn't obviously larger than the breakdown items in a way I could spot without reading. The barrier is the sizing: no coherent scale means every number competes equally and I have to read labels to know what I'm looking at. The fix: reduce to two or three sizes that mean something \u2014 the total in a clearly dominant size, the breakdown items all the same smaller size, any secondary labels smaller still. If those sizes were deliberate, I'd have spotted the total immediately without reading anything around it.",
+          "mean_deflection_score": 2.25,
+          "repetition_rate": 0.25,
+          "unlock_proximity_distribution": {
+            "far": 1,
+            "approaching": 1,
+            "near": 2
+          },
+          "escalation_triggered": false,
+          "escalation_at_turn": null,
+          "laddering_efficiency": 0.667,
+          "drift_rate": 0.0
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "total_groups": 12,
+    "fully_consistent_groups": "11/12",
+    "overall_convergence_rate": "34/36",
+    "overall_category_match_rate": "36/36",
+    "overall_gt_response_match_rate": "30/36"
+  }
+}

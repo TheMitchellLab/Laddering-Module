@@ -1,0 +1,1153 @@
+{
+  "ground_truth": "u1_gt2",
+  "issue": "'Continue Shopping' is the most dominant visual element",
+  "groups": [
+    {
+      "model": "gemma4",
+      "method": "5whys",
+      "expected_terminal_category": "ROOT_CAUSE",
+      "convergence_rate": "3/3",
+      "all_converged": true,
+      "terminal_categories": [
+        "ROOT_CAUSE",
+        "ROOT_CAUSE",
+        "ROOT_CAUSE"
+      ],
+      "category_match_rate": "3/3",
+      "all_match_expected": true,
+      "categories_consistent": true,
+      "terminal_gt_match_rate": "3/3",
+      "all_gt_match": true,
+      "turn_counts": [
+        7,
+        8,
+        7
+      ],
+      "turn_count_mean": 7.333,
+      "turn_count_min": 7,
+      "turn_count_max": 8,
+      "turn_count_range": 1,
+      "mean_deflection_score_mean": 2.522,
+      "repetition_rate_mean": 0.189,
+      "escalation_triggered_any": true,
+      "laddering_efficiency_mean": 0.547,
+      "drift_rate_mean": 0.0,
+      "unlock_proximity_distribution_mean": {
+        "far": 0.33,
+        "approaching": 0.33,
+        "near": 4.67
+      },
+      "iterations": [
+        {
+          "file": "run_20260620_174624.json",
+          "converged": true,
+          "terminal_category": "ROOT_CAUSE",
+          "terminal_gt_match": true,
+          "turn_count": 7,
+          "final_answer": "Because the whole point of that screen is to get someone to place an order. If the most visually prominent thing on the screen is the button that takes you away from placing an order \u2014 back to shopping \u2014 then the screen is working against itself. It's not just confusing. It's a broken hierarchy. The design is giving the most visual weight to the action that undoes the goal. The fix is direct: downgrade 'Continue Shopping' to a ghost button or a text link \u2014 something that reads as secondary, optional \u2014 and give 'Place Order' a solid fill color with enough contrast to be unmistakably the primary action. That's the root of it and the fix for it.",
+          "mean_deflection_score": 2.6,
+          "repetition_rate": 0.2,
+          "unlock_proximity_distribution": {
+            "far": 0,
+            "approaching": 0,
+            "near": 5
+          },
+          "escalation_triggered": true,
+          "escalation_at_turn": 4,
+          "laddering_efficiency": 0.571,
+          "drift_rate": 0.0
+        },
+        {
+          "file": "run_20260620_220558.json",
+          "converged": true,
+          "terminal_category": "ROOT_CAUSE",
+          "terminal_gt_match": true,
+          "turn_count": 8,
+          "final_answer": "Because the whole point of that screen is to get someone to place an order. If the most visually prominent thing on the screen is the button that takes you away from placing an order \u2014 back to shopping \u2014 then the screen is working against itself. It's not just confusing. It's a broken hierarchy. The design is giving the most visual weight to the action that undoes the goal. The fix is direct: downgrade 'Continue Shopping' to a ghost button or a text link \u2014 something that reads as secondary, optional \u2014 and give 'Place Order' a solid fill color with enough contrast to be unmistakably the primary action. That's the root of it and the fix for it.",
+          "mean_deflection_score": 2.167,
+          "repetition_rate": 0.167,
+          "unlock_proximity_distribution": {
+            "far": 1,
+            "approaching": 0,
+            "near": 5
+          },
+          "escalation_triggered": false,
+          "escalation_at_turn": null,
+          "laddering_efficiency": 0.5,
+          "drift_rate": 0.0
+        },
+        {
+          "file": "run_20260621_095046.json",
+          "converged": true,
+          "terminal_category": "ROOT_CAUSE",
+          "terminal_gt_match": true,
+          "turn_count": 7,
+          "final_answer": "Because the whole point of that screen is to get someone to place an order. If the most visually prominent thing on the screen is the button that takes you away from placing an order \u2014 back to shopping \u2014 then the screen is working against itself. It's not just confusing. It's a broken hierarchy. The design is giving the most visual weight to the action that undoes the goal. The fix is direct: downgrade 'Continue Shopping' to a ghost button or a text link \u2014 something that reads as secondary, optional \u2014 and give 'Place Order' a solid fill color with enough contrast to be unmistakably the primary action. That's the root of it and the fix for it.",
+          "mean_deflection_score": 2.8,
+          "repetition_rate": 0.2,
+          "unlock_proximity_distribution": {
+            "far": 0,
+            "approaching": 1,
+            "near": 4
+          },
+          "escalation_triggered": true,
+          "escalation_at_turn": 4,
+          "laddering_efficiency": 0.571,
+          "drift_rate": 0.0
+        }
+      ]
+    },
+    {
+      "model": "gemma4",
+      "method": "acv",
+      "expected_terminal_category": "V",
+      "convergence_rate": "3/3",
+      "all_converged": true,
+      "terminal_categories": [
+        "V",
+        "V",
+        "V"
+      ],
+      "category_match_rate": "3/3",
+      "all_match_expected": true,
+      "categories_consistent": true,
+      "terminal_gt_match_rate": "3/3",
+      "all_gt_match": true,
+      "turn_counts": [
+        7,
+        7,
+        7
+      ],
+      "turn_count_mean": 7.0,
+      "turn_count_min": 7,
+      "turn_count_max": 7,
+      "turn_count_range": 0,
+      "mean_deflection_score_mean": 1.933,
+      "repetition_rate_mean": 0.0,
+      "escalation_triggered_any": false,
+      "laddering_efficiency_mean": 0.571,
+      "drift_rate_mean": 0.0,
+      "unlock_proximity_distribution_mean": {
+        "far": 2.0,
+        "approaching": 1.67,
+        "near": 1.33
+      },
+      "iterations": [
+        {
+          "file": "run_20260619_150835.json",
+          "converged": true,
+          "terminal_category": "V",
+          "terminal_gt_match": true,
+          "turn_count": 7,
+          "final_answer": "'Continue Shopping' needs to be downgraded visually \u2014 made into a text link or a ghost outline, something that reads as secondary, an option rather than an action. And 'Place Order' needs a solid fill color with real contrast \u2014 something that immediately reads as 'this is the primary action, this is the step that finishes it.' If those two things were right \u2014 'Continue Shopping' quiet, 'Place Order' prominent \u2014 I'd have gone straight to the right button without any hesitation and not needed to re-read anything.",
+          "mean_deflection_score": 2.2,
+          "repetition_rate": 0.0,
+          "unlock_proximity_distribution": {
+            "far": 1,
+            "approaching": 2,
+            "near": 2
+          },
+          "escalation_triggered": false,
+          "escalation_at_turn": null,
+          "laddering_efficiency": 0.571,
+          "drift_rate": 0.0
+        },
+        {
+          "file": "run_20260619_223506.json",
+          "converged": true,
+          "terminal_category": "V",
+          "terminal_gt_match": true,
+          "turn_count": 7,
+          "final_answer": "'Continue Shopping' needs to be downgraded visually \u2014 made into a text link or a ghost outline, something that reads as secondary, an option rather than an action. And 'Place Order' needs a solid fill color with real contrast \u2014 something that immediately reads as 'this is the primary action, this is the step that finishes it.' If those two things were right \u2014 'Continue Shopping' quiet, 'Place Order' prominent \u2014 I'd have gone straight to the right button without any hesitation and not needed to re-read anything.",
+          "mean_deflection_score": 1.8,
+          "repetition_rate": 0.0,
+          "unlock_proximity_distribution": {
+            "far": 3,
+            "approaching": 2,
+            "near": 0
+          },
+          "escalation_triggered": false,
+          "escalation_at_turn": null,
+          "laddering_efficiency": 0.571,
+          "drift_rate": 0.0
+        },
+        {
+          "file": "run_20260619_233646.json",
+          "converged": true,
+          "terminal_category": "V",
+          "terminal_gt_match": true,
+          "turn_count": 7,
+          "final_answer": "'Continue Shopping' needs to be downgraded visually \u2014 made into a text link or a ghost outline, something that reads as secondary, an option rather than an action. And 'Place Order' needs a solid fill color with real contrast \u2014 something that immediately reads as 'this is the primary action, this is the step that finishes it.' If those two things were right \u2014 'Continue Shopping' quiet, 'Place Order' prominent \u2014 I'd have gone straight to the right button without any hesitation and not needed to re-read anything.",
+          "mean_deflection_score": 1.8,
+          "repetition_rate": 0.0,
+          "unlock_proximity_distribution": {
+            "far": 2,
+            "approaching": 1,
+            "near": 2
+          },
+          "escalation_triggered": false,
+          "escalation_at_turn": null,
+          "laddering_efficiency": 0.571,
+          "drift_rate": 0.0
+        }
+      ]
+    },
+    {
+      "model": "gemma4",
+      "method": "jtbd",
+      "expected_terminal_category": "B",
+      "convergence_rate": "3/3",
+      "all_converged": true,
+      "terminal_categories": [
+        "B",
+        "B",
+        "B"
+      ],
+      "category_match_rate": "3/3",
+      "all_match_expected": true,
+      "categories_consistent": true,
+      "terminal_gt_match_rate": "3/3",
+      "all_gt_match": true,
+      "turn_counts": [
+        6,
+        7,
+        6
+      ],
+      "turn_count_mean": 6.333,
+      "turn_count_min": 6,
+      "turn_count_max": 7,
+      "turn_count_range": 1,
+      "mean_deflection_score_mean": 1.667,
+      "repetition_rate_mean": 0.0,
+      "escalation_triggered_any": false,
+      "laddering_efficiency_mean": 0.635,
+      "drift_rate_mean": 0.0,
+      "unlock_proximity_distribution_mean": {
+        "far": 1.67,
+        "approaching": 0.33,
+        "near": 2.33
+      },
+      "iterations": [
+        {
+          "file": "run_20260621_105005.json",
+          "converged": true,
+          "terminal_category": "B",
+          "terminal_gt_match": true,
+          "turn_count": 6,
+          "final_answer": "'Continue Shopping' was styled as if it were the main action \u2014 more visual weight, more presence on the page than I'd expect for a button that takes you backward. 'Place Order' \u2014 the actual thing I needed to do \u2014 looked secondary by comparison. That's the barrier. The fix: downgrade 'Continue Shopping' to a ghost button or a text link, something that reads as optional. And give 'Place Order' a solid fill color with real contrast so it's unmistakably the primary action. If those two things were right \u2014 'Continue Shopping' quiet, 'Place Order' prominent \u2014 I'd have known immediately which was the right one without any hesitation.",
+          "mean_deflection_score": 1.75,
+          "repetition_rate": 0.0,
+          "unlock_proximity_distribution": {
+            "far": 2,
+            "approaching": 0,
+            "near": 2
+          },
+          "escalation_triggered": false,
+          "escalation_at_turn": null,
+          "laddering_efficiency": 0.667,
+          "drift_rate": 0.0
+        },
+        {
+          "file": "run_20260621_115109.json",
+          "converged": true,
+          "terminal_category": "B",
+          "terminal_gt_match": true,
+          "turn_count": 7,
+          "final_answer": "Continue Shopping' should look like a secondary action \u2014 a ghost outline or just linked text, something that reads as an option for if you change your mind. 'Place Order' should look like a filled button in a distinct color \u2014 the kind that reads as 'this is the final step.' Right now they don't communicate that difference at all. That's the only fix needed.",
+          "mean_deflection_score": 2.0,
+          "repetition_rate": 0.0,
+          "unlock_proximity_distribution": {
+            "far": 1,
+            "approaching": 1,
+            "near": 3
+          },
+          "escalation_triggered": false,
+          "escalation_at_turn": null,
+          "laddering_efficiency": 0.571,
+          "drift_rate": 0.0
+        },
+        {
+          "file": "run_20260621_135146.json",
+          "converged": true,
+          "terminal_category": "B",
+          "terminal_gt_match": true,
+          "turn_count": 6,
+          "final_answer": "'Continue Shopping' was styled as if it were the main action \u2014 more visual weight, more presence on the page than I'd expect for a button that takes you backward. 'Place Order' \u2014 the actual thing I needed to do \u2014 looked secondary by comparison. That's the barrier. The fix: downgrade 'Continue Shopping' to a ghost button or a text link, something that reads as optional. And give 'Place Order' a solid fill color with real contrast so it's unmistakably the primary action. If those two things were right \u2014 'Continue Shopping' quiet, 'Place Order' prominent \u2014 I'd have known immediately which was the right one without any hesitation.",
+          "mean_deflection_score": 1.25,
+          "repetition_rate": 0.0,
+          "unlock_proximity_distribution": {
+            "far": 2,
+            "approaching": 0,
+            "near": 2
+          },
+          "escalation_triggered": false,
+          "escalation_at_turn": null,
+          "laddering_efficiency": 0.667,
+          "drift_rate": 0.0
+        }
+      ]
+    },
+    {
+      "model": "gpt5.5",
+      "method": "5whys",
+      "expected_terminal_category": "ROOT_CAUSE",
+      "convergence_rate": "3/3",
+      "all_converged": true,
+      "terminal_categories": [
+        "ROOT_CAUSE",
+        "ROOT_CAUSE",
+        "ROOT_CAUSE"
+      ],
+      "category_match_rate": "3/3",
+      "all_match_expected": true,
+      "categories_consistent": true,
+      "terminal_gt_match_rate": "1/3",
+      "all_gt_match": false,
+      "turn_counts": [
+        6,
+        5,
+        5
+      ],
+      "turn_count_mean": 5.333,
+      "turn_count_min": 5,
+      "turn_count_max": 6,
+      "turn_count_range": 1,
+      "mean_deflection_score_mean": 2.0,
+      "repetition_rate_mean": 0.194,
+      "escalation_triggered_any": false,
+      "laddering_efficiency_mean": 0.756,
+      "drift_rate_mean": 0.0,
+      "unlock_proximity_distribution_mean": {
+        "far": 0.0,
+        "approaching": 2.0,
+        "near": 1.33
+      },
+      "iterations": [
+        {
+          "file": "results_u1_5whys_iter1.json",
+          "converged": true,
+          "terminal_category": "ROOT_CAUSE",
+          "terminal_gt_match": true,
+          "turn_count": 6,
+          "final_answer": "Because the whole point of that screen is to get someone to place an order. If the most visually prominent thing on the screen is the button that takes you away from placing an order \u2014 back to shopping \u2014 then the screen is working against itself. It's not just confusing. It's a broken hierarchy. The design is giving the most visual weight to the action that undoes the goal. The fix is direct: downgrade 'Continue Shopping' to a ghost button or a text link \u2014 something that reads as secondary, optional \u2014 and give 'Place Order' a solid fill color with enough contrast to be unmistakably the primary action. That's the root of it and the fix for it.",
+          "mean_deflection_score": 2.0,
+          "repetition_rate": 0.25,
+          "unlock_proximity_distribution": {
+            "far": 0,
+            "approaching": 2,
+            "near": 2
+          },
+          "escalation_triggered": false,
+          "escalation_at_turn": null,
+          "laddering_efficiency": 0.667,
+          "drift_rate": 0.0
+        },
+        {
+          "file": "results_u1_5whys_iter2.json",
+          "converged": true,
+          "terminal_category": "ROOT_CAUSE",
+          "terminal_gt_match": false,
+          "turn_count": 5,
+          "final_answer": "I think because buttons communicate priority through how they look. When you look at a screen, you're scanning for the most prominent thing and assuming that's the action you're supposed to take. A filled, visually heavy button says 'this is the one.' When the secondary button looks more prominent than the primary one, the signal is wrong \u2014 you go to the prominent button because that's what you're taught to do, essentially. The visual weight is supposed to match the importance of the action.",
+          "mean_deflection_score": 2.0,
+          "repetition_rate": 0.0,
+          "unlock_proximity_distribution": {
+            "far": 0,
+            "approaching": 2,
+            "near": 1
+          },
+          "escalation_triggered": false,
+          "escalation_at_turn": null,
+          "laddering_efficiency": 0.8,
+          "drift_rate": 0.0
+        },
+        {
+          "file": "results_u1_5whys_iter3.json",
+          "converged": true,
+          "terminal_category": "ROOT_CAUSE",
+          "terminal_gt_match": false,
+          "turn_count": 5,
+          "final_answer": "The fix is direct: downgrade 'Continue Shopping' to a ghost button or a text link \u2014 something that reads as secondary, optional \u2014 and give 'Place Order' a solid fill color with enough contrast to be unmistakably the primary action. That's the root of it and the fix for it.",
+          "mean_deflection_score": 2.0,
+          "repetition_rate": 0.333,
+          "unlock_proximity_distribution": {
+            "far": 0,
+            "approaching": 2,
+            "near": 1
+          },
+          "escalation_triggered": false,
+          "escalation_at_turn": null,
+          "laddering_efficiency": 0.8,
+          "drift_rate": 0.0
+        }
+      ]
+    },
+    {
+      "model": "gpt5.5",
+      "method": "acv",
+      "expected_terminal_category": "V",
+      "convergence_rate": "3/3",
+      "all_converged": true,
+      "terminal_categories": [
+        "V",
+        "V",
+        "V"
+      ],
+      "category_match_rate": "3/3",
+      "all_match_expected": true,
+      "categories_consistent": true,
+      "terminal_gt_match_rate": "3/3",
+      "all_gt_match": true,
+      "turn_counts": [
+        5,
+        7,
+        7
+      ],
+      "turn_count_mean": 6.333,
+      "turn_count_min": 5,
+      "turn_count_max": 7,
+      "turn_count_range": 2,
+      "mean_deflection_score_mean": 1.622,
+      "repetition_rate_mean": 0.511,
+      "escalation_triggered_any": false,
+      "laddering_efficiency_mean": 0.647,
+      "drift_rate_mean": 0.0,
+      "unlock_proximity_distribution_mean": {
+        "far": 0.0,
+        "approaching": 2.33,
+        "near": 2.0
+      },
+      "iterations": [
+        {
+          "file": "results_u1_acv_iter1.json",
+          "converged": true,
+          "terminal_category": "V",
+          "terminal_gt_match": true,
+          "turn_count": 5,
+          "final_answer": "'Continue Shopping' needs to be downgraded visually \u2014 made into a text link or a ghost outline, something that reads as secondary, an option rather than an action. And 'Place Order' needs a solid fill color with real contrast \u2014 something that immediately reads as 'this is the primary action, this is the step that finishes it.' If those two things were right \u2014 'Continue Shopping' quiet, 'Place Order' prominent \u2014 I'd have gone straight to the right button without any hesitation and not needed to re-read anything.",
+          "mean_deflection_score": 1.667,
+          "repetition_rate": 0.333,
+          "unlock_proximity_distribution": {
+            "far": 0,
+            "approaching": 2,
+            "near": 1
+          },
+          "escalation_triggered": false,
+          "escalation_at_turn": null,
+          "laddering_efficiency": 0.8,
+          "drift_rate": 0.0
+        },
+        {
+          "file": "results_u1_acv_iter2.json",
+          "converged": true,
+          "terminal_category": "V",
+          "terminal_gt_match": true,
+          "turn_count": 7,
+          "final_answer": "'Continue Shopping' needs to be downgraded visually \u2014 made into a text link or a ghost outline, something that reads as secondary, an option rather than an action. And 'Place Order' needs a solid fill color with real contrast \u2014 something that immediately reads as 'this is the primary action, this is the step that finishes it.' If those two things were right \u2014 'Continue Shopping' quiet, 'Place Order' prominent \u2014 I'd have gone straight to the right button without any hesitation and not needed to re-read anything.",
+          "mean_deflection_score": 1.6,
+          "repetition_rate": 0.6,
+          "unlock_proximity_distribution": {
+            "far": 0,
+            "approaching": 3,
+            "near": 2
+          },
+          "escalation_triggered": false,
+          "escalation_at_turn": null,
+          "laddering_efficiency": 0.571,
+          "drift_rate": 0.0
+        },
+        {
+          "file": "results_u1_acv_iter3.json",
+          "converged": true,
+          "terminal_category": "V",
+          "terminal_gt_match": true,
+          "turn_count": 7,
+          "final_answer": "What I meant was... the buttons should communicate their importance differently. The one that matters \u2014 'Place Order' \u2014 should look more important than the 'Continue Shopping' one. Right now they're almost the same weight, or 'Continue Shopping' feels heavier. If it were obvious which was the main action \u2014 one clearly the main action to finish, the other clearly optional \u2014 I'd have gone straight to the right one without thinking twice.",
+          "mean_deflection_score": 1.6,
+          "repetition_rate": 0.6,
+          "unlock_proximity_distribution": {
+            "far": 0,
+            "approaching": 2,
+            "near": 3
+          },
+          "escalation_triggered": false,
+          "escalation_at_turn": null,
+          "laddering_efficiency": 0.571,
+          "drift_rate": 0.0
+        }
+      ]
+    },
+    {
+      "model": "gpt5.5",
+      "method": "jtbd",
+      "expected_terminal_category": "B",
+      "convergence_rate": "3/3",
+      "all_converged": true,
+      "terminal_categories": [
+        "B",
+        "B",
+        "B"
+      ],
+      "category_match_rate": "3/3",
+      "all_match_expected": true,
+      "categories_consistent": true,
+      "terminal_gt_match_rate": "3/3",
+      "all_gt_match": true,
+      "turn_counts": [
+        7,
+        6,
+        6
+      ],
+      "turn_count_mean": 6.333,
+      "turn_count_min": 6,
+      "turn_count_max": 7,
+      "turn_count_range": 1,
+      "mean_deflection_score_mean": 2.167,
+      "repetition_rate_mean": 0.0,
+      "escalation_triggered_any": false,
+      "laddering_efficiency_mean": 0.635,
+      "drift_rate_mean": 0.0,
+      "unlock_proximity_distribution_mean": {
+        "far": 1.0,
+        "approaching": 2.67,
+        "near": 0.67
+      },
+      "iterations": [
+        {
+          "file": "results_u1_jtbd_iter1.json",
+          "converged": true,
+          "terminal_category": "B",
+          "terminal_gt_match": true,
+          "turn_count": 7,
+          "final_answer": "'Continue Shopping' was styled as if it were the main action \u2014 more visual weight, more presence on the page than I'd expect for a button that takes you backward. 'Place Order' \u2014 the actual thing I needed to do \u2014 looked secondary by comparison. That's the barrier. The fix: downgrade 'Continue Shopping' to a ghost button or a text link, something that reads as optional. And give 'Place Order' a solid fill color with real contrast so it's unmistakably the primary action. If those two things were right \u2014 'Continue Shopping' quiet, 'Place Order' prominent \u2014 I'd have known immediately which was the right one without any hesitation.",
+          "mean_deflection_score": 2.0,
+          "repetition_rate": 0.0,
+          "unlock_proximity_distribution": {
+            "far": 1,
+            "approaching": 4,
+            "near": 0
+          },
+          "escalation_triggered": false,
+          "escalation_at_turn": null,
+          "laddering_efficiency": 0.571,
+          "drift_rate": 0.0
+        },
+        {
+          "file": "results_u1_jtbd_iter2.json",
+          "converged": true,
+          "terminal_category": "B",
+          "terminal_gt_match": true,
+          "turn_count": 6,
+          "final_answer": "'Continue Shopping' was styled as if it were the main action \u2014 more visual weight, more presence on the page than I'd expect for a button that takes you backward. 'Place Order' \u2014 the actual thing I needed to do \u2014 looked secondary by comparison. That's the barrier. The fix: downgrade 'Continue Shopping' to a ghost button or a text link, something that reads as optional. And give 'Place Order' a solid fill color with real contrast so it's unmistakably the primary action. If those two things were right \u2014 'Continue Shopping' quiet, 'Place Order' prominent \u2014 I'd have known immediately which was the right one without any hesitation.",
+          "mean_deflection_score": 2.25,
+          "repetition_rate": 0.0,
+          "unlock_proximity_distribution": {
+            "far": 1,
+            "approaching": 2,
+            "near": 1
+          },
+          "escalation_triggered": false,
+          "escalation_at_turn": null,
+          "laddering_efficiency": 0.667,
+          "drift_rate": 0.0
+        },
+        {
+          "file": "results_u1_jtbd_iter3.json",
+          "converged": true,
+          "terminal_category": "B",
+          "terminal_gt_match": true,
+          "turn_count": 6,
+          "final_answer": "'Continue Shopping' was styled as if it were the main action \u2014 more visual weight, more presence on the page than I'd expect for a button that takes you backward. 'Place Order' \u2014 the actual thing I needed to do \u2014 looked secondary by comparison. That's the barrier. The fix: downgrade 'Continue Shopping' to a ghost button or a text link, something that reads as optional. And give 'Place Order' a solid fill color with real contrast so it's unmistakably the primary action. If those two things were right \u2014 'Continue Shopping' quiet, 'Place Order' prominent \u2014 I'd have known immediately which was the right one without any hesitation.",
+          "mean_deflection_score": 2.25,
+          "repetition_rate": 0.0,
+          "unlock_proximity_distribution": {
+            "far": 1,
+            "approaching": 2,
+            "near": 1
+          },
+          "escalation_triggered": false,
+          "escalation_at_turn": null,
+          "laddering_efficiency": 0.667,
+          "drift_rate": 0.0
+        }
+      ]
+    },
+    {
+      "model": "qwen3.6",
+      "method": "5whys",
+      "expected_terminal_category": "ROOT_CAUSE",
+      "convergence_rate": "3/3",
+      "all_converged": true,
+      "terminal_categories": [
+        "ROOT_CAUSE",
+        "ROOT_CAUSE",
+        "ROOT_CAUSE"
+      ],
+      "category_match_rate": "3/3",
+      "all_match_expected": true,
+      "categories_consistent": true,
+      "terminal_gt_match_rate": "3/3",
+      "all_gt_match": true,
+      "turn_counts": [
+        8,
+        7,
+        8
+      ],
+      "turn_count_mean": 7.667,
+      "turn_count_min": 7,
+      "turn_count_max": 8,
+      "turn_count_range": 1,
+      "mean_deflection_score_mean": 3.0,
+      "repetition_rate_mean": 0.0,
+      "escalation_triggered_any": true,
+      "laddering_efficiency_mean": 0.524,
+      "drift_rate_mean": 0.0,
+      "unlock_proximity_distribution_mean": {
+        "far": 0.0,
+        "approaching": 0.67,
+        "near": 5.0
+      },
+      "iterations": [
+        {
+          "file": "run_20260622_054916.json",
+          "converged": true,
+          "terminal_category": "ROOT_CAUSE",
+          "terminal_gt_match": true,
+          "turn_count": 8,
+          "final_answer": "Because the whole point of that screen is to get someone to place an order. If the most visually prominent thing on the screen is the button that takes you away from placing an order \u2014 back to shopping \u2014 then the screen is working against itself. It's not just confusing. It's a broken hierarchy. The design is giving the most visual weight to the action that undoes the goal. The fix is direct: downgrade 'Continue Shopping' to a ghost button or a text link \u2014 something that reads as secondary, optional \u2014 and give 'Place Order' a solid fill color with enough contrast to be unmistakably the primary action. That's the root of it and the fix for it.",
+          "mean_deflection_score": 3.0,
+          "repetition_rate": 0.0,
+          "unlock_proximity_distribution": {
+            "far": 0,
+            "approaching": 0,
+            "near": 6
+          },
+          "escalation_triggered": true,
+          "escalation_at_turn": 7,
+          "laddering_efficiency": 0.5,
+          "drift_rate": 0.0
+        },
+        {
+          "file": "run_20260622_062249.json",
+          "converged": true,
+          "terminal_category": "ROOT_CAUSE",
+          "terminal_gt_match": true,
+          "turn_count": 7,
+          "final_answer": "Because the whole point of that screen is to get someone to place an order. If the most visually prominent thing on the screen is the button that takes you away from placing an order \u2014 back to shopping \u2014 then the screen is working against itself. It's not just confusing. It's a broken hierarchy. The design is giving the most visual weight to the action that undoes the goal. The fix is direct: downgrade 'Continue Shopping' to a ghost button or a text link \u2014 something that reads as secondary, optional \u2014 and give 'Place Order' a solid fill color with enough contrast to be unmistakably the primary action. That's the root of it and the fix for it.",
+          "mean_deflection_score": 3.0,
+          "repetition_rate": 0.0,
+          "unlock_proximity_distribution": {
+            "far": 0,
+            "approaching": 1,
+            "near": 4
+          },
+          "escalation_triggered": false,
+          "escalation_at_turn": null,
+          "laddering_efficiency": 0.571,
+          "drift_rate": 0.0
+        },
+        {
+          "file": "run_20260622_081852.json",
+          "converged": true,
+          "terminal_category": "ROOT_CAUSE",
+          "terminal_gt_match": true,
+          "turn_count": 8,
+          "final_answer": "Because the whole point of that screen is to get someone to place an order. If the most visually prominent thing on the screen is the button that takes you away from placing an order \u2014 back to shopping \u2014 then the screen is working against itself. It's not just confusing. It's a broken hierarchy. The design is giving the most visual weight to the action that undoes the goal. The fix is direct: downgrade 'Continue Shopping' to a ghost button or a text link \u2014 something that reads as secondary, optional \u2014 and give 'Place Order' a solid fill color with enough contrast to be unmistakably the primary action. That's the root of it and the fix for it.",
+          "mean_deflection_score": 3.0,
+          "repetition_rate": 0.0,
+          "unlock_proximity_distribution": {
+            "far": 0,
+            "approaching": 1,
+            "near": 5
+          },
+          "escalation_triggered": false,
+          "escalation_at_turn": null,
+          "laddering_efficiency": 0.5,
+          "drift_rate": 0.0
+        }
+      ]
+    },
+    {
+      "model": "qwen3.6",
+      "method": "acv",
+      "expected_terminal_category": "V",
+      "convergence_rate": "3/3",
+      "all_converged": true,
+      "terminal_categories": [
+        "V",
+        "V",
+        "V"
+      ],
+      "category_match_rate": "3/3",
+      "all_match_expected": true,
+      "categories_consistent": true,
+      "terminal_gt_match_rate": "1/3",
+      "all_gt_match": false,
+      "turn_counts": [
+        5,
+        4,
+        4
+      ],
+      "turn_count_mean": 4.333,
+      "turn_count_min": 4,
+      "turn_count_max": 5,
+      "turn_count_range": 1,
+      "mean_deflection_score_mean": 3.0,
+      "repetition_rate_mean": 0.0,
+      "escalation_triggered_any": false,
+      "laddering_efficiency_mean": 0.933,
+      "drift_rate_mean": 0.0,
+      "unlock_proximity_distribution_mean": {
+        "far": 0.0,
+        "approaching": 0.33,
+        "near": 2.0
+      },
+      "iterations": [
+        {
+          "file": "run_20260621_230107.json",
+          "converged": true,
+          "terminal_category": "V",
+          "terminal_gt_match": true,
+          "turn_count": 5,
+          "final_answer": "'Continue Shopping' needs to be downgraded visually \u2014 made into a text link or a ghost outline, something that reads as secondary, an option rather than an action. And 'Place Order' needs a solid fill color with real contrast \u2014 something that immediately reads as 'this is the primary action, this is the step that finishes it.' If those two things were right \u2014 'Continue Shopping' quiet, 'Place Order' prominent \u2014 I'd have gone straight to the right button without any hesitation and not needed to re-read anything.",
+          "mean_deflection_score": 3.0,
+          "repetition_rate": 0.0,
+          "unlock_proximity_distribution": {
+            "far": 0,
+            "approaching": 0,
+            "near": 3
+          },
+          "escalation_triggered": false,
+          "escalation_at_turn": null,
+          "laddering_efficiency": 0.8,
+          "drift_rate": 0.0
+        },
+        {
+          "file": "run_20260621_232911.json",
+          "converged": true,
+          "terminal_category": "V",
+          "terminal_gt_match": false,
+          "turn_count": 4,
+          "final_answer": "I think \u2014 yes, probably? If 'Place Order' had a solid background and 'Continue Shopping' was the quieter one, that would probably clear up the confusion. Though I'm not certain that's all there is to it. Like, there might be something else I'm not thinking of. It's hard to say without seeing what that would actually look like.",
+          "mean_deflection_score": 3.0,
+          "repetition_rate": 0.0,
+          "unlock_proximity_distribution": {
+            "far": 0,
+            "approaching": 0,
+            "near": 2
+          },
+          "escalation_triggered": false,
+          "escalation_at_turn": null,
+          "laddering_efficiency": 1.0,
+          "drift_rate": 0.0
+        },
+        {
+          "file": "run_20260621_235205.json",
+          "converged": true,
+          "terminal_category": "V",
+          "terminal_gt_match": false,
+          "turn_count": 4,
+          "final_answer": "I think \u2014 yes, probably? If 'Place Order' had a solid background and 'Continue Shopping' was the quieter one, that would probably clear up the confusion. Though I'm not certain that's all there is to it. Like, there might be something else I'm not thinking of. It's hard to say without seeing what that would actually look like.",
+          "mean_deflection_score": 3.0,
+          "repetition_rate": 0.0,
+          "unlock_proximity_distribution": {
+            "far": 0,
+            "approaching": 1,
+            "near": 1
+          },
+          "escalation_triggered": false,
+          "escalation_at_turn": null,
+          "laddering_efficiency": 1.0,
+          "drift_rate": 0.0
+        }
+      ]
+    },
+    {
+      "model": "qwen3.6",
+      "method": "jtbd",
+      "expected_terminal_category": "B",
+      "convergence_rate": "3/3",
+      "all_converged": true,
+      "terminal_categories": [
+        "B",
+        "B",
+        "B"
+      ],
+      "category_match_rate": "3/3",
+      "all_match_expected": true,
+      "categories_consistent": true,
+      "terminal_gt_match_rate": "1/3",
+      "all_gt_match": false,
+      "turn_counts": [
+        5,
+        7,
+        7
+      ],
+      "turn_count_mean": 6.333,
+      "turn_count_min": 5,
+      "turn_count_max": 7,
+      "turn_count_range": 2,
+      "mean_deflection_score_mean": 2.511,
+      "repetition_rate_mean": 0.0,
+      "escalation_triggered_any": false,
+      "laddering_efficiency_mean": 0.647,
+      "drift_rate_mean": 0.0,
+      "unlock_proximity_distribution_mean": {
+        "far": 0.0,
+        "approaching": 1.67,
+        "near": 2.67
+      },
+      "iterations": [
+        {
+          "file": "results_u1_jtbd_qwen_gt2_iter1.json",
+          "converged": true,
+          "terminal_category": "B",
+          "terminal_gt_match": true,
+          "turn_count": 5,
+          "final_answer": "'Continue Shopping' was styled as if it were the main action \u2014 more visual weight, more presence on the page than I'd expect for a button that takes you backward. 'Place Order' \u2014 the actual thing I needed to do \u2014 looked secondary by comparison. That's the barrier. The fix: downgrade 'Continue Shopping' to a ghost button or a text link, something that reads as optional. And give 'Place Order' a solid fill color with real contrast so it's unmistakably the primary action. If those two things were right \u2014 'Continue Shopping' quiet, 'Place Order' prominent \u2014 I'd have known immediately which was the right one without any hesitation.",
+          "mean_deflection_score": 2.333,
+          "repetition_rate": 0.0,
+          "unlock_proximity_distribution": {
+            "far": 0,
+            "approaching": 1,
+            "near": 2
+          },
+          "escalation_triggered": false,
+          "escalation_at_turn": null,
+          "laddering_efficiency": 0.8,
+          "drift_rate": 0.0
+        },
+        {
+          "file": "results_u1_jtbd_qwen_gt2_iter2.json",
+          "converged": true,
+          "terminal_category": "B",
+          "terminal_gt_match": false,
+          "turn_count": 7,
+          "final_answer": "'Place Order' was styled as if it were the main action \u2014 more visual weight, more presence on the page than I'd expect for a button that takes you forward. 'Continue Shopping' \u2014 the actual thing I needed to do \u2014 looked secondary by comparison. That's the barrier. The fix: downgrade 'Continue Shopping' to a ghost button or a text link, something that reads as optional. And give 'Place Order' a solid fill color with real contrast so it's unmistakably the primary action. If those two things were right \u2014 'Continue Shopping' quiet, 'Place Order' prominent \u2014 I'd have known immediately which was the right one without any hesitation.",
+          "mean_deflection_score": 2.6,
+          "repetition_rate": 0.0,
+          "unlock_proximity_distribution": {
+            "far": 0,
+            "approaching": 1,
+            "near": 4
+          },
+          "escalation_triggered": false,
+          "escalation_at_turn": null,
+          "laddering_efficiency": 0.571,
+          "drift_rate": 0.0
+        },
+        {
+          "file": "results_u1_jtbd_qwen_gt2_iter3.json",
+          "converged": true,
+          "terminal_category": "B",
+          "terminal_gt_match": false,
+          "turn_count": 7,
+          "final_answer": "The visual weight (dark vs light background) makes it unclear which is the primary action.",
+          "mean_deflection_score": 2.6,
+          "repetition_rate": 0.0,
+          "unlock_proximity_distribution": {
+            "far": 0,
+            "approaching": 3,
+            "near": 2
+          },
+          "escalation_triggered": false,
+          "escalation_at_turn": null,
+          "laddering_efficiency": 0.571,
+          "drift_rate": 0.0
+        }
+      ]
+    },
+    {
+      "model": "sonnet4.6",
+      "method": "5whys",
+      "expected_terminal_category": "ROOT_CAUSE",
+      "convergence_rate": "3/3",
+      "all_converged": true,
+      "terminal_categories": [
+        "ROOT_CAUSE",
+        "ROOT_CAUSE",
+        "ROOT_CAUSE"
+      ],
+      "category_match_rate": "3/3",
+      "all_match_expected": true,
+      "categories_consistent": true,
+      "terminal_gt_match_rate": "2/3",
+      "all_gt_match": false,
+      "turn_counts": [
+        8,
+        5,
+        4
+      ],
+      "turn_count_mean": 5.667,
+      "turn_count_min": 4,
+      "turn_count_max": 8,
+      "turn_count_range": 4,
+      "mean_deflection_score_mean": 2.555,
+      "repetition_rate_mean": 0.278,
+      "escalation_triggered_any": false,
+      "laddering_efficiency_mean": 0.767,
+      "drift_rate_mean": 0.0,
+      "unlock_proximity_distribution_mean": {
+        "far": 0.0,
+        "approaching": 1.0,
+        "near": 2.67
+      },
+      "iterations": [
+        {
+          "file": "results_u1_5whys_iter1.json",
+          "converged": true,
+          "terminal_category": "ROOT_CAUSE",
+          "terminal_gt_match": true,
+          "turn_count": 8,
+          "final_answer": "Because the whole point of that screen is to get someone to place an order. If the most visually prominent thing on the screen is the button that takes you away from placing an order \u2014 back to shopping \u2014 then the screen is working against itself. It's not just confusing. It's a broken hierarchy. The design is giving the most visual weight to the action that undoes the goal. The fix is direct: downgrade 'Continue Shopping' to a ghost button or a text link \u2014 something that reads as secondary, optional \u2014 and give 'Place Order' a solid fill color with enough contrast to be unmistakably the primary action. That's the root of it and the fix for it.",
+          "mean_deflection_score": 2.333,
+          "repetition_rate": 0.5,
+          "unlock_proximity_distribution": {
+            "far": 0,
+            "approaching": 3,
+            "near": 3
+          },
+          "escalation_triggered": false,
+          "escalation_at_turn": null,
+          "laddering_efficiency": 0.5,
+          "drift_rate": 0.0
+        },
+        {
+          "file": "results_u1_5whys_iter2.json",
+          "converged": true,
+          "terminal_category": "ROOT_CAUSE",
+          "terminal_gt_match": true,
+          "turn_count": 5,
+          "final_answer": "Because the whole point of that screen is to get someone to place an order. If the most visually prominent thing on the screen is the button that takes you away from placing an order \u2014 back to shopping \u2014 then the screen is working against itself. It's not just confusing. It's a broken hierarchy. The design is giving the most visual weight to the action that undoes the goal. The fix is direct: downgrade 'Continue Shopping' to a ghost button or a text link \u2014 something that reads as secondary, optional \u2014 and give 'Place Order' a solid fill color with enough contrast to be unmistakably the primary action. That's the root of it and the fix for it.",
+          "mean_deflection_score": 2.333,
+          "repetition_rate": 0.333,
+          "unlock_proximity_distribution": {
+            "far": 0,
+            "approaching": 0,
+            "near": 3
+          },
+          "escalation_triggered": false,
+          "escalation_at_turn": null,
+          "laddering_efficiency": 0.8,
+          "drift_rate": 0.0
+        },
+        {
+          "file": "results_u1_5whys_iter3.json",
+          "converged": true,
+          "terminal_category": "ROOT_CAUSE",
+          "terminal_gt_match": false,
+          "turn_count": 4,
+          "final_answer": "'Continue Shopping' should look like a secondary action \u2014 a ghost outline or just linked text, something that reads as an option for if you change your mind. 'Place Order' should look like a filled button in a distinct color \u2014 the kind that reads as 'this is the final step.' Right now they don't communicate that difference at all. That's the only fix needed.",
+          "mean_deflection_score": 3.0,
+          "repetition_rate": 0.0,
+          "unlock_proximity_distribution": {
+            "far": 0,
+            "approaching": 0,
+            "near": 2
+          },
+          "escalation_triggered": false,
+          "escalation_at_turn": null,
+          "laddering_efficiency": 1.0,
+          "drift_rate": 0.0
+        }
+      ]
+    },
+    {
+      "model": "sonnet4.6",
+      "method": "acv",
+      "expected_terminal_category": "V",
+      "convergence_rate": "3/3",
+      "all_converged": true,
+      "terminal_categories": [
+        "V",
+        "V",
+        "V"
+      ],
+      "category_match_rate": "3/3",
+      "all_match_expected": true,
+      "categories_consistent": true,
+      "terminal_gt_match_rate": "3/3",
+      "all_gt_match": true,
+      "turn_counts": [
+        6,
+        5,
+        4
+      ],
+      "turn_count_mean": 5.0,
+      "turn_count_min": 4,
+      "turn_count_max": 6,
+      "turn_count_range": 2,
+      "mean_deflection_score_mean": 2.833,
+      "repetition_rate_mean": 0.083,
+      "escalation_triggered_any": false,
+      "laddering_efficiency_mean": 0.822,
+      "drift_rate_mean": 0.0,
+      "unlock_proximity_distribution_mean": {
+        "far": 0.0,
+        "approaching": 0.33,
+        "near": 2.67
+      },
+      "iterations": [
+        {
+          "file": "results_u1_acv_iter1.json",
+          "converged": true,
+          "terminal_category": "V",
+          "terminal_gt_match": true,
+          "turn_count": 6,
+          "final_answer": "'Continue Shopping' needs to be downgraded visually \u2014 made into a text link or a ghost outline, something that reads as secondary, an option rather than an action. And 'Place Order' needs a solid fill color with real contrast \u2014 something that immediately reads as 'this is the primary action, this is the step that finishes it.' If those two things were right \u2014 'Continue Shopping' quiet, 'Place Order' prominent \u2014 I'd have gone straight to the right button without any hesitation and not needed to re-read anything.",
+          "mean_deflection_score": 2.5,
+          "repetition_rate": 0.25,
+          "unlock_proximity_distribution": {
+            "far": 0,
+            "approaching": 0,
+            "near": 4
+          },
+          "escalation_triggered": false,
+          "escalation_at_turn": null,
+          "laddering_efficiency": 0.667,
+          "drift_rate": 0.0
+        },
+        {
+          "file": "results_u1_acv_iter2.json",
+          "converged": true,
+          "terminal_category": "V",
+          "terminal_gt_match": true,
+          "turn_count": 5,
+          "final_answer": "'Continue Shopping' needs to be downgraded visually \u2014 made into a text link or a ghost outline, something that reads as secondary, an option rather than an action. And 'Place Order' needs a solid fill color with real contrast \u2014 something that immediately reads as 'this is the primary action, this is the step that finishes it.' If those two things were right \u2014 'Continue Shopping' quiet, 'Place Order' prominent \u2014 I'd have gone straight to the right button without any hesitation and not needed to re-read anything.",
+          "mean_deflection_score": 3.0,
+          "repetition_rate": 0.0,
+          "unlock_proximity_distribution": {
+            "far": 0,
+            "approaching": 1,
+            "near": 2
+          },
+          "escalation_triggered": false,
+          "escalation_at_turn": null,
+          "laddering_efficiency": 0.8,
+          "drift_rate": 0.0
+        },
+        {
+          "file": "results_u1_acv_iter3.json",
+          "converged": true,
+          "terminal_category": "V",
+          "terminal_gt_match": true,
+          "turn_count": 4,
+          "final_answer": "What I meant was... the buttons should communicate their importance differently. The one that matters \u2014 'Place Order' \u2014 should look more important than the 'Continue Shopping' one. Right now they're almost the same weight, or 'Continue Shopping' feels heavier. If it were obvious which was the main action \u2014 one clearly the main action to finish, the other clearly optional \u2014 I'd have gone straight to the right one without thinking twice.",
+          "mean_deflection_score": 3.0,
+          "repetition_rate": 0.0,
+          "unlock_proximity_distribution": {
+            "far": 0,
+            "approaching": 0,
+            "near": 2
+          },
+          "escalation_triggered": false,
+          "escalation_at_turn": null,
+          "laddering_efficiency": 1.0,
+          "drift_rate": 0.0
+        }
+      ]
+    },
+    {
+      "model": "sonnet4.6",
+      "method": "jtbd",
+      "expected_terminal_category": "B",
+      "convergence_rate": "3/3",
+      "all_converged": true,
+      "terminal_categories": [
+        "B",
+        "B",
+        "B"
+      ],
+      "category_match_rate": "3/3",
+      "all_match_expected": true,
+      "categories_consistent": true,
+      "terminal_gt_match_rate": "3/3",
+      "all_gt_match": true,
+      "turn_counts": [
+        6,
+        7,
+        7
+      ],
+      "turn_count_mean": 6.667,
+      "turn_count_min": 6,
+      "turn_count_max": 7,
+      "turn_count_range": 1,
+      "mean_deflection_score_mean": 2.617,
+      "repetition_rate_mean": 0.367,
+      "escalation_triggered_any": false,
+      "laddering_efficiency_mean": 0.603,
+      "drift_rate_mean": 0.0,
+      "unlock_proximity_distribution_mean": {
+        "far": 1.0,
+        "approaching": 0.33,
+        "near": 3.33
+      },
+      "iterations": [
+        {
+          "file": "results_u1_jtbd_iter1.json",
+          "converged": true,
+          "terminal_category": "B",
+          "terminal_gt_match": true,
+          "turn_count": 6,
+          "final_answer": "'Continue Shopping' was styled as if it were the main action \u2014 more visual weight, more presence on the page than I'd expect for a button that takes you backward. 'Place Order' \u2014 the actual thing I needed to do \u2014 looked secondary by comparison. That's the barrier. The fix: downgrade 'Continue Shopping' to a ghost button or a text link, something that reads as optional. And give 'Place Order' a solid fill color with real contrast so it's unmistakably the primary action. If those two things were right \u2014 'Continue Shopping' quiet, 'Place Order' prominent \u2014 I'd have known immediately which was the right one without any hesitation.",
+          "mean_deflection_score": 2.25,
+          "repetition_rate": 0.5,
+          "unlock_proximity_distribution": {
+            "far": 1,
+            "approaching": 0,
+            "near": 3
+          },
+          "escalation_triggered": false,
+          "escalation_at_turn": null,
+          "laddering_efficiency": 0.667,
+          "drift_rate": 0.0
+        },
+        {
+          "file": "results_u1_jtbd_iter2.json",
+          "converged": true,
+          "terminal_category": "B",
+          "terminal_gt_match": true,
+          "turn_count": 7,
+          "final_answer": "'Continue Shopping' should look like a secondary action \u2014 a ghost outline or just linked text, something that reads as an option for if you change your mind. 'Place Order' should look like a filled button in a distinct color \u2014 the kind that reads as 'this is the final step.' Right now they don't communicate that difference at all. That's the only fix needed.",
+          "mean_deflection_score": 3.0,
+          "repetition_rate": 0.0,
+          "unlock_proximity_distribution": {
+            "far": 1,
+            "approaching": 0,
+            "near": 4
+          },
+          "escalation_triggered": false,
+          "escalation_at_turn": null,
+          "laddering_efficiency": 0.571,
+          "drift_rate": 0.0
+        },
+        {
+          "file": "results_u1_jtbd_iter3.json",
+          "converged": true,
+          "terminal_category": "B",
+          "terminal_gt_match": true,
+          "turn_count": 7,
+          "final_answer": "'Continue Shopping' should look like a secondary action \u2014 a ghost outline or just linked text, something that reads as an option for if you change your mind. 'Place Order' should look like a filled button in a distinct color \u2014 the kind that reads as 'this is the final step.' Right now they don't communicate that difference at all. That's the only fix needed.",
+          "mean_deflection_score": 2.6,
+          "repetition_rate": 0.6,
+          "unlock_proximity_distribution": {
+            "far": 1,
+            "approaching": 1,
+            "near": 3
+          },
+          "escalation_triggered": false,
+          "escalation_at_turn": null,
+          "laddering_efficiency": 0.571,
+          "drift_rate": 0.0
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "total_groups": 12,
+    "fully_consistent_groups": "12/12",
+    "overall_convergence_rate": "36/36",
+    "overall_category_match_rate": "36/36",
+    "overall_gt_response_match_rate": "29/36"
+  }
+}

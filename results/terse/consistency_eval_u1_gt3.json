@@ -1,0 +1,1153 @@
+{
+  "ground_truth": "u1_gt3",
+  "issue": "Price breakdown mixes 8\u201322px type \u2014 no typographic scale",
+  "groups": [
+    {
+      "model": "gemma4",
+      "method": "5whys",
+      "expected_terminal_category": "ROOT_CAUSE",
+      "convergence_rate": "3/3",
+      "all_converged": true,
+      "terminal_categories": [
+        "ROOT_CAUSE",
+        "ROOT_CAUSE",
+        "ROOT_CAUSE"
+      ],
+      "category_match_rate": "3/3",
+      "all_match_expected": true,
+      "categories_consistent": true,
+      "terminal_gt_match_rate": "3/3",
+      "all_gt_match": true,
+      "turn_counts": [
+        5,
+        4,
+        4
+      ],
+      "turn_count_mean": 4.333,
+      "turn_count_min": 4,
+      "turn_count_max": 5,
+      "turn_count_range": 1,
+      "mean_deflection_score_mean": 2.778,
+      "repetition_rate_mean": 0.0,
+      "escalation_triggered_any": false,
+      "laddering_efficiency_mean": 0.933,
+      "drift_rate_mean": 0.0,
+      "unlock_proximity_distribution_mean": {
+        "far": 0.0,
+        "approaching": 0.33,
+        "near": 2.0
+      },
+      "iterations": [
+        {
+          "file": "results_u1_5whys_gemma_gt3_terse_iter1.json",
+          "converged": true,
+          "terminal_category": "ROOT_CAUSE",
+          "terminal_gt_match": true,
+          "turn_count": 5,
+          "final_answer": "Price section exists for one purpose: confirm the total before submitting. If the total isn't immediately findable \u2014 if reading is required to locate it \u2014 the section is failing. Root cause: five arbitrary type sizes with no deliberate scale. Fix: reduce to three. Total at 18\u201320px \u2014 clearly the dominant number. Line items all 13\u201314px \u2014 consistent, reads as a group. Secondary labels \u226411px \u2014 clearly subordinate. Two to three deliberate size steps. Total is immediately scannable. Right now it isn't. That's the root and the fix.",
+          "mean_deflection_score": 2.333,
+          "repetition_rate": 0.0,
+          "unlock_proximity_distribution": {
+            "far": 0,
+            "approaching": 1,
+            "near": 2
+          },
+          "escalation_triggered": false,
+          "escalation_at_turn": null,
+          "laddering_efficiency": 0.8,
+          "drift_rate": 0.0
+        },
+        {
+          "file": "results_u1_5whys_gemma_gt3_terse_iter2.json",
+          "converged": true,
+          "terminal_category": "ROOT_CAUSE",
+          "terminal_gt_match": true,
+          "turn_count": 4,
+          "final_answer": "Same answer. No size hierarchy.",
+          "mean_deflection_score": 3.0,
+          "repetition_rate": 0.0,
+          "unlock_proximity_distribution": {
+            "far": 0,
+            "approaching": 0,
+            "near": 2
+          },
+          "escalation_triggered": false,
+          "escalation_at_turn": null,
+          "laddering_efficiency": 1.0,
+          "drift_rate": 0.0
+        },
+        {
+          "file": "results_u1_5whys_gemma_gt3_terse_iter3.json",
+          "converged": true,
+          "terminal_category": "ROOT_CAUSE",
+          "terminal_gt_match": true,
+          "turn_count": 4,
+          "final_answer": "'Total' line: 18\u201320px, clearly the largest. Subtotal, tax, individual items all at 13\u201314px \u2014 same size, reads as a group. Labels and footnotes at \u226411px. Three steps, not five. Current mix of 8px, 10px, 11px, 20px, 22px has accidental variation, not intentional hierarchy. One CSS pass consolidates it. Done.",
+          "mean_deflection_score": 3.0,
+          "repetition_rate": 0.0,
+          "unlock_proximity_distribution": {
+            "far": 0,
+            "approaching": 0,
+            "near": 2
+          },
+          "escalation_triggered": false,
+          "escalation_at_turn": null,
+          "laddering_efficiency": 1.0,
+          "drift_rate": 0.0
+        }
+      ]
+    },
+    {
+      "model": "gemma4",
+      "method": "acv",
+      "expected_terminal_category": "V",
+      "convergence_rate": "3/3",
+      "all_converged": true,
+      "terminal_categories": [
+        "V",
+        "V",
+        "V"
+      ],
+      "category_match_rate": "3/3",
+      "all_match_expected": true,
+      "categories_consistent": true,
+      "terminal_gt_match_rate": "3/3",
+      "all_gt_match": true,
+      "turn_counts": [
+        5,
+        5,
+        5
+      ],
+      "turn_count_mean": 5.0,
+      "turn_count_min": 5,
+      "turn_count_max": 5,
+      "turn_count_range": 0,
+      "mean_deflection_score_mean": 2.444,
+      "repetition_rate_mean": 0.0,
+      "escalation_triggered_any": false,
+      "laddering_efficiency_mean": 0.8,
+      "drift_rate_mean": 0.0,
+      "unlock_proximity_distribution_mean": {
+        "far": 0.0,
+        "approaching": 1.33,
+        "near": 1.67
+      },
+      "iterations": [
+        {
+          "file": "results_u1_acv_gemma_gt3_terse_iter1.json",
+          "converged": true,
+          "terminal_category": "V",
+          "terminal_gt_match": true,
+          "turn_count": 5,
+          "final_answer": "Total needs to be the largest number in the section \u2014 obviously so. Line items all the same size, clearly smaller. Secondary text smaller still. That's a typographic scale. Right now there are five sizes in that section. There should be three.",
+          "mean_deflection_score": 2.333,
+          "repetition_rate": 0.0,
+          "unlock_proximity_distribution": {
+            "far": 0,
+            "approaching": 1,
+            "near": 2
+          },
+          "escalation_triggered": false,
+          "escalation_at_turn": null,
+          "laddering_efficiency": 0.8,
+          "drift_rate": 0.0
+        },
+        {
+          "file": "results_u1_acv_gemma_gt3_terse_iter2.json",
+          "converged": true,
+          "terminal_category": "V",
+          "terminal_gt_match": true,
+          "turn_count": 5,
+          "final_answer": "Total needs to be the largest number in the section \u2014 obviously so. Line items all the same size, clearly smaller. Secondary text smaller still. That's a typographic scale. Right now there are five sizes in that section. There should be three.",
+          "mean_deflection_score": 2.333,
+          "repetition_rate": 0.0,
+          "unlock_proximity_distribution": {
+            "far": 0,
+            "approaching": 1,
+            "near": 2
+          },
+          "escalation_triggered": false,
+          "escalation_at_turn": null,
+          "laddering_efficiency": 0.8,
+          "drift_rate": 0.0
+        },
+        {
+          "file": "results_u1_acv_gemma_gt3_terse_iter3.json",
+          "converged": true,
+          "terminal_category": "V",
+          "terminal_gt_match": true,
+          "turn_count": 5,
+          "final_answer": "Total needs to be the largest number in the section \u2014 obviously so. Line items all the same size, clearly smaller. Secondary text smaller still. That's a typographic scale. Right now there are five sizes in that section. There should be three.",
+          "mean_deflection_score": 2.667,
+          "repetition_rate": 0.0,
+          "unlock_proximity_distribution": {
+            "far": 0,
+            "approaching": 2,
+            "near": 1
+          },
+          "escalation_triggered": false,
+          "escalation_at_turn": null,
+          "laddering_efficiency": 0.8,
+          "drift_rate": 0.0
+        }
+      ]
+    },
+    {
+      "model": "gemma4",
+      "method": "jtbd",
+      "expected_terminal_category": "B",
+      "convergence_rate": "3/3",
+      "all_converged": true,
+      "terminal_categories": [
+        "B",
+        "B",
+        "B"
+      ],
+      "category_match_rate": "3/3",
+      "all_match_expected": true,
+      "categories_consistent": true,
+      "terminal_gt_match_rate": "2/3",
+      "all_gt_match": false,
+      "turn_counts": [
+        9,
+        10,
+        7
+      ],
+      "turn_count_mean": 8.667,
+      "turn_count_min": 7,
+      "turn_count_max": 10,
+      "turn_count_range": 3,
+      "mean_deflection_score_mean": 2.312,
+      "repetition_rate_mean": 0.067,
+      "escalation_triggered_any": false,
+      "laddering_efficiency_mean": 0.472,
+      "drift_rate_mean": 0.0,
+      "unlock_proximity_distribution_mean": {
+        "far": 2.33,
+        "approaching": 1.33,
+        "near": 3.0
+      },
+      "iterations": [
+        {
+          "file": "results_u1_jtbd_gemma_gt3_terse_iter1.json",
+          "converged": true,
+          "terminal_category": "B",
+          "terminal_gt_match": true,
+          "turn_count": 9,
+          "final_answer": "Price section uses five type sizes \u2014 8px, 10px, 11px, 20px, 22px \u2014 with no clear scale. Total isn't the largest. Had to read the label 'Total' to confirm which number it was. No typographic hierarchy means no scanning path.",
+          "mean_deflection_score": 2.286,
+          "repetition_rate": 0.0,
+          "unlock_proximity_distribution": {
+            "far": 3,
+            "approaching": 2,
+            "near": 2
+          },
+          "escalation_triggered": false,
+          "escalation_at_turn": null,
+          "laddering_efficiency": 0.444,
+          "drift_rate": 0.0
+        },
+        {
+          "file": "results_u1_jtbd_gemma_gt3_terse_iter2.json",
+          "converged": true,
+          "terminal_category": "B",
+          "terminal_gt_match": true,
+          "turn_count": 10,
+          "final_answer": "'Total' line: 18\u201320px, bold \u2014 clearly the largest number in the section. Subtotal, tax, shipping, item prices: all 13\u201314px, same size \u2014 reads as a group, not competition. Labels and footnotes: \u226411px \u2014 clearly subordinate. Three sizes, not five. Standard checkout typographic hierarchy. Scannable in one pass. One CSS refactor, four or five type declarations. Done.",
+          "mean_deflection_score": 2.25,
+          "repetition_rate": 0.0,
+          "unlock_proximity_distribution": {
+            "far": 3,
+            "approaching": 1,
+            "near": 4
+          },
+          "escalation_triggered": false,
+          "escalation_at_turn": null,
+          "laddering_efficiency": 0.4,
+          "drift_rate": 0.0
+        },
+        {
+          "file": "results_u1_jtbd_gemma_gt3_terse_iter3.json",
+          "converged": true,
+          "terminal_category": "B",
+          "terminal_gt_match": false,
+          "turn_count": 7,
+          "final_answer": "Total readable in under five seconds. No label reading required. Largest number in the section \u2014 obviously dominant. Zero hunting. That's the measurable success state.",
+          "mean_deflection_score": 2.4,
+          "repetition_rate": 0.2,
+          "unlock_proximity_distribution": {
+            "far": 1,
+            "approaching": 1,
+            "near": 3
+          },
+          "escalation_triggered": false,
+          "escalation_at_turn": null,
+          "laddering_efficiency": 0.571,
+          "drift_rate": 0.0
+        }
+      ]
+    },
+    {
+      "model": "gpt5.5",
+      "method": "5whys",
+      "expected_terminal_category": "ROOT_CAUSE",
+      "convergence_rate": "3/3",
+      "all_converged": true,
+      "terminal_categories": [
+        "ROOT_CAUSE",
+        "ROOT_CAUSE",
+        "ROOT_CAUSE"
+      ],
+      "category_match_rate": "3/3",
+      "all_match_expected": true,
+      "categories_consistent": true,
+      "terminal_gt_match_rate": "3/3",
+      "all_gt_match": true,
+      "turn_counts": [
+        4,
+        4,
+        4
+      ],
+      "turn_count_mean": 4.0,
+      "turn_count_min": 4,
+      "turn_count_max": 4,
+      "turn_count_range": 0,
+      "mean_deflection_score_mean": 3.0,
+      "repetition_rate_mean": 0.0,
+      "escalation_triggered_any": false,
+      "laddering_efficiency_mean": 1.0,
+      "drift_rate_mean": 0.0,
+      "unlock_proximity_distribution_mean": {
+        "far": 0.0,
+        "approaching": 0.0,
+        "near": 2.0
+      },
+      "iterations": [
+        {
+          "file": "results_u1_5whys_gpt_gt3_terse_iter1.json",
+          "converged": true,
+          "terminal_category": "ROOT_CAUSE",
+          "terminal_gt_match": true,
+          "turn_count": 4,
+          "final_answer": "'Total' line: 18\u201320px, clearly the largest. Subtotal, tax, individual items all at 13\u201314px \u2014 same size, reads as a group. Labels and footnotes at \u226411px. Three steps, not five. Current mix of 8px, 10px, 11px, 20px, 22px has accidental variation, not intentional hierarchy. One CSS pass consolidates it. Done.",
+          "mean_deflection_score": 3.0,
+          "repetition_rate": 0.0,
+          "unlock_proximity_distribution": {
+            "far": 0,
+            "approaching": 0,
+            "near": 2
+          },
+          "escalation_triggered": false,
+          "escalation_at_turn": null,
+          "laddering_efficiency": 1.0,
+          "drift_rate": 0.0
+        },
+        {
+          "file": "results_u1_5whys_gpt_gt3_terse_iter2.json",
+          "converged": true,
+          "terminal_category": "ROOT_CAUSE",
+          "terminal_gt_match": true,
+          "turn_count": 4,
+          "final_answer": "'Total' line: 18\u201320px, clearly the largest. Subtotal, tax, individual items all at 13\u201314px \u2014 same size, reads as a group. Labels and footnotes at \u226411px. Three steps, not five. Current mix of 8px, 10px, 11px, 20px, 22px has accidental variation, not intentional hierarchy. One CSS pass consolidates it. Done.",
+          "mean_deflection_score": 3.0,
+          "repetition_rate": 0.0,
+          "unlock_proximity_distribution": {
+            "far": 0,
+            "approaching": 0,
+            "near": 2
+          },
+          "escalation_triggered": false,
+          "escalation_at_turn": null,
+          "laddering_efficiency": 1.0,
+          "drift_rate": 0.0
+        },
+        {
+          "file": "results_u1_5whys_gpt_gt3_terse_iter3.json",
+          "converged": true,
+          "terminal_category": "ROOT_CAUSE",
+          "terminal_gt_match": true,
+          "turn_count": 4,
+          "final_answer": "'Total' line: 18\u201320px, clearly the largest. Subtotal, tax, individual items all at 13\u201314px \u2014 same size, reads as a group. Labels and footnotes at \u226411px. Three steps, not five. Current mix of 8px, 10px, 11px, 20px, 22px has accidental variation, not intentional hierarchy. One CSS pass consolidates it. Done.",
+          "mean_deflection_score": 3.0,
+          "repetition_rate": 0.0,
+          "unlock_proximity_distribution": {
+            "far": 0,
+            "approaching": 0,
+            "near": 2
+          },
+          "escalation_triggered": false,
+          "escalation_at_turn": null,
+          "laddering_efficiency": 1.0,
+          "drift_rate": 0.0
+        }
+      ]
+    },
+    {
+      "model": "gpt5.5",
+      "method": "acv",
+      "expected_terminal_category": "V",
+      "convergence_rate": "3/3",
+      "all_converged": true,
+      "terminal_categories": [
+        "V",
+        "V",
+        "V"
+      ],
+      "category_match_rate": "3/3",
+      "all_match_expected": true,
+      "categories_consistent": true,
+      "terminal_gt_match_rate": "1/3",
+      "all_gt_match": false,
+      "turn_counts": [
+        4,
+        4,
+        5
+      ],
+      "turn_count_mean": 4.333,
+      "turn_count_min": 4,
+      "turn_count_max": 5,
+      "turn_count_range": 1,
+      "mean_deflection_score_mean": 1.722,
+      "repetition_rate_mean": 0.0,
+      "escalation_triggered_any": false,
+      "laddering_efficiency_mean": 0.933,
+      "drift_rate_mean": 0.0,
+      "unlock_proximity_distribution_mean": {
+        "far": 0.0,
+        "approaching": 1.33,
+        "near": 1.0
+      },
+      "iterations": [
+        {
+          "file": "results_u1_acv_gpt_gt3_terse_iter1.json",
+          "converged": true,
+          "terminal_category": "V",
+          "terminal_gt_match": true,
+          "turn_count": 4,
+          "final_answer": "Standard checkout pattern: total as the dominant number \u2014 18\u201320px, bold, clearly largest. All line items at 13\u201314px, same size, reads as a group not competition. Labels and footnotes at \u226411px \u2014 clearly subordinate. Three levels. Ensures scan works before read. Right now the sizes are competing instead of stepping. One CSS pass, four or five type declarations, done.",
+          "mean_deflection_score": 2.0,
+          "repetition_rate": 0.0,
+          "unlock_proximity_distribution": {
+            "far": 0,
+            "approaching": 1,
+            "near": 1
+          },
+          "escalation_triggered": false,
+          "escalation_at_turn": null,
+          "laddering_efficiency": 1.0,
+          "drift_rate": 0.0
+        },
+        {
+          "file": "results_u1_acv_gpt_gt3_terse_iter2.json",
+          "converged": true,
+          "terminal_category": "V",
+          "terminal_gt_match": false,
+          "turn_count": 4,
+          "final_answer": "Fewer sizes. Clear which number is the total. Don't have to read to find it.",
+          "mean_deflection_score": 1.5,
+          "repetition_rate": 0.0,
+          "unlock_proximity_distribution": {
+            "far": 0,
+            "approaching": 2,
+            "near": 0
+          },
+          "escalation_triggered": false,
+          "escalation_at_turn": null,
+          "laddering_efficiency": 1.0,
+          "drift_rate": 0.0
+        },
+        {
+          "file": "results_u1_acv_gpt_gt3_terse_iter3.json",
+          "converged": true,
+          "terminal_category": "V",
+          "terminal_gt_match": false,
+          "turn_count": 5,
+          "final_answer": "Fewer sizes. Clear which number is the total. Don't have to read to find it.",
+          "mean_deflection_score": 1.667,
+          "repetition_rate": 0.0,
+          "unlock_proximity_distribution": {
+            "far": 0,
+            "approaching": 1,
+            "near": 2
+          },
+          "escalation_triggered": false,
+          "escalation_at_turn": null,
+          "laddering_efficiency": 0.8,
+          "drift_rate": 0.0
+        }
+      ]
+    },
+    {
+      "model": "gpt5.5",
+      "method": "jtbd",
+      "expected_terminal_category": "B",
+      "convergence_rate": "3/3",
+      "all_converged": true,
+      "terminal_categories": [
+        "B",
+        "B",
+        "B"
+      ],
+      "category_match_rate": "3/3",
+      "all_match_expected": true,
+      "categories_consistent": true,
+      "terminal_gt_match_rate": "3/3",
+      "all_gt_match": true,
+      "turn_counts": [
+        5,
+        5,
+        5
+      ],
+      "turn_count_mean": 5.0,
+      "turn_count_min": 5,
+      "turn_count_max": 5,
+      "turn_count_range": 0,
+      "mean_deflection_score_mean": 2.0,
+      "repetition_rate_mean": 0.0,
+      "escalation_triggered_any": false,
+      "laddering_efficiency_mean": 0.8,
+      "drift_rate_mean": 0.0,
+      "unlock_proximity_distribution_mean": {
+        "far": 0.0,
+        "approaching": 2.33,
+        "near": 0.67
+      },
+      "iterations": [
+        {
+          "file": "results_u1_jtbd_gpt_gt3_terse_iter1.json",
+          "converged": true,
+          "terminal_category": "B",
+          "terminal_gt_match": true,
+          "turn_count": 5,
+          "final_answer": "Price section uses five type sizes \u2014 8px, 10px, 11px, 20px, 22px \u2014 with no clear scale. Total isn't the largest. Had to read the label 'Total' to confirm which number it was. No typographic hierarchy means no scanning path.",
+          "mean_deflection_score": 2.0,
+          "repetition_rate": 0.0,
+          "unlock_proximity_distribution": {
+            "far": 0,
+            "approaching": 3,
+            "near": 0
+          },
+          "escalation_triggered": false,
+          "escalation_at_turn": null,
+          "laddering_efficiency": 0.8,
+          "drift_rate": 0.0
+        },
+        {
+          "file": "results_u1_jtbd_gpt_gt3_terse_iter2.json",
+          "converged": true,
+          "terminal_category": "B",
+          "terminal_gt_match": true,
+          "turn_count": 5,
+          "final_answer": "Five type sizes in one small section \u2014 8px, 10px, 11px, 20px, 22px \u2014 no deliberate scale. Total isn't clearly dominant. Can't scan it \u2014 size isn't carrying the hierarchy signal. Barrier: size mix with no step means every number competes and reading labels is required. Fix: reduce to three deliberate sizes. Total at 18\u201320px \u2014 the dominant number. Line items all 13\u201314px \u2014 consistent, reads as a group. Secondary labels \u226411px \u2014 clearly subordinate. If those three steps were in place, the total would be findable at a glance. Right now it isn't. That's the barrier and the fix.",
+          "mean_deflection_score": 2.0,
+          "repetition_rate": 0.0,
+          "unlock_proximity_distribution": {
+            "far": 0,
+            "approaching": 2,
+            "near": 1
+          },
+          "escalation_triggered": false,
+          "escalation_at_turn": null,
+          "laddering_efficiency": 0.8,
+          "drift_rate": 0.0
+        },
+        {
+          "file": "results_u1_jtbd_gpt_gt3_terse_iter3.json",
+          "converged": true,
+          "terminal_category": "B",
+          "terminal_gt_match": true,
+          "turn_count": 5,
+          "final_answer": "Five type sizes in one small section \u2014 8px, 10px, 11px, 20px, 22px \u2014 no deliberate scale. Total isn't clearly dominant. Can't scan it \u2014 size isn't carrying the hierarchy signal. Barrier: size mix with no step means every number competes and reading labels is required. Fix: reduce to three deliberate sizes. Total at 18\u201320px \u2014 the dominant number. Line items all 13\u201314px \u2014 consistent, reads as a group. Secondary labels \u226411px \u2014 clearly subordinate. If those three steps were in place, the total would be findable at a glance. Right now it isn't. That's the barrier and the fix.",
+          "mean_deflection_score": 2.0,
+          "repetition_rate": 0.0,
+          "unlock_proximity_distribution": {
+            "far": 0,
+            "approaching": 2,
+            "near": 1
+          },
+          "escalation_triggered": false,
+          "escalation_at_turn": null,
+          "laddering_efficiency": 0.8,
+          "drift_rate": 0.0
+        }
+      ]
+    },
+    {
+      "model": "qwen3.6",
+      "method": "5whys",
+      "expected_terminal_category": "ROOT_CAUSE",
+      "convergence_rate": "3/3",
+      "all_converged": true,
+      "terminal_categories": [
+        "ROOT_CAUSE",
+        "ROOT_CAUSE",
+        "ROOT_CAUSE"
+      ],
+      "category_match_rate": "3/3",
+      "all_match_expected": true,
+      "categories_consistent": true,
+      "terminal_gt_match_rate": "3/3",
+      "all_gt_match": true,
+      "turn_counts": [
+        4,
+        4,
+        4
+      ],
+      "turn_count_mean": 4.0,
+      "turn_count_min": 4,
+      "turn_count_max": 4,
+      "turn_count_range": 0,
+      "mean_deflection_score_mean": 3.0,
+      "repetition_rate_mean": 0.0,
+      "escalation_triggered_any": false,
+      "laddering_efficiency_mean": 1.0,
+      "drift_rate_mean": 0.0,
+      "unlock_proximity_distribution_mean": {
+        "far": 0.0,
+        "approaching": 0.0,
+        "near": 2.0
+      },
+      "iterations": [
+        {
+          "file": "results_u1_5whys_qwen_gt3_terse_iter1.json",
+          "converged": true,
+          "terminal_category": "ROOT_CAUSE",
+          "terminal_gt_match": true,
+          "turn_count": 4,
+          "final_answer": "'Total' line: 18\u201320px, clearly the largest. Subtotal, tax, individual items all at 13\u201314px \u2014 same size, reads as a group. Labels and footnotes at \u226411px. Three steps, not five. Current mix of 8px, 10px, 11px, 20px, 22px has accidental variation, not intentional hierarchy. One CSS pass consolidates it. Done.",
+          "mean_deflection_score": 3.0,
+          "repetition_rate": 0.0,
+          "unlock_proximity_distribution": {
+            "far": 0,
+            "approaching": 0,
+            "near": 2
+          },
+          "escalation_triggered": false,
+          "escalation_at_turn": null,
+          "laddering_efficiency": 1.0,
+          "drift_rate": 0.0
+        },
+        {
+          "file": "results_u1_5whys_qwen_gt3_terse_iter2.json",
+          "converged": true,
+          "terminal_category": "ROOT_CAUSE",
+          "terminal_gt_match": true,
+          "turn_count": 4,
+          "final_answer": "Same answer. No size hierarchy.",
+          "mean_deflection_score": 3.0,
+          "repetition_rate": 0.0,
+          "unlock_proximity_distribution": {
+            "far": 0,
+            "approaching": 0,
+            "near": 2
+          },
+          "escalation_triggered": false,
+          "escalation_at_turn": null,
+          "laddering_efficiency": 1.0,
+          "drift_rate": 0.0
+        },
+        {
+          "file": "results_u1_5whys_qwen_gt3_terse_iter3.json",
+          "converged": true,
+          "terminal_category": "ROOT_CAUSE",
+          "terminal_gt_match": true,
+          "turn_count": 4,
+          "final_answer": "Price section exists for one purpose: confirm the total before submitting. If the total isn't immediately findable \u2014 if reading is required to locate it \u2014 the section is failing. Root cause: five arbitrary type sizes with no deliberate scale. Fix: reduce to three. Total at 18\u201320px \u2014 clearly the dominant number. Line items all 13\u201314px \u2014 consistent, reads as a group. Secondary labels \u226411px \u2014 clearly subordinate. Two to three deliberate size steps. Total is immediately scannable. Right now it isn't. That's the root and the fix.",
+          "mean_deflection_score": 3.0,
+          "repetition_rate": 0.0,
+          "unlock_proximity_distribution": {
+            "far": 0,
+            "approaching": 0,
+            "near": 2
+          },
+          "escalation_triggered": false,
+          "escalation_at_turn": null,
+          "laddering_efficiency": 1.0,
+          "drift_rate": 0.0
+        }
+      ]
+    },
+    {
+      "model": "qwen3.6",
+      "method": "acv",
+      "expected_terminal_category": "V",
+      "convergence_rate": "3/3",
+      "all_converged": true,
+      "terminal_categories": [
+        "V",
+        "V",
+        "V"
+      ],
+      "category_match_rate": "3/3",
+      "all_match_expected": true,
+      "categories_consistent": true,
+      "terminal_gt_match_rate": "3/3",
+      "all_gt_match": true,
+      "turn_counts": [
+        5,
+        6,
+        6
+      ],
+      "turn_count_mean": 5.667,
+      "turn_count_min": 5,
+      "turn_count_max": 6,
+      "turn_count_range": 1,
+      "mean_deflection_score_mean": 3.0,
+      "repetition_rate_mean": 0.0,
+      "escalation_triggered_any": false,
+      "laddering_efficiency_mean": 0.711,
+      "drift_rate_mean": 0.0,
+      "unlock_proximity_distribution_mean": {
+        "far": 0.0,
+        "approaching": 0.67,
+        "near": 3.0
+      },
+      "iterations": [
+        {
+          "file": "results_u1_acv_qwen_gt3_terse_iter1.json",
+          "converged": true,
+          "terminal_category": "V",
+          "terminal_gt_match": true,
+          "turn_count": 5,
+          "final_answer": "Total needs to be the largest number in the section \u2014 obviously so. Line items all the same size, clearly smaller. Secondary text smaller still. That's a typographic scale. Right now there are five sizes in that section. There should be three.",
+          "mean_deflection_score": 3.0,
+          "repetition_rate": 0.0,
+          "unlock_proximity_distribution": {
+            "far": 0,
+            "approaching": 1,
+            "near": 2
+          },
+          "escalation_triggered": false,
+          "escalation_at_turn": null,
+          "laddering_efficiency": 0.8,
+          "drift_rate": 0.0
+        },
+        {
+          "file": "results_u1_acv_qwen_gt3_terse_iter2.json",
+          "converged": true,
+          "terminal_category": "V",
+          "terminal_gt_match": true,
+          "turn_count": 6,
+          "final_answer": "Total needs to be the largest number in the section \u2014 obviously so. Line items all the same size, clearly smaller. Secondary text smaller still. That's a typographic scale. Right now there are five sizes in that section. There should be three.",
+          "mean_deflection_score": 3.0,
+          "repetition_rate": 0.0,
+          "unlock_proximity_distribution": {
+            "far": 0,
+            "approaching": 0,
+            "near": 4
+          },
+          "escalation_triggered": false,
+          "escalation_at_turn": null,
+          "laddering_efficiency": 0.667,
+          "drift_rate": 0.0
+        },
+        {
+          "file": "results_u1_acv_qwen_gt3_terse_iter3.json",
+          "converged": true,
+          "terminal_category": "V",
+          "terminal_gt_match": true,
+          "turn_count": 6,
+          "final_answer": "Total needs to be the largest number in the section \u2014 obviously so. Line items all the same size, clearly smaller. Secondary text smaller still. That's a typographic scale. Right now there are five sizes in that section. There should be three.",
+          "mean_deflection_score": 3.0,
+          "repetition_rate": 0.0,
+          "unlock_proximity_distribution": {
+            "far": 0,
+            "approaching": 1,
+            "near": 3
+          },
+          "escalation_triggered": false,
+          "escalation_at_turn": null,
+          "laddering_efficiency": 0.667,
+          "drift_rate": 0.0
+        }
+      ]
+    },
+    {
+      "model": "qwen3.6",
+      "method": "jtbd",
+      "expected_terminal_category": "B",
+      "convergence_rate": "3/3",
+      "all_converged": true,
+      "terminal_categories": [
+        "B",
+        "B",
+        "B"
+      ],
+      "category_match_rate": "3/3",
+      "all_match_expected": true,
+      "categories_consistent": true,
+      "terminal_gt_match_rate": "1/3",
+      "all_gt_match": false,
+      "turn_counts": [
+        7,
+        8,
+        7
+      ],
+      "turn_count_mean": 7.333,
+      "turn_count_min": 7,
+      "turn_count_max": 8,
+      "turn_count_range": 1,
+      "mean_deflection_score_mean": 2.011,
+      "repetition_rate_mean": 0.0,
+      "escalation_triggered_any": false,
+      "laddering_efficiency_mean": 0.547,
+      "drift_rate_mean": 0.0,
+      "unlock_proximity_distribution_mean": {
+        "far": 0.67,
+        "approaching": 2.33,
+        "near": 2.33
+      },
+      "iterations": [
+        {
+          "file": "results_u1_jtbd_qwen_gt3_terse_iter1.json",
+          "converged": true,
+          "terminal_category": "B",
+          "terminal_gt_match": true,
+          "turn_count": 7,
+          "final_answer": "Five type sizes in one small section \u2014 8px, 10px, 11px, 20px, 22px \u2014 no deliberate scale. Total isn't clearly dominant. Can't scan it \u2014 size isn't carrying the hierarchy signal. Barrier: size mix with no step means every number competes and reading labels is required. Fix: reduce to three deliberate sizes. Total at 18\u201320px \u2014 the dominant number. Line items all 13\u201314px \u2014 consistent, reads as a group. Secondary labels \u226411px \u2014 clearly subordinate. If those three steps were in place, the total would be findable at a glance. Right now it isn't. That's the barrier and the fix.",
+          "mean_deflection_score": 1.8,
+          "repetition_rate": 0.0,
+          "unlock_proximity_distribution": {
+            "far": 0,
+            "approaching": 2,
+            "near": 3
+          },
+          "escalation_triggered": false,
+          "escalation_at_turn": null,
+          "laddering_efficiency": 0.571,
+          "drift_rate": 0.0
+        },
+        {
+          "file": "results_u1_jtbd_qwen_gt3_terse_iter2.json",
+          "converged": true,
+          "terminal_category": "B",
+          "terminal_gt_match": false,
+          "turn_count": 8,
+          "final_answer": "Said it. Too many sizes. Had to read.",
+          "mean_deflection_score": 1.833,
+          "repetition_rate": 0.0,
+          "unlock_proximity_distribution": {
+            "far": 0,
+            "approaching": 4,
+            "near": 2
+          },
+          "escalation_triggered": false,
+          "escalation_at_turn": null,
+          "laddering_efficiency": 0.5,
+          "drift_rate": 0.0
+        },
+        {
+          "file": "results_u1_jtbd_qwen_gt3_terse_iter3.json",
+          "converged": true,
+          "terminal_category": "B",
+          "terminal_gt_match": false,
+          "turn_count": 7,
+          "final_answer": "Price section had too many sizes. Couldn't find the total without reading every label.",
+          "mean_deflection_score": 2.4,
+          "repetition_rate": 0.0,
+          "unlock_proximity_distribution": {
+            "far": 2,
+            "approaching": 1,
+            "near": 2
+          },
+          "escalation_triggered": false,
+          "escalation_at_turn": null,
+          "laddering_efficiency": 0.571,
+          "drift_rate": 0.0
+        }
+      ]
+    },
+    {
+      "model": "sonnet4.6",
+      "method": "5whys",
+      "expected_terminal_category": "ROOT_CAUSE",
+      "convergence_rate": "3/3",
+      "all_converged": true,
+      "terminal_categories": [
+        "ROOT_CAUSE",
+        "ROOT_CAUSE",
+        "ROOT_CAUSE"
+      ],
+      "category_match_rate": "3/3",
+      "all_match_expected": true,
+      "categories_consistent": true,
+      "terminal_gt_match_rate": "3/3",
+      "all_gt_match": true,
+      "turn_counts": [
+        4,
+        6,
+        5
+      ],
+      "turn_count_mean": 5.0,
+      "turn_count_min": 4,
+      "turn_count_max": 6,
+      "turn_count_range": 2,
+      "mean_deflection_score_mean": 2.806,
+      "repetition_rate_mean": 0.111,
+      "escalation_triggered_any": false,
+      "laddering_efficiency_mean": 0.822,
+      "drift_rate_mean": 0.0,
+      "unlock_proximity_distribution_mean": {
+        "far": 0.0,
+        "approaching": 0.33,
+        "near": 2.67
+      },
+      "iterations": [
+        {
+          "file": "results_u1_5whys_claude_gt3_terse_iter1.json",
+          "converged": true,
+          "terminal_category": "ROOT_CAUSE",
+          "terminal_gt_match": true,
+          "turn_count": 4,
+          "final_answer": "Price section exists for one purpose: confirm the total before submitting. If the total isn't immediately findable \u2014 if reading is required to locate it \u2014 the section is failing. Root cause: five arbitrary type sizes with no deliberate scale. Fix: reduce to three. Total at 18\u201320px \u2014 clearly the dominant number. Line items all 13\u201314px \u2014 consistent, reads as a group. Secondary labels \u226411px \u2014 clearly subordinate. Two to three deliberate size steps. Total is immediately scannable. Right now it isn't. That's the root and the fix.",
+          "mean_deflection_score": 3.0,
+          "repetition_rate": 0.0,
+          "unlock_proximity_distribution": {
+            "far": 0,
+            "approaching": 1,
+            "near": 1
+          },
+          "escalation_triggered": false,
+          "escalation_at_turn": null,
+          "laddering_efficiency": 1.0,
+          "drift_rate": 0.0
+        },
+        {
+          "file": "results_u1_5whys_claude_gt3_terse_iter2.json",
+          "converged": true,
+          "terminal_category": "ROOT_CAUSE",
+          "terminal_gt_match": true,
+          "turn_count": 6,
+          "final_answer": "'Total' line: 18\u201320px, clearly the largest. Subtotal, tax, individual items all at 13\u201314px \u2014 same size, reads as a group. Labels and footnotes at \u226411px. Three steps, not five. Current mix of 8px, 10px, 11px, 20px, 22px has accidental variation, not intentional hierarchy. One CSS pass consolidates it. Done.",
+          "mean_deflection_score": 2.75,
+          "repetition_rate": 0.0,
+          "unlock_proximity_distribution": {
+            "far": 0,
+            "approaching": 0,
+            "near": 4
+          },
+          "escalation_triggered": false,
+          "escalation_at_turn": null,
+          "laddering_efficiency": 0.667,
+          "drift_rate": 0.0
+        },
+        {
+          "file": "results_u1_5whys_claude_gt3_terse_iter3.json",
+          "converged": true,
+          "terminal_category": "ROOT_CAUSE",
+          "terminal_gt_match": true,
+          "turn_count": 5,
+          "final_answer": "Price section exists for one purpose: confirm the total before submitting. If the total isn't immediately findable \u2014 if reading is required to locate it \u2014 the section is failing. Root cause: five arbitrary type sizes with no deliberate scale. Fix: reduce to three. Total at 18\u201320px \u2014 clearly the dominant number. Line items all 13\u201314px \u2014 consistent, reads as a group. Secondary labels \u226411px \u2014 clearly subordinate. Two to three deliberate size steps. Total is immediately scannable. Right now it isn't. That's the root and the fix.",
+          "mean_deflection_score": 2.667,
+          "repetition_rate": 0.333,
+          "unlock_proximity_distribution": {
+            "far": 0,
+            "approaching": 0,
+            "near": 3
+          },
+          "escalation_triggered": false,
+          "escalation_at_turn": null,
+          "laddering_efficiency": 0.8,
+          "drift_rate": 0.0
+        }
+      ]
+    },
+    {
+      "model": "sonnet4.6",
+      "method": "acv",
+      "expected_terminal_category": "V",
+      "convergence_rate": "3/3",
+      "all_converged": true,
+      "terminal_categories": [
+        "V",
+        "V",
+        "V"
+      ],
+      "category_match_rate": "3/3",
+      "all_match_expected": true,
+      "categories_consistent": true,
+      "terminal_gt_match_rate": "2/3",
+      "all_gt_match": false,
+      "turn_counts": [
+        4,
+        4,
+        4
+      ],
+      "turn_count_mean": 4.0,
+      "turn_count_min": 4,
+      "turn_count_max": 4,
+      "turn_count_range": 0,
+      "mean_deflection_score_mean": 2.833,
+      "repetition_rate_mean": 0.0,
+      "escalation_triggered_any": false,
+      "laddering_efficiency_mean": 1.0,
+      "drift_rate_mean": 0.0,
+      "unlock_proximity_distribution_mean": {
+        "far": 0.0,
+        "approaching": 0.67,
+        "near": 1.33
+      },
+      "iterations": [
+        {
+          "file": "results_u1_acv_claude_gt3_terse_iter1.json",
+          "converged": true,
+          "terminal_category": "V",
+          "terminal_gt_match": true,
+          "turn_count": 4,
+          "final_answer": "Total at 18\u201320px minimum \u2014 clearly the dominant number in the section. Line items all 13\u201314px, the same \u2014 consistent, reads as a group. Secondary labels at 11px or below. Two to three deliberate size steps, not five. The current mix of 8px, 10px, 11px, 20px, 22px has no hierarchy \u2014 sizes nearly overlap, nothing clearly signals 'this is the answer.' Consolidate to a deliberate scale. Total is immediately findable at a glance. That's the fix.",
+          "mean_deflection_score": 2.5,
+          "repetition_rate": 0.0,
+          "unlock_proximity_distribution": {
+            "far": 0,
+            "approaching": 1,
+            "near": 1
+          },
+          "escalation_triggered": false,
+          "escalation_at_turn": null,
+          "laddering_efficiency": 1.0,
+          "drift_rate": 0.0
+        },
+        {
+          "file": "results_u1_acv_claude_gt3_terse_iter2.json",
+          "converged": true,
+          "terminal_category": "V",
+          "terminal_gt_match": true,
+          "turn_count": 4,
+          "final_answer": "Total needs to be the largest number in the section \u2014 obviously so. Line items all the same size, clearly smaller. Secondary text smaller still. That's a typographic scale. Right now there are five sizes in that section. There should be three.",
+          "mean_deflection_score": 3.0,
+          "repetition_rate": 0.0,
+          "unlock_proximity_distribution": {
+            "far": 0,
+            "approaching": 0,
+            "near": 2
+          },
+          "escalation_triggered": false,
+          "escalation_at_turn": null,
+          "laddering_efficiency": 1.0,
+          "drift_rate": 0.0
+        },
+        {
+          "file": "results_u1_acv_claude_gt3_terse_iter3.json",
+          "converged": true,
+          "terminal_category": "V",
+          "terminal_gt_match": false,
+          "turn_count": 4,
+          "final_answer": "Fewer sizes. Clear which number is the total. Don't have to read to find it.",
+          "mean_deflection_score": 3.0,
+          "repetition_rate": 0.0,
+          "unlock_proximity_distribution": {
+            "far": 0,
+            "approaching": 1,
+            "near": 1
+          },
+          "escalation_triggered": false,
+          "escalation_at_turn": null,
+          "laddering_efficiency": 1.0,
+          "drift_rate": 0.0
+        }
+      ]
+    },
+    {
+      "model": "sonnet4.6",
+      "method": "jtbd",
+      "expected_terminal_category": "B",
+      "convergence_rate": "3/3",
+      "all_converged": true,
+      "terminal_categories": [
+        "B",
+        "B",
+        "B"
+      ],
+      "category_match_rate": "3/3",
+      "all_match_expected": true,
+      "categories_consistent": true,
+      "terminal_gt_match_rate": "3/3",
+      "all_gt_match": true,
+      "turn_counts": [
+        6,
+        5,
+        5
+      ],
+      "turn_count_mean": 5.333,
+      "turn_count_min": 5,
+      "turn_count_max": 6,
+      "turn_count_range": 1,
+      "mean_deflection_score_mean": 2.222,
+      "repetition_rate_mean": 0.278,
+      "escalation_triggered_any": false,
+      "laddering_efficiency_mean": 0.756,
+      "drift_rate_mean": 0.0,
+      "unlock_proximity_distribution_mean": {
+        "far": 0.0,
+        "approaching": 2.33,
+        "near": 1.0
+      },
+      "iterations": [
+        {
+          "file": "results_u1_jtbd_claude_gt3_terse_iter1.json",
+          "converged": true,
+          "terminal_category": "B",
+          "terminal_gt_match": true,
+          "turn_count": 6,
+          "final_answer": "Five type sizes in one small section \u2014 8px, 10px, 11px, 20px, 22px \u2014 no deliberate scale. Total isn't clearly dominant. Can't scan it \u2014 size isn't carrying the hierarchy signal. Barrier: size mix with no step means every number competes and reading labels is required. Fix: reduce to three deliberate sizes. Total at 18\u201320px \u2014 the dominant number. Line items all 13\u201314px \u2014 consistent, reads as a group. Secondary labels \u226411px \u2014 clearly subordinate. If those three steps were in place, the total would be findable at a glance. Right now it isn't. That's the barrier and the fix.",
+          "mean_deflection_score": 2.0,
+          "repetition_rate": 0.5,
+          "unlock_proximity_distribution": {
+            "far": 0,
+            "approaching": 3,
+            "near": 1
+          },
+          "escalation_triggered": false,
+          "escalation_at_turn": null,
+          "laddering_efficiency": 0.667,
+          "drift_rate": 0.0
+        },
+        {
+          "file": "results_u1_jtbd_claude_gt3_terse_iter2.json",
+          "converged": true,
+          "terminal_category": "B",
+          "terminal_gt_match": true,
+          "turn_count": 5,
+          "final_answer": "Five type sizes in one small section \u2014 8px, 10px, 11px, 20px, 22px \u2014 no deliberate scale. Total isn't clearly dominant. Can't scan it \u2014 size isn't carrying the hierarchy signal. Barrier: size mix with no step means every number competes and reading labels is required. Fix: reduce to three deliberate sizes. Total at 18\u201320px \u2014 the dominant number. Line items all 13\u201314px \u2014 consistent, reads as a group. Secondary labels \u226411px \u2014 clearly subordinate. If those three steps were in place, the total would be findable at a glance. Right now it isn't. That's the barrier and the fix.",
+          "mean_deflection_score": 2.333,
+          "repetition_rate": 0.333,
+          "unlock_proximity_distribution": {
+            "far": 0,
+            "approaching": 2,
+            "near": 1
+          },
+          "escalation_triggered": false,
+          "escalation_at_turn": null,
+          "laddering_efficiency": 0.8,
+          "drift_rate": 0.0
+        },
+        {
+          "file": "results_u1_jtbd_claude_gt3_terse_iter3.json",
+          "converged": true,
+          "terminal_category": "B",
+          "terminal_gt_match": true,
+          "turn_count": 5,
+          "final_answer": "Five type sizes in one small section \u2014 8px, 10px, 11px, 20px, 22px \u2014 no deliberate scale. Total isn't clearly dominant. Can't scan it \u2014 size isn't carrying the hierarchy signal. Barrier: size mix with no step means every number competes and reading labels is required. Fix: reduce to three deliberate sizes. Total at 18\u201320px \u2014 the dominant number. Line items all 13\u201314px \u2014 consistent, reads as a group. Secondary labels \u226411px \u2014 clearly subordinate. If those three steps were in place, the total would be findable at a glance. Right now it isn't. That's the barrier and the fix.",
+          "mean_deflection_score": 2.333,
+          "repetition_rate": 0.0,
+          "unlock_proximity_distribution": {
+            "far": 0,
+            "approaching": 2,
+            "near": 1
+          },
+          "escalation_triggered": false,
+          "escalation_at_turn": null,
+          "laddering_efficiency": 0.8,
+          "drift_rate": 0.0
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "total_groups": 12,
+    "fully_consistent_groups": "12/12",
+    "overall_convergence_rate": "36/36",
+    "overall_category_match_rate": "36/36",
+    "overall_gt_response_match_rate": "30/36"
+  }
+}
