@@ -1,8 +1,12 @@
 # LadderChat — Human-in-the-Loop Interview Tool
+> Companion code for **"{{LadderTeam: Dual-Agent Laddering Elicitation Framework}}"** - {{Venue: ACM AI Summit 2026}}.
+> 📄 Paper pdf: ({{https://arxiv.org/html/2608.17029v1}}) | ✉️ {{Manjushree.aithal@cuanschutz.edu}}
+>
+** Authors:** {{Manjushree Aithal}}, {{Alexander Kotz}}, {{James Mitchell}}
 
-A structured laddering interview tool where a real human is the interviewee. An LLM generates the questions, the human types answers in the terminal, and a separate judge LLM scores each exchange in real time.
-
-Based on the Reynolds & Gutman (1988) laddering methodology. Supports three probing methods: ACV, 5-Whys, and JTBD.
+---
+## About
+LadderTeam is a research prototype for running **structured qualitative interviews** where an LLM acts a the interviewer and a human answers. It implements the Reynolds & Gutman (1988) laddering methodology with three probing strategies (ACV, 5-Whys, JTBD) and a separate judge LLM that scores interview quality in real time. Built to study whether LLM interviews can surface actionable design insight from wireframe evaluations.
 
 ---
 
@@ -31,11 +35,16 @@ Interviewer LLM ──► Question displayed in terminal
 
 ## Prerequisites
 
-**Python packages:**
+```markdown
+**Python:** 3.10 or later
 
+**Install:**
 ```bash
-pip install openai httpx anthropic
-```
+pip install -r requirements
+
+Or manually:
+```bash
+pip install "openai>=1.40" "httpx>=0.27" "anthropic>=0.34"
 
 `httpx` is only needed for local Ollama runs. `anthropic` is only needed if using Anthropic as the judge provider directly (the built-in shim handles most cases via the OpenAI-compatible layer).
 
