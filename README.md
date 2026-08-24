@@ -1,8 +1,8 @@
 # LadderChat — Human-in-the-Loop Interview Tool
 > Companion code for **"{{LadderTeam: Dual-Agent Laddering Elicitation Framework}}"** - {{Venue: ACM AI Summit 2026}}.
-> 📄 Paper pdf: ({{https://arxiv.org/html/2608.17029v1}}) | ✉️ {{Manjushree.aithal@cuanschutz.edu}}
->
-** Authors:** {{Manjushree Aithal}}, {{Alexander Kotz}}, {{James Mitchell}}
+> 📄 Paper pdf: (https://arxiv.org/html/2608.17029v1) | ✉️ Manjushree.aithal@cuanschutz.edu
+
+**Authors:** Manjushree Aithal, Alexander Kotz, James Mitchell
 
 ---
 ## About
@@ -43,10 +43,11 @@ Interviewer LLM ──► Question displayed in terminal
 pip install -r requirements
 
 Or manually:
+
 ```bash
 pip install "openai>=1.40" "httpx>=0.27" "anthropic>=0.34"
 
-`httpx` is only needed for local Ollama runs. `anthropic` is only needed if using Anthropic as the judge provider directly (the built-in shim handles most cases via the OpenAI-compatible layer).
+`httpx` is required for local Ollama runs. `anthropic` is required when `--judge-provider anthropic` is used (the default cloud configuration).
 
 **API keys (cloud mode):**
 
@@ -62,6 +63,8 @@ ollama pull gemma4:12b
 ollama pull qwen3.6:27b
 ollama serve
 ```
+
+**Vision requirement:** wireframe interviews require a **vision-capable model** for the interviewer role. `qwen2.5:7b` is text-only and will fail. Verified vision models: `gpt-5.5`, `claude-sonnet-4-6`, `gemini-2.5-pro`, `gemma4:12b`, `qwen3.6:27b`.
 
 ---
 
@@ -112,6 +115,11 @@ python pipeline_p3.py \
 ```
 
 ---
+
+## Cost and Data privacy
+**Cost (cloud mode):** each interview turn issues 2-3 LLM calls (extractor, question generator, judge). A typical 8-turn ACV interview costs roughly **$0.15-0.4** with the default `gpt-5.5` + `claude-sonnet-4.6` pairing. User `--skip-judge`, local mode or shorter methods to reduce cost.
+
+**Data send to third parties (cloud mode):** your typed answers, the vague seed you select, and the wireframe image(s) you pass via `--wireframe-image` are transmitted to the API providers you configure (OpenAI, Anthropic, etc.) subject to their data policies. **Do not upload confidential product mockups or proprietary designs in cloud model.** User `--local` with Ollama for fully on-device runs.
 
 ## What happens at runtime
 
@@ -188,6 +196,14 @@ The judge must always use a different model than the interviewer — the pipelin
 
 Wireframe interviews require a **vision-capable model**. `qwen2.5:7b` does not support vision and cannot be used as the interviewer.
 
+### Reproducibility
+
+LLM outputs are **non-deterministic**. Re-running the same interview will produce slightly different questions and different judge scores. The models listed above are the versions we tested at the time of the ACM AI Summit 2026 submission. Provider-hosted models are updated over time and may drift.
+
+- All calls use provider defaults for `temperature` and `top_p` (check `_llm_call()` in `ladder_interview.py`)
+- To pin behavior for replication, use `--local` with the exact Ollama model tags in the table above
+- **Reproducing a ground-truth transcript:** use the same wireframe image, initial response and vague seed from the ground-truth transcript. The interviewer will not ask the *exact* questions from the transcript (LLM outputs vary run-to-run) so match each generated question to the **closest question in the transcript** and paste the corresponding ground-truth answer. Use the transcript as guidance, not as a script.
+  
 ---
 
 ## Output
@@ -201,6 +217,15 @@ Results are saved to `results/results_{screen}_{method}_{model}_iterN.json` (or 
 - `judge_log` — per-turn scores (ladder score, deflection score, tactic, composite)
 - `judge_report` — end-of-session efficiency score and missed opportunities
 
+### Example run
+A complete example interview is provided in [`results/`], and the wireframe used is [`u1.png`]. Reproduce it with:
+
+```bash
+python pipeline_p3.py\
+--cloud --provider open --model gpt-5.5 \
+--laddering-method acv \
+--wireframe-images u1/png
+
 ---
 
 ## File structure
@@ -212,3 +237,64 @@ manual_ladder/
 ├── README.md                   # This file
 └── results/                    # JSON outputs (created on first run)
 ```
+
+## Troubleshooting
+
+| Symptom | Fix |
+| --- | --- |
+| `open.AuthenticationError` | `export OPENAI_API_KEY=sk-...` before running |
+| `anthropic.AuthenticationError` | `export ANTHROPIC_API_KEY=sk-ant-...` before running |
+| `ConnectionError` on `--local` | `ollama serve` not running, or model not pulled (`ollama pull gemma4:12b`) |
+| Interviewer produces empty questions | You picked a non-vision model for the interviewer role, check the vision requirements in Prerequisites |
+| `RuntimeError: judge model must differ from interviewer model` | Change `--judge-model` to a different model than `--model` |
+| Ollama returns empty responses on gemma4/qwen3.6 | Thinking-mode suppression issue, pull the exact tags in the model pairing table |
+
+## Intended use and limitations
+
+LadderTeam is a **research prototype** for studying LLM-driven interview methodology. It is not:
+- a replacement for real user research with human participants
+- a validated qualitative-research instrument
+
+Any use with real human subjects (e.g., recording their answers to study interviewer behavior) requires appropriate IRB/ethics-board approval at your institution.
+
+---
+
+## Citation
+
+If you use LadderTeam in academic work, please cite:
+
+```bibtex
+@article{aithal2026ladderteam,
+  title={LadderTeam: Dual-Agent Laddering Elicitation Framework},
+  author={Aithal, Manjushree and Kotz, Alexander and Mitchell, James},
+  journal={arXiv preprint arXiv:2608.17029},
+  year={2026}
+}
+```
+---
+
+## License
+
+## Acknowledgments
+
+Developed at the University of Colorado Anschutz Medical Campus. Thanks to reviewers who provided feedback on the interview design.
+
+## Contributing
+
+This is a research prototype and is not actively maintained, but bug reports and reproducibility issues are welcome. Please open a [Github Issue].
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
