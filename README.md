@@ -221,12 +221,11 @@ Results are saved to `results/results_{screen}_{method}_{model}_iterN.json` (or 
 A complete example interview is provided in [`results/`], and the wireframe used is [`u1.png`]. Reproduce it with:
 
 ```bash
-python pipeline_p3.py\
---cloud --provider open --model gpt-5.5 \
---laddering-method acv \
---wireframe-images u1/png
-
----
+python pipeline_p3.py \
+  --cloud --provider openai --model gpt-5.5 \
+  --laddering-method acv \
+  --wireframe-images examples/wireframe_sample.png
+```
 
 ## File structure
 
