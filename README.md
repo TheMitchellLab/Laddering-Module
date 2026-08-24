@@ -1,5 +1,5 @@
 # LadderChat — Human-in-the-Loop Interview Tool
-> Companion code for **"{{LadderTeam: Dual-Agent Laddering Elicitation Framework}}"** - Venue: ACM AI Summit 2026.
+> Companion code for **"LadderTeam: Dual-Agent Laddering Elicitation Framework"** - Venue: ACM AI Summit 2026.
 > 📄 Paper pdf: (https://arxiv.org/html/2608.17029v1) | ✉️ Manjushree.aithal@cuanschutz.edu
 
 **Authors:** Manjushree Aithal, Alexander Kotz, James Mitchell
