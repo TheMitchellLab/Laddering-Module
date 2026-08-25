@@ -12,6 +12,8 @@ LadderTeam is a research prototype for running **structured qualitative intervie
 
 ## How it works
 
+![LadderTeam interview demo](assets/demo.gif)
+
 ```
 Wireframe image(s)
       │
