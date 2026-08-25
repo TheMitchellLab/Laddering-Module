@@ -19,6 +19,10 @@ LadderTeam is a research prototype for running **structured qualitative intervie
 
 ![LadderTeam interview demo](assets/demo.gif)
 
+![LadderTeam system architecture](assets/architecture.png)
+
+*Two-agent architecture: an interviewer LLM probes the user turn-by-turn while a judge LLM scores each exchange in real time and (optionally) injects tactic feedback into the next question.*
+
 ```
 Wireframe image(s)
       │
@@ -37,6 +41,7 @@ Interviewer LLM ──► Question displayed in terminal
                           │
                     Results saved to results/results_{screen}_{method}_{model}_iterN.json
 ```
+
 
 ---
 
