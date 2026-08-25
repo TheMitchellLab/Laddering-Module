@@ -1,7 +1,6 @@
 # LadderChat — Human-in-the-Loop Interview Tool
 
-📄 Paper pdf: (https://arxiv.org/html/2608.17029v1) | ✉️ Manjushree.aithal@cuanschutz.edu
-[![Paper] (https://img.shields.io/badge/Paper-arXiv-b31b1b?logo=arxiv&logoColor=white&style=for-the-badge)](https://arxiv.org/html/2608.17029v1)
+[![Paper](https://img.shields.io/badge/Paper-arXiv-b31b1b?logo=arxiv&logoColor=white&style=for-the-badge)](https://arxiv.org/html/2608.17029v1)
 [![Lab](https://img.shields.io/badge/Lab-Mitchell%20Lab-1f6feb?logo=googlescholar&logoColor=white&style=for-the-badge)](https://www.jamphd.com/research.html)
 [![App](https://img.shields.io/badge/App-LadderTeam-6f42c1?logo=rocket&logoColor=white&style=for-the-badge)](https://craves-lite.onrender.com)
 [![Contact](https://img.shields.io/badge/Contact-Email-0a66c2?logo=gmail&logoColor=white&style=for-the-badge)](mailto:Manjushree.aithal@cuanschutz.edu)
