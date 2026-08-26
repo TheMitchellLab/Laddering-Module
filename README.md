@@ -3,7 +3,7 @@
 [![Conference](https://img.shields.io/badge/ACM%20AI%20Summit%202026-Poster-a78bfa?labelColor=4c1d95&style=flat)](https://aisummit.acm.org)
 [![arXiv](https://img.shields.io/badge/arXiv-Paper-fca5a5?labelColor=7f1d1d&logo=arxiv&logoColor=white&style=flat)](https://arxiv.org/html/2608.17029v1)
 [![Demo](https://img.shields.io/badge/🚀%20Try%20CRAVES-Live%20App-86efac?labelColor=14532d&style=flat)](https://craves-lite.onrender.com)
-[![HuggingFace](https://img.shields.io/badge/🤗%20Hugging%20Face-Dataset-FFD21E?labelColor=a26B35&style=flat)](https://huggingface.co/YOUR-URL)
+[![HuggingFace](https://img.shields.io/badge/🤗%20Hugging%20Face-Dataset-FFD21E?labelColor=a26B35&style=flat)](https://huggingface.co/datasets/maithal05/ladderteam-transcripts/tree/main)
 [![Lab](https://img.shields.io/badge/🧠%20Mitchell%20Lab-Website-93c5fd?labelColor=1e40af&style=flat)](https://www.jamphd.com/research.html)
 [![Contact](https://img.shields.io/badge/Contact-Email-5eead4?labelColor=134e4a&logo=gmail&logoColor=white&style=flat)](mailto:Manjushree.aithal@cuanschutz.edu)
 
