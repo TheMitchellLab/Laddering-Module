@@ -1,15 +1,10 @@
 # LadderChat — Human-in-the-Loop Interview Tool
 
-[![Paper](https://img.shields.io/badge/Paper-arXiv-b31b1b?logo=arxiv&logoColor=white&style=for-the-badge)](https://arxiv.org/html/2608.17029v1)
-[![Lab](https://img.shields.io/badge/Lab-Mitchell%20Lab-1f6feb?logo=googlescholar&logoColor=white&style=for-the-badge)](https://www.jamphd.com/research.html)
-[![App](https://img.shields.io/badge/App-LadderTeam-6f42c1?logo=rocket&logoColor=white&style=for-the-badge)](https://craves-lite.onrender.com)
-[![Contact](https://img.shields.io/badge/Contact-Email-0a66c2?logo=gmail&logoColor=white&style=for-the-badge)](mailto:Manjushree.aithal@cuanschutz.edu)
-
-[![Conference](https://img.shields.io/badge/ACM%20AI%20Summit%202026-Poster-1f6feb?labelColor=555555&style=flat-square)](https://aisummit.acm.org)
-[![arXiv](https://img.shields.io/badge/arXiv-Paper-b31b1b?labelColor=555555&logo=arxiv&logoColor=white&style=flat-square)](https://arxiv.org/html/2608.17029v1)
-[![Demo](https://img.shields.io/badge/YouTube-Video-red?labelColor=282828&logo=youtube&logoColor=white&style=flat-square)](https://craves-lite.onrender.com)
-[![Lab](https://img.shields.io/badge/Mitchell%20Lab-Website-1f6feb?labelColor=555555&logo=googlescholar&logoColor=white&style=flat-square)](https://www.jamphd.com/research.html)
-[![Contact](https://img.shields.io/badge/Contact-Email-0a66c2?labelColor=555555&logo=gmail&logoColor=white&style=flat-square)](mailto:Manjushree.aithal@cuanschutz.edu)
+[![Conference](https://img.shields.io/badge/ACM%20AI%20Summit%202026-Poster-1f6feb?labelColor=7c3aed&style=flat)](https://aisummit.acm.org)
+[![arXiv](https://img.shields.io/badge/arXiv-Paper-b31b1b?labelColor=b31b1b&logo=arxiv&logoColor=white&style=flat)](https://arxiv.org/html/2608.17029v1)
+[![Demo](https://img.shields.io/badge/YouTube-Video-red?labelColor=282828&logo=youtube&logoColor=white&style=flat)](https://craves-lite.onrender.com)
+[![Lab](https://img.shields.io/badge/Mitchell%20Lab-Website-1f6feb?labelColor=059669&logo=googlescholar&logoColor=white&style=flat)](https://www.jamphd.com/research.html)
+[![Contact](https://img.shields.io/badge/Contact-Email-0a66c2?labelColor=eab308&logo=gmail&logoColor=white&style=flat)](mailto:Manjushree.aithal@cuanschutz.edu)
 
 > Companion code for **"LadderTeam: Dual-Agent Laddering Elicitation Framework"** - Venue: ACM AI Summit 2026.
 >
