@@ -1,10 +1,10 @@
 # LadderChat — Human-in-the-Loop Interview Tool
 
 [![Conference](https://img.shields.io/badge/ACM%20AI%20Summit%202026-Poster-a78bfa?labelColor=4c1d95&style=flat)](https://aisummit.acm.org)
-[![arXiv](https://img.shields.io/badge/arXiv-Paper-fca5a5?labelColor=b31b1b&logo=arxiv&logoColor=white&style=flat)](https://arxiv.org/html/2608.17029v1)
-[![Demo](https://img.shields.io/badge/🚀%20Try%20CRAVES-Live%20App-6ee7b7?labelColor=065f46&style=flat)](https://craves-lite.onrender.com)
-[![Lab](https://img.shields.io/badge/Mitchell%20Lab-Website-6ee7b7?labelColor=065f46&logo=googlescholar&logoColor=white&style=flat)](https://www.jamphd.com/research.html)
-[![Contact](https://img.shields.io/badge/Contact-Email-fcd34d?labelColor=78350f&logo=gmail&logoColor=white&style=flat)](mailto:Manjushree.aithal@cuanschutz.edu)
+[![arXiv](https://img.shields.io/badge/arXiv-Paper-fca5a5?labelColor=7f1d1d&logo=arxiv&logoColor=white&style=flat)](https://arxiv.org/html/2608.17029v1)
+[![Demo](https://img.shields.io/badge/🚀%20Try%20CRAVES-Live%20App-86efac?labelColor=14532d&style=flat)](https://craves-lite.onrender.com)
+[![Lab](https://img.shields.io/badge/🧠%20Mitchell%20Lab-Website-7dd3fc?labelColor=0c4a6e&logo=googlescholar&logoColor=white&style=flat)](https://www.jamphd.com/research.html)
+[![Contact](https://img.shields.io/badge/Contact-Email-fda4af?labelColor=881337&logo=gmail&logoColor=white&style=flat)](mailto:Manjushree.aithal@cuanschutz.edu)
 
 > Companion code for **"LadderTeam: Dual-Agent Laddering Elicitation Framework"** - Venue: ACM AI Summit 2026.
 >
