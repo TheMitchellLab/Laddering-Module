@@ -5,6 +5,7 @@
 [![Demo](https://img.shields.io/badge/🚀%20Try%20CRAVES-Live%20App-86efac?labelColor=14532d&style=flat)](https://craves-lite.onrender.com)
 [![HuggingFace](https://img.shields.io/badge/🤗%20Hugging%20Face-Dataset-FFD21E?labelColor=a26B35&style=flat)](https://huggingface.co/datasets/maithal05/ladderteam-transcripts/tree/main)
 [![Lab](https://img.shields.io/badge/🧠%20Mitchell%20Lab-Website-93c5fd?labelColor=1e40af&style=flat)](https://www.jamphd.com/research.html)
+[![License](https://img.shields.io/badge/License-CC%20BY--NC%204.0-94a3b8?labelColor=334155&style=flat)](LICENSE)
 [![Contact](https://img.shields.io/badge/Contact-Email-5eead4?labelColor=134e4a&logo=gmail&logoColor=white&style=flat)](mailto:Manjushree.aithal@cuanschutz.edu)
 
 > Companion code for **"LadderTeam: Dual-Agent Laddering Elicitation Framework"** - Venue: ACM AI Summit 2026.
@@ -49,17 +50,19 @@ Interviewer LLM ──► Question displayed in terminal
 
 ## Prerequisites
 
-```markdown
 **Python:** 3.10 or later
 
 **Install:**
+
 ```bash
-pip install -r requirements
+pip install -r requirements.txt
+```
 
 Or manually:
 
 ```bash
 pip install "openai>=1.40" "httpx>=0.27" "anthropic>=0.34"
+```
 
 `httpx` is required for local Ollama runs. `anthropic` is required when `--judge-provider anthropic` is used (the default cloud configuration).
 
@@ -214,7 +217,7 @@ Wireframe interviews require a **vision-capable model**. `qwen2.5:7b` does not s
 
 LLM outputs are **non-deterministic**. Re-running the same interview will produce slightly different questions and different judge scores. The models listed above are the versions we tested at the time of the ACM AI Summit 2026 submission. Provider-hosted models are updated over time and may drift.
 
-- All calls use provider defaults for `temperature` and `top_p` (check `_llm_call()` in `ladder_interview.py`)
+- All calls use provider defaults for `temperature` and `top_p` (check `_llm_call()` in `ladderchat_interview_p3.py`)
 - To pin behavior for replication, use `--local` with the exact Ollama model tags in the table above
 - **Reproducing a ground-truth transcript:** use the same wireframe image, initial response and vague seed from the ground-truth transcript. The interviewer will not ask the *exact* questions from the transcript (LLM outputs vary run-to-run) so match each generated question to the **closest question in the transcript** and paste the corresponding ground-truth answer. Use the transcript as guidance, not as a script.
   
@@ -232,7 +235,7 @@ Results are saved to `results/results_{screen}_{method}_{model}_iterN.json` (or 
 - `judge_report` — end-of-session efficiency score and missed opportunities
 
 ### Example run
-A complete example interview is provided in [`results/`], and the wireframe used is [`u1.png`]. Reproduce it with:
+Example interviews are in [`results/`](results/), reference transcripts in [`ground_truth/`](ground_truth/), and the wireframe used is [`u1.png`](u1.png). Reproduce with:
 
 ```bash
 python pipeline_p3.py \
@@ -255,7 +258,7 @@ manual_ladder/
 
 | Symptom | Fix |
 | --- | --- |
-| `open.AuthenticationError` | `export OPENAI_API_KEY=sk-...` before running |
+| `openai.AuthenticationError` | `export OPENAI_API_KEY=sk-...` before running |
 | `anthropic.AuthenticationError` | `export ANTHROPIC_API_KEY=sk-ant-...` before running |
 | `ConnectionError` on `--local` | `ollama serve` not running, or model not pulled (`ollama pull gemma4:12b`) |
 | Interviewer produces empty questions | You picked a non-vision model for the interviewer role, check the vision requirements in Prerequisites |
@@ -288,9 +291,13 @@ If you use LadderTeam in academic work, please cite:
 
 ## License
 
+This project is licensed under **CC BY-NC 4.0** (Creative Commons Attribution-NonCommercial 4.0 International). You are free to share and adapt this material for non-commercial purposes with attribution. See [`LICENSE`](LICENSE) for the full terms, or the [human-readable summary](https://creativecommons.org/licenses/by-nc/4.0/).
+
+For commercial licensing inquiries, contact [Manjushree.aithal@cuanschutz.edu](mailto:Manjushree.aithal@cuanschutz.edu).
+
 ## Acknowledgments
 
-Developed at the University of Colorado Anschutz Medical Campus. Thanks to reviewers who provided feedback on the interview design.
+Developed at the University of Colorado Anschutz Medical Campus. Research reported in this paper was supported by the National Library of Medicine (NLM) of the National Institutes of Health (NIH) under award number T15LM009451. Thanks to reviewers who provided feedback on the interview design.
 
 ## Contributing
 
